@@ -11,17 +11,28 @@ var mongoose     = require('mongoose');
 var flash        = require('connect-flash');
 var configDB     = require('./config/database.js');
 // configuration ===============================================================
-mongoose.connect(configDB.url); // connect to our database
+var connection = mongoose.connect(configDB.url); // connect to our database
+var autoIncrement = require('mongoose-auto-increment');
+autoIncrement.initialize(connection);
+
 var passport     = require('passport')
 require('./config/passport')(passport);
 
+
 app.use(express.static('public'))
-app.use(bodyParser());
-app.use(session({ secret: 'keyboard cat' }));
+app.use(bodyParser.urlencoded());
+app.use(bodyParser.json());
+app.use(session({ 
+  secret: 'keyboard cat',
+  saveUninitialized: false,
+  resave: false
+}));
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(flash()); // use connect-flash for flash messages stored in session
 
+// set the view engine to ejs
+app.set('view engine', 'ejs')
 
 /// AUTH ROUTING
 app.post('/login',
@@ -33,67 +44,31 @@ app.post('/login',
 
 app.get('/logout', function(req, res){
   req.logout();
+  req.flash("success", "Logged out.")
   res.redirect('/');
 });
 /////
 
-
-// fake posts to simulate a database
-const posts = [
-  {
-    id: 1,
-    author: 'John',
-    title: 'Templating with EJS',
-    body: 'Blog post number 1'
-  },
-  {
-    id: 2,
-    author: 'Drake',
-    title: 'Express: Starting from the Bottom',
-    body: 'Blog post number 2'
-  },
-  {
-    id: 3,
-    author: 'Emma',
-    title: 'Streams',
-    body: 'Blog post number 3'
-  },
-  {
-    id: 4,
-    author: 'Cody',
-    title: 'Events',
-    body: 'Blog post number 4'
-  }
-]
-
-for (var i = 0; i <20 ; i++) {
-  posts.push(posts[0])
-}
-
-// set the view engine to ejs
-app.set('view engine', 'ejs')
-
-// blog home page
+//// Other routing
+// homepage
 app.get('/', (req, res) => {
-  console.log(req.session)
-  // render `home.ejs` with the list of posts
-  res.render('home', { posts: posts, user: req.user, messages: req.flash() })
+  res.render('home', { messages: req.flash(), req: req })
 })
 
-// blog post
-app.get('/post/:id', (req, res) => {
-  // find the post in the `posts` array
-  const post = posts.filter((post) => {
-    return post.id == req.params.id
-  })[0]
-
-  // render the `post.ejs` template with the post content
-  res.render('post', {
-    author: post.author,
-    title: post.title,
-    body: post.body
-  })
+// redirect to home page if not logged in
+app.use((req, res, next) => {
+  if (!req.user && req.path != "/") {
+    req.flash("error", "Please login first.")
+    res.redirect('/')
+  } else {
+    next()
+  }
 })
+
+// all other routes
+require('./routes/addPatient.js')(app); 
+require('./routes/addVisit.js')(app); 
+
 
 app.listen(port)
 

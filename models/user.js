@@ -1,4 +1,4 @@
-// app/models/user.js
+// models/user.js
 // load the things we need
 var mongoose = require('mongoose');
 var bcrypt   = require('bcrypt-nodejs');
@@ -6,8 +6,15 @@ var bcrypt   = require('bcrypt-nodejs');
 // define the schema for our user model
 var userSchema = mongoose.Schema({
     name:     String,
-    username: String,
-    password: String,
+    username: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    password:  {
+        type: String,
+        required: true
+    },
     authLevel: Number,
 });
 
