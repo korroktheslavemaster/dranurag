@@ -1,0 +1,180 @@
+<!-- views/home.ejs -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   <%- include('partials/head')%>
+</head>
+
+<body>
+    <div class="container">
+        <%- include('partials/navbar') %>
+        <%- include('partials/header')%>
+        <div class="jumbotron">
+         <form action="/addVisit" method="post">
+  <h1 class="display-3">Add Visit</h1>
+  <div>
+    <div>
+      <div class="form-group">
+        <label for="diagnosis">Diagnosis:&nbsp;&nbsp;</label><br />
+        <textarea name="diagnosis" id="diagnosis" rows=3 cols=70></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="complaints">Chief complaints:&nbsp;&nbsp;</label><br />
+        
+        <input type="text" name="complaint[]"  />
+        <input type="number" name="duration[]" />
+        <select name="duration2[]">
+          <option value="days">days</option>
+          <option value="months">months</option>
+          <option value="years">years</option>
+        </select>
+        
+        <input type="text" name="complaint[]" />
+        <input type="number" name="duration[]" />
+        <select name="duration2[]">
+          <option value="days">days</option>
+          <option value="months">months</option>
+          <option value="years">years</option>
+        </select>
+        
+        <input type="text" name="complaint[]" />
+        <input type="number" name="duration[]"  />
+        <select name="duration2[]">
+          <option value="days">days</option>
+          <option value="months">months</option>
+          <option value="years">years</option>
+        </select>
+        
+        <input type="text" name="complaint[]"  />
+        <input type="number" name="duration[]" />
+        <select name="duration2[]">
+          <option value="days">days</option>
+          <option value="months">months</option>
+          <option value="years">years</option>
+        </select>
+        
+        <input type="text" name="complaint[]"  />
+        <input type="number" name="duration[]"  />
+        <select name="duration2[]">
+          <option value="days">days</option>
+          <option value="months">months</option>
+          <option value="years">years</option>
+        </select>
+        
+      </div>
+
+      <div class="form-group">
+        <label>On examination:&nbsp;&nbsp;</label>
+        <br>
+        <label for="pulse">Pulse:&nbsp;&nbsp;</label>
+        <input type="text" name="pulse" id="pulse"/>
+        <label for="bp">BP:&nbsp;&nbsp;</label>
+        <input type="text" name="bp" id="bp"/>
+        <label for="temperature">Temp:&nbsp;&nbsp;</label>
+        <input type="text" name="temperature" id="temperature"/>
+          <textarea name="on_examination" id="on_examination" rows=3 cols=70></textarea>
+      </div>
+    </div>
+    <div style='font-size:15px;'><br>Investigations</div>
+    <div>
+      <table>
+        <th><label style="color:white;">New Investigations</label></th>
+        <th><label style="color:white;">Old investigations</label></th>
+        <tr>
+          <td>
+      <p>
+        <input type="text" name="investigation[]" style="width:200px" /><br>
+        <input type="text" name="investigation[]" style="width:200px" /><br>
+        <input type="text" name="investigation[]" style="width:200px" /><br>
+      </td>
+      <td></td>
+      </p>
+    </tr>
+    </table>
+    <div style='font-size:15px;'><br>Treatment advised</div>
+    <table>
+      <label for="medicines">Medicines:&nbsp;&nbsp;</label><br />
+      
+      <input type="text" name="complaint[]" style="width:200px" />
+      <input type="number" name="duration[]" style="width:200px" />
+      <select name="duration2[]">
+        <option value="days">days</option>
+        <option value="months">months</option>
+        <option value="years">years</option>
+      </select>
+      
+      <input type="text" name="complaint[]" style="width:200px" />
+      <input type="number" name="duration[]" style="width:200px" />
+      <select name="duration2[]">
+        <option value="days">days</option>
+        <option value="months">months</option>
+        <option value="years">years</option>
+      </select>
+      
+      <input type="text" name="complaint[]" style="width:200px" />
+      <input type="number" name="duration[]" style="width:200px" />
+      <select name="duration2[]">
+        <option value="days">days</option>
+        <option value="months">months</option>
+        <option value="years">years</option>
+      </select>
+      
+      <input type="text" name="complaint[]" style="width:200px" />
+      <input type="number" name="duration[]" style="width:200px" />
+      <select name="duration2[]">
+        <option value="days">days</option>
+        <option value="months">months</option>
+        <option value="years">years</option>
+      </select>
+      
+      <input type="text" name="complaint[]" style="width:200px" />
+      <input type="number" name="duration[]" style="width:200px" />
+      <select name="duration2[]">
+        <option value="days">days</option>
+        <option value="months">months</option>
+        <option value="years">years</option>
+      </select>
+      
+    </table>
+    <div>
+      <p>
+      <table>
+        <th><label for="investigation" style="color:white;">Dietary advice</label></th>
+        <th><label style="color:white;">Medicines</label></th>
+        <th><label style="color:white;">Other advices</label></th>
+        <tr>
+        <td>
+          <textarea name="dietary_advice" id="dietary_advice" rows=3 cols=17></textarea>
+        </td>
+        <td>
+          <textarea name="other_advice" id="other_advice" rows=3 cols=17></textarea>
+        </td>
+    </tr>
+    </table>
+  </p>
+      <p>
+        <label style="font-size:15">Review after: </label>
+        <input type="number" name="review_time" id="review_time"  />
+        <select name="review_time_units">
+          <option value="days">days</option>
+          <option value="months">months</option>
+          <option value="years">years</option>
+        </select>
+      </p>
+</div>
+</div>
+<p>
+  <input type="submit" name="submit" value="Create prescription"/>
+</p>
+
+</form>
+
+        </div>
+        <%- include('partials/footer') %>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!-- views/home.ejs -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+   <%- include('partials/head')%>
+</head>
+
+<body>
+    <div class="container">
+        <%- include('partials/navbar') %>
+        <%- include('partials/header')%>
+        <div >
+        <h1 class="display-3">Add Patient</h1>
+        <form action="/addPatient" method="post">
+          <div class="form-group">
+            <label for="inputFirstName">First Name</label>
+            <input type="text" class="form-control required" id="inputFirstName" name="firstName" placeholder="First name">
+          </div>
+          <div class="form-group">
+            <label for="inputLastName">Last Name</label>
+            <input type="text" class="form-control" id="inputLastName" name="lastName" placeholder="Last name">
+          </div>
+          <div class="form-group">
+            <label for="inputDateOfBirth" class="col-2 col-form-label">Date of birth</label>
+            <div class="col-10">
+              <input class="form-control" type="date" name="dateOfBirth" id="inputDateOfBirth">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="exampleSelect1">Sex</label>
+            <select class="form-control" id="exampleSelect1" name="sex">
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="example-tel-input" class="col-2 col-form-label">Phone 1</label>
+            <div class="col-10">
+              <input class="form-control" type="tel" id="example-tel-input" name="phone1">
+            </div>
+          </div>
+           <div class="form-group">
+            <label for="example-tel-input2" class="col-2 col-form-label">Phone 2</label>
+            <div class="col-10">
+              <input class="form-control" type="tel" id="example-tel-input2" name="phone2">
+            </div>
+          </div>
+          <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Link with href
+            </a>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Button with data-target
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <div class="card card-block">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        </div>
+        <%- include('partials/footer') %>
+    </div>
+</body>
+
+</html>
