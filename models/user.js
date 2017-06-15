@@ -21,14 +21,14 @@ var userSchema = mongoose.Schema({
 // methods ======================
 // generating a hash
 userSchema.methods.generateHash = function(password) {
-    return password;
-    // return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
+    // return password;
+    return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 };
 
 // checking if password is valid
 userSchema.methods.validPassword = function(password) {
-    return (password == this.password);
-    // return bcrypt.compareSync(password, this.password);
+    // return (password == this.password);
+    return bcrypt.compareSync(password, this.password);
 };
 
 // create the model for users and expose it to our app

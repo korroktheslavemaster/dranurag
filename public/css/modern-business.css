@@ -15,12 +15,31 @@ body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
+/* for required form fields */
+text.asterisk {
+    color: #e32;
+}
+
+.required label:after {
+    color: #e32;
+    content: ' *';
+    display:inline;
+}
+
 .img-portfolio {
     margin-bottom: 30px;
 }
 
 .img-hover:hover {
     opacity: 0.8;
+}
+
+/* textarea height hack */
+html, body, .container {
+  height: 100%;
+}
+textarea.form-control {
+  height: 100%;
 }
 
 /* Home Page Carousel */

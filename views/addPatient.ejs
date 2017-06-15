@@ -13,37 +13,46 @@
         <%- include('partials/header')%>
         <div >
         <h1 class="display-3">Add Patient</h1>
+        
+        <small >Fields marked with <text class="asterisk">*</text> are required</small>
+        <hr class="my-4">
         <form action="/addPatient" method="post">
-          <div class="form-group">
-            <label for="inputFirstName">First Name</label>
-            <input type="text" class="form-control required" id="inputFirstName" name="firstName" placeholder="First name">
+          <div class="form-group row required">
+            <label for="inputFirstName" class="col-sm-2 col-form-label">First Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputFirstName" required="true" name="firstName" >
+            </div>
           </div>
-          <div class="form-group">
-            <label for="inputLastName">Last Name</label>
-            <input type="text" class="form-control" id="inputLastName" name="lastName" placeholder="Last name">
+          <div class="form-group row">
+            <label for="inputLastName" class="col-sm-2 col-form-label">Last Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="inputLastName" name="lastName" >
+            </div>
           </div>
-          <div class="form-group">
-            <label for="inputDateOfBirth" class="col-2 col-form-label">Date of birth</label>
-            <div class="col-10">
+          <div class="form-group row">
+            <label for="inputDateOfBirth" class="col-sm-2 col-form-label">Date of birth</label>
+            <div class="col-sm-10">
               <input class="form-control" type="date" name="dateOfBirth" id="inputDateOfBirth">
             </div>
           </div>
-          <div class="form-group">
-            <label for="exampleSelect1">Sex</label>
-            <select class="form-control" id="exampleSelect1" name="sex">
-              <option>Male</option>
-              <option>Female</option>
-            </select>
+          <div class="form-group row">
+            <label for="exampleSelect1" class="col-sm-2 col-form-label">Sex</label>
+            <div class="col-sm-10">
+              <select class="form-control" id="exampleSelect1" name="sex">
+                <option>Male</option>
+                <option>Female</option>
+              </select>
+            </div>
           </div>
-          <div class="form-group">
-            <label for="example-tel-input" class="col-2 col-form-label">Phone 1</label>
-            <div class="col-10">
+          <div class="form-group row">
+            <label for="example-tel-input" class="col-sm-2 col-form-label">Phone 1</label>
+            <div class="col-sm-10">
               <input class="form-control" type="tel" id="example-tel-input" name="phone1">
             </div>
           </div>
-           <div class="form-group">
-            <label for="example-tel-input2" class="col-2 col-form-label">Phone 2</label>
-            <div class="col-10">
+           <div class="form-group row">
+            <label for="example-tel-input2" class="col-sm-2 col-form-label">Phone 2</label>
+            <div class="col-sm-10">
               <input class="form-control" type="tel" id="example-tel-input2" name="phone2">
             </div>
           </div>
