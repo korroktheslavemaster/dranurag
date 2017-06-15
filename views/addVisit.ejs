@@ -62,7 +62,13 @@
     <hr class="my-4">
     <form action="/addVisit" method="post">
       <div class="form-group row required">
-        <label for="diagnosis" class="col-form-label col-md-2">Diagnosis</label><br />
+        <label for="patientId" class="col-form-label col-md-2">Patient ID</label>
+        <div class="col-md-10">
+          <input type="number" class="form-control" name="patientId" value="<%= req.query.patientId || ""%>" <%= req.query.patientId? "disabled" : "" %>>
+        </div>
+      </div>
+      <div class="form-group row required">
+        <label for="diagnosis" class="col-form-label col-md-2">Diagnosis</label>
         <div class="col-md-10">
           <textarea name="diagnosis" id="diagnosis" required="true" rows=3 cols=70 class="form-control"></textarea>
         </div>
@@ -91,7 +97,7 @@
                   <button class="btn btn-danger pull-right" data-role="remove">
                     <i class="fa fa-minus"></i>
                   </button>
-                  <button class="btn btn-primary pull-right" data-role="add">
+                  <button class="btn btn-success pull-right" data-role="add">
                     <i class="fa fa-plus"></i>
                   </button>
                 </div>
@@ -128,6 +134,37 @@
               <textarea name="onExaminationNotes" class="form-control" placeholder="Notes" rows="6"></textarea>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-md-2 col-form-label">Investigations</label>
+        <div class="col-md-10">
+          <% if (investigations) {%>
+            <small class="form-text text-muted">Old</small>
+            <ul class="list-group mb-3">
+              <%investigations.forEach(function(str) {%>
+              <li class="list-group-item bg-faded"><%- str%></li>
+              <%})%>
+            </ul>
+            <small class="form-text text-muted">New</small>
+          <%}%>
+          <div data-role="dynamic-fields">
+            <div class="form-inline-special">
+              <div class="form-group row">
+                <div class="col pr-0 pr-md-3">
+                  <input type="text" class="form-control" name="investigations[]">
+                </div>
+                <div class="col-2 col-auto pl-3 pl-md-0">
+                  <button class="btn btn-danger pull-right" data-role="remove">
+                    <i class="fa fa-minus"></i>
+                  </button>
+                  <button class="btn btn-success pull-right" data-role="add">
+                    <i class="fa fa-plus"></i>
+                  </button>
+                </div>
+              </div>
+            </div>  <!-- /div.form-inline -->
+          </div>  <!-- /div[data-role="dynamic-fields"] -->
         </div>
       </div>
       <div class="form-group row">

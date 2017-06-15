@@ -3,7 +3,7 @@ var Visit            = require('../models/visit');
 module.exports = (app) => {
   // add visit page
   app.get('/addVisit', (req, res) => {
-    res.render('addVisit', {messages: req.flash(), req:req})
+    res.render('addVisit', {messages: req.flash(), req:req, investigations: req.query.patientId? ["first in", "second"] : undefined})
   })
 
   // add visit form submission
