@@ -1,4 +1,5 @@
 var Patient            = require('../models/patient');
+var Visit              = require('../models/visit');
 
 module.exports = (app) => {
   // add patient page
@@ -6,16 +7,16 @@ module.exports = (app) => {
     res.render('addPatient', {messages: req.flash(), req:req})
   })
 
-  // add patient form submission
+  // add patient form submission, also adds a visit
   app.post('/addPatient', (req, res) => {
     console.log(req.body)
-    Patient.create(req.body, (err, patient) => {
-      if (err) {
-        req.flash("error", err.message)
-      } else {
-        req.flash("info", "Added new patient \"" + patient.firstName + "\" with id: <strong>" + patient.id + "</strong>.")
-      }
-      res.redirect('/addPatient')
-    })
+    new Patient(req.body)
+      .save()
+      .then((patient) => {
+        return Visit.addVisit(req, Patient, Visit, patient.id)
+      })
+      .then(() => {
+        res.redirect('/addPatient')
+      })
   })
 }

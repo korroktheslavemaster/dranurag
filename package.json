@@ -17,6 +17,8 @@
     "express": "^4.15.3",
     "express-session": "^1.15.3",
     "forms-mongoose": "0.0.6",
+    "lodash": "^4.17.4",
+    "moment": "^2.18.1",
     "mongoose": "^4.10.6",
     "mongoose-auto-increment": "^5.0.1",
     "passport": "^0.3.2",

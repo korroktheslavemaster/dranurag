@@ -12,6 +12,8 @@ var flash        = require('connect-flash');
 var configDB     = require('./config/database.js');
 // configuration ===============================================================
 var connection = mongoose.connect(configDB.url); // connect to our database
+// use js promise
+mongoose.Promise = global.Promise
 var autoIncrement = require('mongoose-auto-increment');
 autoIncrement.initialize(connection);
 
@@ -50,25 +52,11 @@ app.get('/logout', function(req, res){
 /////
 
 //// Other routing
-// homepage
-app.get('/', (req, res) => {
-  res.render('home', { messages: req.flash(), req: req })
-})
-
-// redirect to home page if not logged in
-app.use((req, res, next) => {
-  if (!req.user && req.path != "/") {
-    req.flash("error", "Please login first.")
-    res.redirect('/')
-  } else {
-    next()
-  }
-})
-
-// all other routes
+// homepage first to handle auth redirects correctly
+require('./routes/home.js')(app)
 require('./routes/addPatient.js')(app); 
 require('./routes/addVisit.js')(app); 
-
+require('./routes/patientSearch.js')(app);
 
 app.listen(port)
 
