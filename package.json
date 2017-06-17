@@ -23,7 +23,8 @@
     "mongoose-auto-increment": "^5.0.1",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
-    "prince": "^1.4.0"
+    "prince": "^1.4.0",
+    "request": "^2.81.0"
   },
   "engines": {
     "node": "4.8.3"

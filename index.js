@@ -80,6 +80,44 @@ app.get('/prince', function(req, res) {
     })
 })
 
+// testing docraptor
+
+app.get('/docraptor', function(req, res) {
+  var request = require('request');
+  var fs = require('fs');
+  var content = "<html><body>TEST!</body></html>";
+
+  config = {
+    url: 'https://docraptor.com/docs',
+    encoding: null, //IMPORTANT! This produces a binary body response instead of text
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    json: {
+      user_credentials: "Vuh4JHZczTgYYFbECgw",
+      doc: {
+        document_content: content,
+        type: "pdf",
+        test: true,
+        // prince_options: {
+        //   media:   "screen",          // use screen styles instead of print styles
+        //   baseurl: "http://hello.com" // URL to use for generating absolute URLs for assets from relative URLs
+        // }
+      }
+    }
+  };
+
+  request.post(config, function(err, response, body) {
+      fs.writeFile('doc_raptor_sample.pdf', body, "binary", function(writeErr) {
+        res.contentType("application/pdf");
+        res.send(body);
+        // fs.readFile('doc_raptor_sample.pdf', function (err,data){
+          
+        // });
+        console.log('Saved!');
+    });
+  });
+})
 app.listen(port)
 
 console.log('listening on port ' + port)
