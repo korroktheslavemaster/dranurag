@@ -59,25 +59,26 @@ require('./routes/addVisit.js')(app);
 require('./routes/patientSearch.js')(app);
  
 // testing princexml
-var Prince = require("prince");
 
 app.get('/prince', function(req, res) {
+  var bin = process.env.PRINCE_BIN || "node_modules/prince/prince/lib/prince/bin/prince"
   const fs = require('fs');
-
-  Prince()
-    .inputs("test.html")
-    .output("/tmp/test.pdf")
-    .execute()
-    .then(function () {
-      console.log("OK: done");
-      fs.readFile('/tmp/test.pdf', function (err,data){
-        res.contentType("application/pdf");
-        res.send(data);
-      });
-    }).catch((err) => {
-      console.log(err)
-      res.send("NOPE")
-    })
+  var exec = require('child_process').exec;
+  var cmd = bin + " test.html -o test2.pdf"
+  exec(cmd, function(error, stdout, stderr) {
+    // command output is in stdout
+    console.log(stdout)
+    console.log(error)
+    console.log(stderr)
+    if (error) {
+      req.flash('error', error)
+      res.send("NOTOK")
+    }
+    fs.readFile('test2.pdf', function (err,data){
+      res.contentType("application/pdf");
+      res.send(data);
+    });
+  });
 })
  
 // testing docraptor
