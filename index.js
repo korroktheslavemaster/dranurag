@@ -57,7 +57,7 @@ require('./routes/home.js')(app)
 require('./routes/addPatient.js')(app); 
 require('./routes/addVisit.js')(app); 
 require('./routes/patientSearch.js')(app);
-
+ 
 // testing princexml
 var Prince = require("prince");
 
