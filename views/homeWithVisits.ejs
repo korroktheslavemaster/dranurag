@@ -1,0 +1,36 @@
+<!-- views/home.ejs -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <%- include('partials/head')%>
+</head>
+
+<body>
+  <div class="container">
+    <%- include('partials/navbar') %>
+    <%- include('partials/header')%>
+    <h3 class="py-2">Today's Visits</h3>
+    <div class="list-group">
+      <% visits.forEach((e) => {%>
+      <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+        <div class="d-flex w-100 justify-content-between">
+          <h5 class="mb-1"><%=e.patient.name%></h5>
+          <div class="flex-row align-items-start justify-content-between d-flex">
+          <small class="pr-2"><%=e.ago%></small>
+            <button type="button" class="close" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </div>
+        <p class="mb-1">ID: <%=e.patient._id%></p>
+        <small><%=e.helpText%></small>
+      </a>
+      <%})%>
+    </div>
+    <%- include('partials/footer') %>
+  </div>
+</body>
+
+</html>

@@ -58,6 +58,28 @@ require('./routes/addPatient.js')(app);
 require('./routes/addVisit.js')(app); 
 require('./routes/patientSearch.js')(app);
 
+// testing princexml
+var Prince = require("prince");
+
+app.get('/prince', function(req, res) {
+  const fs = require('fs');
+
+  Prince()
+    .inputs("test.html")
+    .output("/tmp/test.pdf")
+    .execute()
+    .then(function () {
+      console.log("OK: done");
+      fs.readFile('/tmp/test.pdf', function (err,data){
+        res.contentType("application/pdf");
+        res.send(data);
+      });
+    }).catch((err) => {
+      console.log(err)
+      res.send("NOPE")
+    })
+})
+
 app.listen(port)
 
 console.log('listening on port ' + port)
