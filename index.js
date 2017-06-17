@@ -34,7 +34,7 @@ app.use(passport.session());
 app.use(flash()); // use connect-flash for flash messages stored in session
 
 // set the view engine to ejs
-app.set('view engine', 'ejs')
+app.set('view engine', 'ejs') 
 
 /// AUTH ROUTING
 app.post('/login',
