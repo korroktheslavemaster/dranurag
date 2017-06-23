@@ -14,6 +14,17 @@
       return false;
     }
   });
+  $('#inputDateOfBirth').datepicker({
+    format: {
+        toDisplay: function (date, format, language) {
+          $('#dateOfBirth').val(date)
+          return date.toISOString().replace( /(\d{4})-(\d{2})-(\d{2}).*/, "$3/$2/$1")
+        },
+        toValue: function (date, format, language) {
+           return new Date(date.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1"))
+        }
+    }
+  })
 });
  </script>
 </head>
@@ -28,16 +39,17 @@
       <small >Fields marked with <text class="asterisk">*</text> are required</small>
       <hr class="my-4">
       <form action="/addPatient" method="post">
+
         <div class="form-group">
           <div class="input-group">
-            <span class="input-group-addon fa fa-user"></span>
+            <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
             <input type="text" class="form-control input-no-enter" required="true" name="name">
           </div>
           <small class="text-muted form-text">Full Name <text class="asterisk">*</text></small>
         </div>
         <div class="form-group">
           <div class="input-group">
-            <span class="input-group-addon fa fa-transgender"></span>
+            <span class="input-group-addon"><i class="fa fa-transgender fa-fw"></i></span>
             <select class="form-control" id="exampleSelect1" name="sex">
               <option>Male</option>
               <option>Female</option>
@@ -47,14 +59,17 @@
         </div>
         <div class="form-group">
           <div class="input-group">
-            <span class="input-group-addon fa fa-calendar"></span>
-            <input class="form-control" type="date" name="dateOfBirth" id="inputDateOfBirth">
+            <span class="input-group-addon"><i class="fa fa-calendar fa-fw"></i></span>
+            <input class="form-control" id="inputDateOfBirth" name="dateOfBirthDisplay" data-date-start-view=2>
+            <!-- need hidden input for format conversion -->
+            <input type="hidden" name="dateOfBirth" id="dateOfBirth">
+            <!-- <input class="form-control" type="date" name="dateOfBirth" id="inputDateOfBirth"> -->
           </div>
           <small class="text-muted form-text">Date of Birth</small>
         </div>
         <div class="form-group">
           <div class="input-group">
-            <span class="input-group-addon fa fa-phone"></span>
+            <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
             <input class="form-control input-no-enter" type="tel" name="phone1">
           </div>
           <small class="text-muted form-text">Phone number</small>
@@ -67,14 +82,14 @@
         <div class="collapse" id="collapseExample">
           <div class="form-group">
             <div class="input-group">
-              <span class="input-group-addon fa fa-phone"></span>
+              <span class="input-group-addon"><i class="fa fa-phone fa-fw"></i></span>
               <input class="form-control" type="tel" name="phone2" id="inputPhone2">
             </div>
             <small class="text-muted form-text">Alternate phone</small>
           </div>
           <div class="form-group">
             <div class="input-group">
-              <span class="input-group-addon fa fa-male"></span>
+              <span class="input-group-addon"><i class="fa fa-male fa-fw"></i></span>
               <input class="form-control" type="number" step="any" name="height" id="inputHeight">
               <span class="input-group-addon">cm</span>
             </div>
@@ -82,7 +97,7 @@
           </div>
           <div class="form-group">
             <div class="input-group">
-              <span class="input-group-addon fa fa-balance-scale"></span>
+              <span class="input-group-addon"><i class="fa fa-balance-scale fa-fw"></i></span>
               <input class="form-control" type="number" step="any" name="weight" id="inputWeight">
               <span class="input-group-addon">kg</span>
             </div>

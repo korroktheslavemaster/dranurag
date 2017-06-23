@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "postinstall": "bower install"
   },
   "author": "",
   "license": "ISC",
@@ -13,6 +14,8 @@
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
     "connect-flash": "^0.1.1",
+    "connect-mongo": "^1.3.2",
+    "dateformat": "^2.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.3",
     "express-session": "^1.15.3",
@@ -27,6 +30,6 @@
     "request": "^2.81.0"
   },
   "engines": {
-    "node": "4.8.3"
+    "node": "6.11.0"
   }
 }

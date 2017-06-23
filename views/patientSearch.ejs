@@ -52,14 +52,14 @@
           <div>
             <h5 class="mb-1"><%=e.name%></h5>
             <p class="mb-1">ID: <%=e._id%></p>
-            <small><%=e.helpText%></small>
+            <small><%-e.helpText%></small>
           </div>
           <div>
               <div class="pb-2">
               <a class="btn btn-outline-primary col" href="/addVisit?patientId=<%=e._id%>">Add Visit</a>
               </div>
               <div clas="pt-2">
-              <a class="btn btn-outline-primary col" href="#">View Profile</a>
+              <a class="btn btn-outline-primary col" href="/patient/<%=e._id%>">View Profile</a>
               </div>
           </div>
         </div>

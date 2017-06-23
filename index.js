@@ -7,6 +7,7 @@ var app = express()
 var port = process.env.PORT || 8080
 var bodyParser   = require('body-parser');
 var session      = require('express-session');
+const MongoStore = require('connect-mongo')(session);
 var mongoose     = require('mongoose');
 var flash        = require('connect-flash');
 var configDB     = require('./config/database.js');
@@ -22,12 +23,14 @@ require('./config/passport')(passport);
 
 
 app.use(express.static('public'))
+app.use('/bower_components',  express.static('bower_components'));
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
 app.use(session({ 
   secret: 'keyboard cat',
   saveUninitialized: false,
-  resave: false
+  resave: false,
+  store: new MongoStore({mongooseConnection: mongoose.connection})
 }));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -60,6 +63,7 @@ require('./routes/home.js')(app)
 require('./routes/addPatient.js')(app); 
 require('./routes/addVisit.js')(app); 
 require('./routes/patientSearch.js')(app);
+require('./routes/patient.js')(app)
 
 app.listen(port)
 

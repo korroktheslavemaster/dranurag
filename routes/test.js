@@ -6,21 +6,20 @@ saveHtml = (url, filename) => {
     var request = require('request');
     var fs = require('fs');
     if (!url) {
-      resolve()
+      resolve("<html><body>TEST!</body></html>")
     } else {
       console.log("sending get request")
       request.get(url, function(err, response, body) {
         console.log("got reesponse")
         // console.log(body)
         fs.writeFileSync(filename, body)
-        resolve()
+        resolve(body)
       });
     }
   })
 }
 
 module.exports = (app) => {
-
   app.get('/prince', function(req, res) {
     var bin = process.env.PRINCE_BIN || "node_modules/prince/prince/lib/prince/bin/prince"
     const fs = require('fs');
@@ -49,8 +48,6 @@ module.exports = (app) => {
   app.get('/docraptor', function(req, res) {
     var request = require('request');
     var fs = require('fs');
-    var content = "<html><body>TEST!</body></html>";
-
     config = {
       url: 'https://docraptor.com/docs',
       encoding: null, //IMPORTANT! This produces a binary body response instead of text
@@ -60,7 +57,8 @@ module.exports = (app) => {
       json: {
         user_credentials: "Vuh4JHZczTgYYFbECgw",
         doc: {
-          document_content: content,
+          // document_content: content,
+          document_url: req.query.url,
           type: "pdf",
           test: true,
           // prince_options: {
