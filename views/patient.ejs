@@ -26,7 +26,24 @@
           <button class="btn btn-danger pull-right" data-role="remove">
             <i class="fa fa-minus"></i>
           </button>
-          <button class="btn btn-success pull-right" data-role="add">
+          <button class="btn btn-success pull-right" data-role="add" id="investigationButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline -->
+  </script>
+  <script type="text/x-handlebars-template" id="investigationRequiredTemplate">
+    <div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-10 col-md-4 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="investigationName" name="investigationsRequired[]" placeholder="Test name">
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
             <i class="fa fa-plus"></i>
           </button>
         </div>
@@ -37,6 +54,7 @@
     console.log("hello")
     var global_source;
     invTmpl = Handlebars.compile($('#investigationTemplate').html())
+    invRqdTmpl = Handlebars.compile($('#investigationRequiredTemplate').html())
     function getNewInvestigationElement() {
       var $jqueryElement = $(invTmpl());
       // fix background-color transparent if possible
@@ -57,13 +75,32 @@
       })
       $('#dateDisplay', $jqueryElement).datepicker({
         format: {
-            toDisplay: function (date, format, language) {
-              $('#date', $jqueryElement).val(date.toISOString().slice(0, 10))
-              return date.toISOString().replace( /(\d{4})-(\d{2})-(\d{2}).*/, "$3/$2/$1")
-            },
-            toValue: function (date, format, language) {
-               return new Date(date.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1"))
-            }
+          toDisplay: function (date, format, language) {
+            $('#date', $jqueryElement).val(date.toISOString().slice(0, 10))
+            return date.toISOString().replace( /(\d{4})-(\d{2})-(\d{2}).*/, "$3/$2/$1")
+          },
+          toValue: function (date, format, language) {
+           return new Date(date.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1"))
+         }
+       }
+     })
+      return $jqueryElement
+    }
+
+    function getNewInvestigationRequiredElement() {
+      var $jqueryElement = $(invRqdTmpl());
+      // fix background-color transparent if possible
+      $("#investigationName", $jqueryElement).typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        display: 'name', 
+        source: global_source,
+        templates: {
+          suggestion: Handlebars.compile('<div class="d-flex w-100 justify-content-between align-items-center"><text>{{name}}</text> <small class="pl-4 text-muted">{{units}}</small></div>')
         }
       })
       return $jqueryElement
@@ -71,7 +108,7 @@
     
 
     $.get("/json/tests.json", function(data){
-    
+
     // constructs the suggestion engine
     global_source = new Bloodhound({
       datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
@@ -80,7 +117,8 @@
       local: data
     });
     // add the first investigation input
-    $('[data-role="dynamic-fields"]').append(getNewInvestigationElement())
+    $('#investigationsDynamicContainer').append(getNewInvestigationElement())
+    $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
 
   },'json');
 
@@ -104,7 +142,10 @@
       function(e) {
         e.preventDefault();
         var container = $(this).closest('[data-role="dynamic-fields"]');
-        container.prepend(getNewInvestigationElement());
+        if ($(this).attr('id') == 'investigationButton')
+          container.prepend(getNewInvestigationElement());
+        else
+          container.prepend(getNewInvestigationRequiredElement());
       }
       );
   });
@@ -174,43 +215,129 @@
               <tr>
                 <th>#</th>
                 <%table.colHeaders.forEach(elm => {%>
-                  <th><%=elm%></th>
+                <th><%=elm%></th>
                 <%})%>
               </tr>
             </thead>
             <tbody>
               <%table.rowHeaders.forEach((elm, idx) => {%>
-                <tr>
-                  <th scope="row">
-                    <div class="d-flex w-100 justify-content-start align-items-center">
-                      <span class="mb-1"><%=elm.name%></span>
-                      <small class="pl-2 text-muted"><%=elm.units%></small>
-                    </div>
-                  </th>
-                  <%table.values[idx].forEach(elm => {%>
-                    <td><%=elm%></td>
-                  <%})%>
-                </tr>
+              <tr>
+                <th scope="row">
+                  <div class="d-flex w-100 justify-content-start align-items-baseline">
+                    <span class="mb-1"><%=elm.name%></span>
+                    <small class="pl-2 text-muted"><%=elm.units%></small>
+                  </div>
+                </th>
+                <%table.values[idx].forEach(elm => {%>
+                <td><%=elm%></td>
+                <%})%>
+              </tr>
               <%})%>
             </tbody>
           </table>
         </div>
+        <h6 class="card-subtitle pt-4">New Investigations:</h6>
         <form action='/addInvestigation/<%=patient._id %>' method='post'>
-          <div data-role="dynamic-fields" class='pt-4'>
+          <div data-role="dynamic-fields" id="investigationsDynamicContainer" class='pt-3'>
 
           </div>  <!-- /div[data-role="dynamic-fields"] -->
-          <button type="submit" class="btn btn-outline-primary">Add Investigations</button>
+          <button type="submit" class="btn btn-outline-primary">Add Investigation(s)</button>
         </form>
       </div>
     </div>
-    <div class="card">
-      <div class="card-block">
-        <h3 class="card-title">Prescriptions</h3>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class='pt-4'>
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">New Prescription</h3>
+          <form action="/addPrescription/<%=patient._id %>" method="post">
+            <div class="form-group row required">
+              <label for="diagnosis" class="col-form-label col-md-2">Diagnosis</label>
+              <div class="col-md-10">
+                <textarea name="diagnosis" id="diagnosis" required="true" rows=3 cols=70 class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <label class="col-form-label">Chief Complaints</label>
+              </div>
+              <div class="col-md-10 pb-5">
+                <textarea name="chiefComplaints" id="chiefComplaints" rows=3 cols=70 class="form-control" placeholder="eg. Headache (3 days)"></textarea>
+                <small class="text-muted form-text">One complaint each line</small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">On Examination</label>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-5 col-md-6"> <!-- col for pulse, bp, temp-->
+                    <div class="row form-group"> <!-- pulse -->
+                      <label class="col-6 col-form-label">Pulse</label>
+                      <div class="col-6 pr-0 pr-md-3">
+                        <input class="form-control" type="number" name="onExaminationPulse" step="any">
+                      </div>
+                    </div>
+                    <div class="row form-group"> <!-- bp -->
+                      <label class="col-6 col-form-label">BP</label>
+                      <div class="col-6 pr-0 pr-md-3">
+                        <input class="form-control" type="number" name="onExaminationBp" step="any">
+                      </div>
+                    </div>
+                    <div class="row form-group"> <!-- temp -->
+                      <label class="col-6 col-form-label">Temp.</label>
+                      <div class="col-6 pr-0 pr-md-3">
+                        <input class="form-control" type="number" name="onExaminationTemp" step="any">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-6 pr-md-3 mb-3"> <!-- col for notes -->
+                    <textarea name="onExaminationNotes" class="form-control" placeholder="Notes" rows="6"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">Investigations Required</label>
+              <div class="col-md-10">
+                <div data-role="dynamic-fields" id="investigationsRequiredDynamicContainer" class='pt-3'>
+
+                </div>  <!-- /div[data-role="dynamic-fields"] -->
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">Treatment Advised</label>
+              <div class="col-md-4">
+                <textarea name="medicineAdvice" class="form-control" placeholder="Medicines" rows="6"></textarea>
+              </div>
+              <div class="col-md-3 pt-2 pt-md-0">
+                <textarea name="dietaryAdvice" class="form-control" placeholder="Dietary Advice" rows="6"></textarea>
+              </div>
+              <div class="col-md-3 pt-2 pt-md-0">
+                <textarea name="otherAdvice" class="form-control" placeholder="Other Advices" rows="6"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">Review After</label>
+              <div class="col-8 col-md-4">
+                <input class="form-control" type="number" name="reviewAfterNumber" step="any">
+              </div>
+              <div class="col-4 col-md-2">
+                 <select class="form-control" name="reviewAfterType">
+                  <option>days</option>
+                  <option>weeks</option>
+                  <option>months</option>
+                  <option>years</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-md-2 col-md-10">
+                <button type="submit" class="btn btn-outline-primary">Create Prescription </button>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-    
     <%- include('partials/footer') %>
   </div>
 

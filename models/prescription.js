@@ -3,26 +3,20 @@ var mongoose = require('mongoose');
 var autoIncrement = require('mongoose-auto-increment');
 
 var prescriptionSchema = mongoose.Schema({
-    patient: {type: Number, ref: 'Patient', required: true}
+    patient: {type: Number, ref: 'Patient', required: true},
     date: Date,
     diagnosis: String,
-    chiefComplaints: [{
-      complaint: String,
-      duration: String // use duration?
-    }],
-    onExamination: {
-      pulse: String,
-      bp: String,
-      temp: String,
-      notes: String,
-    },
-    treatmentAdvised: {
-      dietary: String,
-      medicines: String,
-      other: String,
-    }
-    reviewAfter: String, // use duration?,
-    
+    chiefComplaints: String,
+    onExaminationPulse: String,
+    onExaminationBp: String,
+    onExaminationTemp: String,
+    onExaminationNotes: String,
+    investigationsRequired: [String],
+    medicineAdvice: String,
+    dietaryAdvice: String,
+    otherAdvice: String,
+    reviewAfterNumber: Number, // use duration?,
+    reviewAfterType: String
 });
 
 prescriptionSchema.plugin(autoIncrement.plugin, { model: 'Prescription', startAt: 1000 });

@@ -1,6 +1,8 @@
 var Visit            = require('../models/visit');
 var Patient          = require('../models/patient');
 var Investigation    = require('../models/investigation');
+var Prescription     = require('../models/prescription');
+
 var _ = require('lodash');
 
 
@@ -90,6 +92,26 @@ module.exports = (app) => {
         return Promise.all(investigations)
           .then(values => {
             req.flash('info', 'Added <strong>' + values.length + '</strong> investigation(s).')
+            res.redirect('back')
+          })
+      }
+    }).catch((err) => {
+      req.flash("error", err.message)
+      res.redirect('/patient/' + req.params.patientId)
+    })
+  })
+
+  app.post('/addPrescription/:patientId', (req, res) => {
+    Patient.findOne({_id: parseInt(req.params.patientId)})
+    .then((patient) => {
+      if (!patient) {
+        throw {message: 'Invalid patient ID.'}
+      } else {
+        // console.log(req.body)
+        return new Prescription(Object.assign({date: new Date(), patient: patient._id}, req.body))
+          .save()
+          .then(prescription => {
+            console.log(prescription)
             res.redirect('back')
           })
       }
