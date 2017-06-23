@@ -1,0 +1,22 @@
+{
+  "name": "dranurag",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "apoorvumang <apoorvumang@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "dranurag.in",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "typeahead.js": "^0.11.1",
+    "bootstrap": "bootstrap4#^3.3.7"
+  }
+}

@@ -1,0 +1,223 @@
+<!-- views/patient.ejs -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('partials/head')%>
+  <%   var now = dateformat(new Date(), 'dd/mm/yyyy');%>
+  <script type="text/x-handlebars-template" id="investigationTemplate">
+    <div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-2 pr-0 pr-md-3">
+          <input class="form-control" id="dateDisplay" value="<%= now%>">
+          <input type="hidden" id="date" name="date[]" value="<%= new Date()%>">
+        </div>
+        <div class="col-4 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="investigationName" name="name[]" placeholder="Test name">
+        </div>
+        <div class="col-2 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="units" name="units[]" placeholder="Units">
+        </div>
+        <div class="col-2 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="value" name="value[]" placeholder="Value">
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline -->
+  </script>
+  <script type="text/javascript">
+    console.log("hello")
+    var global_source;
+    invTmpl = Handlebars.compile($('#investigationTemplate').html())
+    function getNewInvestigationElement() {
+      var $jqueryElement = $(invTmpl());
+      // fix background-color transparent if possible
+      $("#investigationName", $jqueryElement).typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        display: 'name', 
+        source: global_source,
+        templates: {
+          suggestion: Handlebars.compile('<div class="d-flex w-100 justify-content-between align-items-center"><text>{{name}}</text> <small class="pl-4 text-muted">{{units}}</small></div>')
+        }
+      }).on('typeahead:select', function(ev, suggestion) {
+        $(this).parents().eq(1).next().children().val(suggestion.units)
+      })
+      $('#dateDisplay', $jqueryElement).datepicker({
+        format: {
+            toDisplay: function (date, format, language) {
+              $('#date', $jqueryElement).val(date)
+              return date.toISOString().replace( /(\d{4})-(\d{2})-(\d{2}).*/, "$3/$2/$1")
+            },
+            toValue: function (date, format, language) {
+               return new Date(date.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1"))
+            }
+        }
+      })
+      return $jqueryElement
+    }
+    
+
+    $.get("/json/tests.json", function(data){
+    
+    // constructs the suggestion engine
+    global_source = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
+      queryTokenizer: Bloodhound.tokenizers.nonword,
+      // `states` is an array of state names defined in "The Basics"
+      local: data
+    });
+    // add the first investigation input
+    $('[data-role="dynamic-fields"]').append(getNewInvestigationElement())
+
+  },'json');
+
+</script>
+
+<script type="text/javascript">
+ $(function() {
+    // Remove button click
+    $(document).on(
+      'click',
+      '[data-role="dynamic-fields"] > .form-inline-special [data-role="remove"]',
+      function(e) {
+        e.preventDefault();
+        $(this).closest('.form-inline-special').remove();
+      }
+      );
+    // Add button click
+    $(document).on(
+      'click',
+      '[data-role="dynamic-fields"] > .form-inline-special [data-role="add"]',
+      function(e) {
+        e.preventDefault();
+        var container = $(this).closest('[data-role="dynamic-fields"]');
+        container.prepend(getNewInvestigationElement());
+      }
+      );
+  });
+
+</script>
+<style type="text/css">
+
+  [data-role="dynamic-fields"] > .form-inline-special + .form-inline-special {
+    margin-top: 0.5em;
+  }
+
+  [data-role="dynamic-fields"] > .form-inline-special [data-role="add"] {
+    display: none;
+  }
+
+  [data-role="dynamic-fields"] > .form-inline-special:first-child [data-role="add"] {
+    display: inline;
+  }
+
+  [data-role="dynamic-fields"] > .form-inline-special:first-child [data-role="remove"] {
+    display: none;
+  } 
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <%- include('partials/navbar') %>
+    <%- include('partials/header')%>
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-3"><%=patient.name%></h1>
+        <p class="lead"><%-helpText%> </p>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <p class="col-6">Height</p>
+          <p class="col-3"><%=patient.height || "-"%></p>
+          <p class="col-3">cms</p>
+        </div>
+        <div class="row">
+          <p class="col-6">Weight</p>
+          <p class="col-3"><%=patient.weight || "-"%></p>
+          <p class="col-3">kgs</p>
+        </div>
+        <div class="row">
+          <p class="col-6">BMI</p>
+          <p class="col-6"><%=patient.bmi || "-"%></p>
+        </div>
+        <div class="row">
+          <p class="col-6">Allergies</p>
+          <p class="col-6"><%=patient.allergies || "-"%></p>
+        </div>
+        <div class="row">
+          <p class="col-6">Alternate phone number</p>
+          <p class="col-6"><%=patient.phone2 || "-"%></p>
+        </div>
+      </div>
+    </div>
+    <hr class="pb-4">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">Investigations</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Username</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+        <form action='/addInvestigation/<%=patient._id %>' method='post'>
+          <div data-role="dynamic-fields">
+
+          </div>  <!-- /div[data-role="dynamic-fields"] -->
+          <button type="submit" class="btn btn-outline-primary">Add Investigations</button>
+        </form>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">Prescriptions</h3>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+    
+    <%- include('partials/footer') %>
+  </div>
+
+  
+</body>
+
+</html>
