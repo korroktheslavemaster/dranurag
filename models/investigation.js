@@ -10,6 +10,10 @@ var investigationSchema = mongoose.Schema({
     type: String,
     required: true
   },
+  date: {
+    type: Date,
+    required: true
+  },
   units: {
     type: String,
     required: false

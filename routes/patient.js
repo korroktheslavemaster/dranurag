@@ -14,12 +14,59 @@ module.exports = (app) => {
       if (!patient) {
         throw {message: "Invalid patient ID."}
       }
-      Investigation.aggregate({$match: {patient: {$eq: patient._id}}})
+      return Investigation.aggregate({
+          $match: {patient: {$eq: patient._id}}
+        }, {
+          $group: {
+            _id: {name: '$name', units: '$units'}, 
+            cols: {
+              $push: {
+                date: "$date", 
+                value: "$value"
+              }
+            }}
+          })
       .then(res => {
-        console.log(res)
+        dates = _(res)
+          .map(elm => elm.cols)
+          .flatten()
+          .map(elm => elm.date)
+          .uniqWith(_.isEqual)
+          .value()
+          .sort((a, b) => a.getTime() - b.getTime())
+        dummyRow = dates.map(elm => ({date: elm, value: '-'}))
+        rowHeaders = res.map(elm => elm._id)
+        values = 
+          res.map(elm => elm.cols)
+          .map(elm => {
+            return _.unionWith(elm, dummyRow, (a, b) => _.isEqual(a.date, b.date))
+              .sort((a,b) => a.date.getTime() - b.date.getTime())
+              .map(elm => elm.value)
+          })
+        // console.log(headers)
+        // console.log(values)
+        return {
+          rowHeaders: rowHeaders,
+          colHeaders: dates.map(elm => dateformat(elm, 'dd/mm/yyyy')),
+          values: values
+        }
+      }).catch(err => {
+        req.flash('error', err.message)
+        return {
+          rowHeaders: [],
+          colHeaders: [],
+          values: []
+        }
+      }).then(table => {
+        res.render('patient', {
+          messages: req.flash(), 
+          req: req, 
+          patient: patient, 
+          helpText: patient.getHelpText(), 
+          dateformat: dateformat,
+          table: table
+        })
       })
-      res.render('patient', {messages: req.flash(), req: req, patient: patient, helpText: patient.getHelpText(), dateformat: dateformat})
-      
     }).catch((err) => {
       req.flash("error", err.message)
       res.redirect('/')

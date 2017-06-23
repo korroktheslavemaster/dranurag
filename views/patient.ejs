@@ -11,7 +11,7 @@
       <div class="form-group row">
         <div class="col-2 pr-0 pr-md-3">
           <input class="form-control" id="dateDisplay" value="<%= now%>">
-          <input type="hidden" id="date" name="date[]" value="<%= new Date()%>">
+          <input type="hidden" id="date" name="date[]" value="<%= dateformat(new Date(), 'yyyy-mm-dd')%>">
         </div>
         <div class="col-4 pr-0 pr-md-3">
           <input type="text" class="form-control" id="investigationName" name="name[]" placeholder="Test name">
@@ -58,7 +58,7 @@
       $('#dateDisplay', $jqueryElement).datepicker({
         format: {
             toDisplay: function (date, format, language) {
-              $('#date', $jqueryElement).val(date)
+              $('#date', $jqueryElement).val(date.toISOString().slice(0, 10))
               return date.toISOString().replace( /(\d{4})-(\d{2})-(\d{2}).*/, "$3/$2/$1")
             },
             toValue: function (date, format, language) {
@@ -168,38 +168,35 @@
     <div class="card">
       <div class="card-block">
         <h3 class="card-title">Investigations</h3>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>First Name</th>
-              <th>Last Name</th>
-              <th>Username</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class='table-responsive'>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                <%table.colHeaders.forEach(elm => {%>
+                  <th><%=elm%></th>
+                <%})%>
+              </tr>
+            </thead>
+            <tbody>
+              <%table.rowHeaders.forEach((elm, idx) => {%>
+                <tr>
+                  <th scope="row">
+                    <div class="d-flex w-100 justify-content-start align-items-center">
+                      <span class="mb-1"><%=elm.name%></span>
+                      <small class="pl-2 text-muted"><%=elm.units%></small>
+                    </div>
+                  </th>
+                  <%table.values[idx].forEach(elm => {%>
+                    <td><%=elm%></td>
+                  <%})%>
+                </tr>
+              <%})%>
+            </tbody>
+          </table>
+        </div>
         <form action='/addInvestigation/<%=patient._id %>' method='post'>
-          <div data-role="dynamic-fields">
+          <div data-role="dynamic-fields" class='pt-4'>
 
           </div>  <!-- /div[data-role="dynamic-fields"] -->
           <button type="submit" class="btn btn-outline-primary">Add Investigations</button>
