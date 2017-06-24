@@ -18,6 +18,10 @@ var investigationSchema = mongoose.Schema({
     type: String,
     required: false
   },
+  cat: {
+    type: String,
+    required: false
+  },
   value: {
     type: String,
     required: true

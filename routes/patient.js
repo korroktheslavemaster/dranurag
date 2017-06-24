@@ -20,13 +20,15 @@ module.exports = (app) => {
           $match: {patient: {$eq: patient._id}}
         }, {
           $group: {
-            _id: {name: '$name', units: '$units'}, 
+            _id: {name: '$name', units: '$units', cat: '$cat'}, 
             cols: {
               $push: {
                 date: "$date", 
                 value: "$value"
               }
             }}
+          }, {
+            $sort: {'_id.cat': 1}
           })
       .then(res => {
         dates = _(res)
@@ -81,13 +83,13 @@ module.exports = (app) => {
       if (!patient) {
         throw {message: 'Invalid patient ID.'}
       } else {
-        const {date, name, units, value} = req.body
+        const {date, name, units, value, cat} = req.body
         const length = date.length
         const patient = _.times(length, _.constant(req.params.patientId))
         investigations = 
-         _.zip(patient, date, name, units, value)
+         _.zip(patient, date, name, units, value, cat)
           .filter(elm => elm[2] && elm[4]) // only consider investigations with non-empty name and value
-          .map(elm => _.zipObject(['patient', 'date', 'name', 'units', 'value'], elm))
+          .map(elm => _.zipObject(['patient', 'date', 'name', 'units', 'value', 'cat'], elm))
           .map(elm => new Investigation(elm).save())
         return Promise.all(investigations)
           .then(values => {

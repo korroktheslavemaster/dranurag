@@ -81,4 +81,9 @@ module.exports = (app) => {
     });
   })
 
+  // testing prescription
+  app.get('/prescription', function(req, res) {
+    res.render('partials/prescription', {})
+  })
+
 }

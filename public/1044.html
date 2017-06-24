@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://localhost:8080/patient/1044 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- fontawesome -->
+   <link href="./1044_files/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="./1044_files/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link href="./1044_files/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+
+    <!-- jQuery -->
+    <script src="./1044_files/jquery.min.js"></script>
+
+    <!-- tether.io required for bootstrap 4 -->
+    <script src="./1044_files/tether.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./1044_files/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- handlebars -->
+    <script src="./1044_files/handlebars.min.js"></script>
+
+    <!-- typeahead -->
+  <script src="./1044_files/typeahead.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./1044_files/typeaheadjs.css">
+
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" type="text/css" href="./1044_files/bootstrap-datepicker.min.css">
+    <script src="./1044_files/bootstrap-datepicker.min.js"></script>
+  
+  <script type="text/x-handlebars-template" id="investigationTemplate">
+    <div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-2 pr-0 pr-md-3">
+          <input class="form-control" id="dateDisplay" value="24/06/2017">
+          <input type="hidden" id="date" name="date[]" value="2017-06-24">
+        </div>
+        <div class="col-4 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="investigationName" name="name[]" placeholder="Test name">
+        </div>
+        <div class="col-2 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="units" name="units[]" placeholder="Units">
+        </div>
+        <div class="col-2 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="value" name="value[]" placeholder="Value">
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline -->
+  </script>
+  <script type="text/x-handlebars-template" id="investigationRequiredTemplate">
+    <div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-10 col-md-4 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="investigationName" name="investigationsRequired[]" placeholder="Test name">
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline -->
+  </script>
+  <script type="text/javascript">
+    console.log("hello")
+    var global_source;
+    invTmpl = Handlebars.compile($('#investigationTemplate').html())
+    invRqdTmpl = Handlebars.compile($('#investigationRequiredTemplate').html())
+    function getNewInvestigationElement() {
+      var $jqueryElement = $(invTmpl());
+      // fix background-color transparent if possible
+      $("#investigationName", $jqueryElement).typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        display: 'name', 
+        source: global_source,
+        templates: {
+          suggestion: Handlebars.compile('<div class="d-flex w-100 justify-content-between align-items-center"><text>{{name}}</text> <small class="pl-4 text-muted">{{units}}</small></div>')
+        }
+      }).on('typeahead:select', function(ev, suggestion) {
+        $(this).parents().eq(1).next().children().val(suggestion.units)
+      })
+      $('#dateDisplay', $jqueryElement).datepicker({
+        format: {
+          toDisplay: function (date, format, language) {
+            $('#date', $jqueryElement).val(date.toISOString().slice(0, 10))
+            return date.toISOString().replace( /(\d{4})-(\d{2})-(\d{2}).*/, "$3/$2/$1")
+          },
+          toValue: function (date, format, language) {
+           return new Date(date.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1"))
+         }
+       }
+     })
+      return $jqueryElement
+    }
+
+    function getNewInvestigationRequiredElement() {
+      var $jqueryElement = $(invRqdTmpl());
+      // fix background-color transparent if possible
+      $("#investigationName", $jqueryElement).typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        display: 'name', 
+        source: global_source,
+        templates: {
+          suggestion: Handlebars.compile('<div class="d-flex w-100 justify-content-between align-items-center"><text>{{name}}</text> <small class="pl-4 text-muted">{{units}}</small></div>')
+        }
+      })
+      return $jqueryElement
+    }
+    
+
+    $.get("/json/tests.json", function(data){
+
+    // constructs the suggestion engine
+    global_source = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
+      queryTokenizer: Bloodhound.tokenizers.nonword,
+      // `states` is an array of state names defined in "The Basics"
+      local: data
+    });
+    // add the first investigation input
+    $('#investigationsDynamicContainer').append(getNewInvestigationElement())
+    for (var i = 0; i < 5; i++) {
+      $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
+    }
+    // $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
+
+  },'json');
+
+</script>
+
+<script type="text/javascript">
+ $(function() {
+    // Remove button click
+    $(document).on(
+      'click',
+      '[data-role="dynamic-fields"] > .form-inline-special [data-role="remove"]',
+      function(e) {
+        e.preventDefault();
+        $(this).closest('.form-inline-special').remove();
+      }
+      );
+    // Add button click
+    $(document).on(
+      'click',
+      '[data-role="dynamic-fields"] > .form-inline-special [data-role="add"]',
+      function(e) {
+        e.preventDefault();
+        var container = $(this).closest('[data-role="dynamic-fields"]');
+        if ($(this).attr('id') == 'investigationButton')
+          container.prepend(getNewInvestigationElement());
+        else
+          container.prepend(getNewInvestigationRequiredElement());
+      }
+      );
+  });
+
+</script>
+<style type="text/css">
+
+  [data-role="dynamic-fields"] > .form-inline-special + .form-inline-special {
+    margin-top: 0.5em;
+  }
+
+  [data-role="dynamic-fields"] > .form-inline-special [data-role="add"] {
+    display: none;
+  }
+
+  [data-role="dynamic-fields"] > .form-inline-special:first-child [data-role="add"] {
+    display: inline;
+  }
+
+  [data-role="dynamic-fields"] > .form-inline-special:first-child [data-role="remove"] {
+    display: none;
+  } 
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="http://localhost:8080/">dranurag.in</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="http://localhost:8080/">Home</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="http://localhost:8080/addPatient">Add Patient</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="http://localhost:8080/patientSearch">Patients</a>
+      </li>
+
+    </ul>
+    
+      <ul class="navbar-nav">
+        <span class="navbar-text my-auto mr-lg-2">
+          Signed in as Arpit
+        </span>
+        <li class="nav-item"><a class="nav-link " href="http://localhost:8080/logout">Logout</a></li>
+      </ul>
+      
+  </div>
+</nav>
+
+
+
+
+
+
+
+    <header class="header">
+ 
+  
+
+</header>
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-3">Arpit Tarang Saxena</h1>
+        <p class="lead"><i class="fa fa-mars pr-2"></i> / 24 yrs /  <i class="fa fa-phone px-1"></i> 07407650530 </p>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <p class="col-6">Height</p>
+          <p class="col-3">-</p>
+          <p class="col-3">cms</p>
+        </div>
+        <div class="row">
+          <p class="col-6">Weight</p>
+          <p class="col-3">-</p>
+          <p class="col-3">kgs</p>
+        </div>
+        <div class="row">
+          <p class="col-6">BMI</p>
+          <p class="col-6">-</p>
+        </div>
+        <div class="row">
+          <p class="col-6">Allergies</p>
+          <p class="col-6">-</p>
+        </div>
+        <div class="row">
+          <p class="col-6">Alternate phone number</p>
+          <p class="col-6">-</p>
+        </div>
+      </div>
+    </div>
+    <hr class="pb-4">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">Investigations</h3>
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th>#</th>
+                
+                <th>20/06/2017</th>
+                
+                <th>23/06/2017</th>
+                
+              </tr>
+            </thead>
+            <tbody>
+              
+              <tr>
+                <th scope="row">
+                  <div class="d-flex w-100 justify-content-start align-items-baseline">
+                    <span class="mb-1">Total Leukocyte Count (TLC)</span>
+                    <small class="pl-2 text-muted">thou/mm3</small>
+                  </div>
+                </th>
+                
+                <td>-</td>
+                
+                <td>4</td>
+                
+              </tr>
+              
+              <tr>
+                <th scope="row">
+                  <div class="d-flex w-100 justify-content-start align-items-baseline">
+                    <span class="mb-1">Hemoglobin</span>
+                    <small class="pl-2 text-muted">g/dL</small>
+                  </div>
+                </th>
+                
+                <td>-</td>
+                
+                <td>5</td>
+                
+              </tr>
+              
+              <tr>
+                <th scope="row">
+                  <div class="d-flex w-100 justify-content-start align-items-baseline">
+                    <span class="mb-1">MCH</span>
+                    <small class="pl-2 text-muted">pg</small>
+                  </div>
+                </th>
+                
+                <td>66</td>
+                
+                <td>4</td>
+                
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+        <h6 class="card-subtitle pt-4">New Investigations:</h6>
+        <form action="http://localhost:8080/addInvestigation/1044" method="post">
+          <div data-role="dynamic-fields" id="investigationsDynamicContainer" class="pt-3">
+
+          <div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-2 pr-0 pr-md-3">
+          <input class="form-control" id="dateDisplay" value="24/06/2017">
+          <input type="hidden" id="date" name="date[]" value="2017-06-24">
+        </div>
+        <div class="col-4 pr-0 pr-md-3">
+          <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1;"><input type="text" class="form-control tt-input" id="investigationName" name="name[]" placeholder="Test name" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;">l</pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-states"><div class="d-flex w-100 justify-content-between align-items-center tt-suggestion tt-selectable"><text>Tota<strong class="tt-highlight">l</strong> <strong class="tt-highlight">L</strong>eukocyte Count (T<strong class="tt-highlight">L</strong>C)</text> <small class="pl-4 text-muted">thou/mm3</small></div><div class="d-flex w-100 justify-content-between align-items-center tt-suggestion tt-selectable"><text><strong class="tt-highlight">L</strong>ymphocytes</text> <small class="pl-4 text-muted">%</small></div><div class="d-flex w-100 justify-content-between align-items-center tt-suggestion tt-selectable"><text><strong class="tt-highlight">L</strong>ymphocytes</text> <small class="pl-4 text-muted">thou/mm3</small></div></div></div></span>
+        </div>
+        <div class="col-2 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="units" name="units[]" placeholder="Units">
+        </div>
+        <div class="col-2 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="value" name="value[]" placeholder="Value">
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline --></div>  <!-- /div[data-role="dynamic-fields"] -->
+          <button type="submit" class="btn btn-outline-primary">Add Investigation(s)</button>
+        </form>
+      </div>
+    </div>
+    <div class="pt-4">
+      <div class="card">
+        <div class="card-block">
+          <h3 class="card-title">New Prescription</h3>
+          <form action="http://localhost:8080/addPrescription/1044" method="post">
+            <div class="form-group row required">
+              <label for="diagnosis" class="col-form-label col-md-2">Diagnosis</label>
+              <div class="col-md-10">
+                <textarea name="diagnosis" id="diagnosis" required="true" rows="3" cols="70" class="form-control"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-2">
+                <label class="col-form-label">Chief Complaints</label>
+              </div>
+              <div class="col-md-10 pb-5">
+                <textarea name="chiefComplaints" id="chiefComplaints" rows="3" cols="70" class="form-control" placeholder="eg. Headache (3 days)"></textarea>
+                <small class="text-muted form-text">One complaint each line</small>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">On Examination</label>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-5 col-md-6"> <!-- col for pulse, bp, temp-->
+                    <div class="row form-group"> <!-- pulse -->
+                      <label class="col-6 col-form-label">Pulse</label>
+                      <div class="col-6 pr-0 pr-md-3">
+                        <input class="form-control" type="number" name="onExaminationPulse" step="any">
+                      </div>
+                    </div>
+                    <div class="row form-group"> <!-- bp -->
+                      <label class="col-6 col-form-label">BP</label>
+                      <div class="col-6 pr-0 pr-md-3">
+                        <input class="form-control" type="number" name="onExaminationBp" step="any">
+                      </div>
+                    </div>
+                    <div class="row form-group"> <!-- temp -->
+                      <label class="col-6 col-form-label">Temp.</label>
+                      <div class="col-6 pr-0 pr-md-3">
+                        <input class="form-control" type="number" name="onExaminationTemp" step="any">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-7 col-md-6 pr-md-3 mb-3"> <!-- col for notes -->
+                    <textarea name="onExaminationNotes" class="form-control" placeholder="Notes" rows="6"></textarea>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">Investigations Required</label>
+              <div class="col-md-10">
+                <div data-role="dynamic-fields" id="investigationsRequiredDynamicContainer" class="pt-3">
+
+                <div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-10 col-md-4 pr-0 pr-md-3">
+          <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1;"><input type="text" class="form-control tt-input" id="investigationName" name="investigationsRequired[]" placeholder="Test name" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-states"></div></div></span>
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline --><div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-10 col-md-4 pr-0 pr-md-3">
+          <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1;"><input type="text" class="form-control tt-input" id="investigationName" name="investigationsRequired[]" placeholder="Test name" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-states"></div></div></span>
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline --><div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-10 col-md-4 pr-0 pr-md-3">
+          <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1;"><input type="text" class="form-control tt-input" id="investigationName" name="investigationsRequired[]" placeholder="Test name" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-states"></div></div></span>
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline --><div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-10 col-md-4 pr-0 pr-md-3">
+          <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1;"><input type="text" class="form-control tt-input" id="investigationName" name="investigationsRequired[]" placeholder="Test name" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-states"></div></div></span>
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline --><div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-10 col-md-4 pr-0 pr-md-3">
+          <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1;"><input type="text" class="form-control tt-input" id="investigationName" name="investigationsRequired[]" placeholder="Test name" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-states"></div></div></span>
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline --></div>  <!-- /div[data-role="dynamic-fields"] -->
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">Treatment Advised</label>
+              <div class="col-md-4">
+                <textarea name="medicineAdvice" class="form-control" placeholder="Medicines" rows="6"></textarea>
+              </div>
+              <div class="col-md-3 pt-2 pt-md-0">
+                <textarea name="dietaryAdvice" class="form-control" placeholder="Dietary Advice" rows="6"></textarea>
+              </div>
+              <div class="col-md-3 pt-2 pt-md-0">
+                <textarea name="otherAdvice" class="form-control" placeholder="Other Advices" rows="6"></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">Review After</label>
+              <div class="col-8 col-md-4">
+                <input class="form-control" type="number" name="reviewAfterNumber" step="any">
+              </div>
+              <div class="col-4 col-md-2">
+                 <select class="form-control" name="reviewAfterType">
+                  <option>days</option>
+                  <option>weeks</option>
+                  <option>months</option>
+                  <option>years</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="offset-md-2 col-md-10">
+                <button type="submit" class="btn btn-outline-primary">Create Prescription </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- views/partials/footer.ejs -->
+<footer class="footer">
+    <p>© 90210 Lawyer Stuff.</p>
+   
+</footer>
+  </div>
+
+  
+
+
+</body></html>

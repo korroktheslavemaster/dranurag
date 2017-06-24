@@ -1,431 +1,77 @@
+<!-- views/home.ejs -->
+
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- fontawesome -->
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-  <title>lm-tools/heroku-buildpack-princexml - Buildpacks - Heroku Elements</title>
-  <meta name="description" content="Bringing together Add-ons, Buttons and Buildpacks.">
-  <link rel="stylesheet" media="all" href="/assets/application-7afe32061713506b06a8cabeccbd4e3e9f911d69c5217dc74332cbfdebfc6ffc.css" />
-  <script src="/assets/application-f4bda77fee6ea90b2bf6cf92c9e038fa0b0ce79abdf65f6800e1632559cb70f1.js"></script>
-    <meta name="deploys" content="9" />
-  <meta name="element_description" content="Buildpack for Heroku" />
-  <meta name="element_name" content="heroku-buildpack-princexml" />
-  <meta name="element_type" content="buildpack" />
-  <meta name="username" content="lm-tools" />
-  <meta name="forks" content="13" />
-  <meta name="stars" content="3" />
+    <!-- Custom CSS -->
+    <link href="/css/modern-business.css" rel="stylesheet">
 
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@heroku" />
-  <meta name="twitter:title" content="Elements Marketplace: heroku-buildpack-princexml" />
-  <meta name="twitter:description" content="Buildpack for Heroku" />
-  <meta name="twitter:image" content="https://avatars0.githubusercontent.com/u/12998430?v=3" />
+    <!-- Custom Fonts -->
 
-  <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="/81RKhl+Ze1lbNIzNpwzZEcAodiRqocy++B8+eOoX+pgUlW5jxskA91tY3bHRq2zdh4bcO5SlzwaYUiP1TxVIw==" />
-  <link rel="shortcut icon" type="image/x-icon" href="https://www.herokucdn.com/favicon.ico" />
-  <link rel="apple-touch-icon" href="https://elements.heroku.com/assets/apple-touch-icon-5cc70e04f61898abf8ba6a16d9bfa6ceeaec853e5fea67cc11e019790ac14595.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://elements.heroku.com/assets/apple-touch-icon-76x76-d5c9d4873a34066012b10d342c45d75ffcd809eecb833bde811f9d02137c7e0f.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="https://elements.heroku.com/assets/apple-touch-icon-120x120-bd2a8a553b7b715c4072d86b8a1e25681a2238f1a1dfdfdf50fbb9cca87c5b15.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="https://elements.heroku.com/assets/apple-touch-icon-152x152-ca8eb52c1e8ff901bf5f7f2dfe0690adbacc015e5c4b20e6a8831029845b8935.png">
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- tether.io required for bootstrap 4 -->
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
+
+    <!-- typeahead -->
+  <script src="/bower_components/typeahead.js/dist/typeahead.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/typeaheadjs.css">
+
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0/css/bootstrap-datepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0/js/bootstrap-datepicker.min.js"></script>
 </head>
 
-<body >
-  <div class="flexbox-content">
-
-    <header id="header">
-  <nav id="navigation" role="navigation">
-    <span class="mobile-nav" aria-hidden="true">
-      Show nav
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </span>
-
-    <div class="wrapper-full">
-      <div id="logo">
-        <a href="https://www.heroku.com/home">Heroku</a>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-3">Deepak Agrawal</h1>
+        <p class="lead"><i class='fa fa-mars pr-2'></i> / 32 yrs /  <i class='fa fa-phone px-1'></i> 4122684272 </p>
       </div>
-      <div class="nav-wrapper">
-        <ul class="main-nav">
-          <li class="has-dropdown">
-            <a href="https://www.heroku.com/products">Products</a>
-            <ul class="dropdown">
-              <li class="has-dropdown"><a class="bookends-icon platform" href="https://www.heroku.com/platform">Heroku Platform</a>
-                <ul class="dropdown">
-                  <li class="has-dropdown"><a class="bookends-icon dx" href="https://www.heroku.com/dx">Heroku DX</a>
-                    <ul class="dropdown wide">
-                      <li><a class="bookends-icon flow" href="https://www.heroku.com/flow">Heroku Flow</a></li>
-                      <li><a class="bookends-icon cd" href="https://www.heroku.com/continuous-delivery">Continuous Delivery</a></li>
-                      <li><a class="bookends-icon ci" href="https://www.heroku.com/continuous-integration">Continuous Integration</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="bookends-icon opex" href="https://www.heroku.com/platform/opex">Heroku OpEx</a></li>
-                  <li class="has-dropdown"><a class="bookends-icon runtime" href="https://www.heroku.com/platform/runtime">Heroku Runtime</a>
-                    <ul class="dropdown">
-                      <li><a class="bookends-icon dyno" href="https://www.heroku.com/dynos">Heroku Dynos</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li><a class="bookends-icon postgres" href="https://www.heroku.com/postgres">Heroku Postgres</a></li>
-              <li><a class="bookends-icon redis" href="https://www.heroku.com/redis">Heroku Redis</a></li>
-              <li><a class="bookends-icon kafka" href="https://www.heroku.com/kafka">Kafka on Heroku</a></li>
-              <li><a class="bookends-icon connect" href="https://www.heroku.com/connect">Heroku Connect</a></li>
-              <li class="has-dropdown">
-                <a class="bookends-icon enterprise" href="https://www.heroku.com/enterprise">Heroku Enterprise</a>
-                <ul class="dropdown">
-                  <li><a class="bookends-icon spaces" href="https://www.heroku.com/private-spaces">Private Spaces</a></li>
-                </ul>
-              </li>
-              <li><a class="bookends-icon teams" href="https://www.heroku.com/teams">Heroku Teams</a></li>
-            </ul>
-          </li>
-          <li class="has-dropdown">
-            <a href="https://elements.heroku.com">Elements</a>
-            <ul class="dropdown">
-              <li><a class="bookends-icon addons" href="https://elements.heroku.com/addons">Add-ons</a></li>
-              <li><a class="bookends-icon buttons" href="https://elements.heroku.com/buttons">Buttons</a></li>
-              <li><a class="bookends-icon buildpacks" href="https://elements.heroku.com/buildpacks">Buildpacks</a></li>
-              <li><a class="bookends-icon elements" href="https://www.heroku.com/elements">About</a></li>
-            </ul>
-          </li>
-          <li><a id="pricing-head" href="https://www.heroku.com/pricing">Pricing</a></li>
-          <li><a id="doc-head" href="https://devcenter.heroku.com">Documentation</a></li>
-          <li><a href="https://www.heroku.com/support">Support</a></li>
-          <li class="has-dropdown">
-            <a class="nav-more" href="#">More</a>
-            <div class="dropdown more">
-              <section class="more-resources">
-                <span class="more-title">Resources</span>
-                <ul>
-                  <li><a href="https://www.heroku.com/what">What is Heroku?</a></li>
-                  <li><a href="https://www.heroku.com/help">Help</a></li>
-                  <li><a href="https://www.heroku.com/customers">Customers</a></li>
-                  <li><a href="https://www.heroku.com/careers">Careers</a></li>
-                  <li><a href="https://www.heroku.com/events">Events</a></li>
-                </ul>
-              </section>
-              <section class="more-heroku-is">
-                <span class="more-title">Heroku is for</span>
-                <ul>
-                  <li><a href="https://www.heroku.com/developers">Developers</a></li>
-                  <li><a href="https://www.heroku.com/ctos">CTOs</a></li>
-                  <li><a href="https://www.heroku.com/team-collaboration">Team Collaboration</a></li>
-                  <li><a href="https://www.heroku.com/startups">Startups</a></li>
-                  <li><a href="https://www.heroku.com/enterprises">Enterprises</a></li>
-                  <li><a href="https://www.heroku.com/agencies">Agencies</a></li>
-                </ul>
-              </section>
-              <section class="more-languages">
-                <span class="more-title">Languages</span>
-                <ul>
-                  <li><a href="https://www.heroku.com/nodejs">Node</a></li>
-                  <li><a href="https://www.heroku.com/ruby">Ruby</a></li>
-                  <li><a href="https://www.heroku.com/java">Java</a></li>
-                  <li><a href="https://www.heroku.com/php">PHP</a></li>
-                  <li><a href="https://www.heroku.com/python">Python</a></li>
-                  <li><a href="https://www.heroku.com/go">Go</a></li>
-                  <li><a href="https://www.heroku.com/scala">Scala</a></li>
-                  <li><a href="https://www.heroku.com/clojure">Clojure</a></li>
-                </ul>
-              </section>
-              <section id="more-blog" class="more-blog">
-                <span class="more-title">Latest News from the Heroku Blog</span>
-                <h3><a class="js-blog-link" href="https://blog.heroku.com">Heroku Blog</a></h3>
-                <p class="js-blog-date"></p>
-                <p class="js-blog-content">Find out what's new with Heroku on our blog.</p>
-                <a class="button btn btn-default btn-sm btn-inline" href="https://blog.heroku.com/news">More news</a>
-                <a class="button btn-inline" href="https://blog.heroku.com">View all blog posts</a>
-              </section>
-            </div>
-          </li>
-        </ul>
-
-        <ul class="tool-nav">
-            <li>
-              <form action="/search/buildpacks" class="site-search" id="site-search" method="get">
-                <div class="search-input gsc-input">
-                  <input name="utf8" type="hidden" value="✓">
-<input autocomplete="off" type="text" name="q" title="search" class="gsc-input" style="width: 100%; padding: 0px; border: none; margin: -0.0625em 0px 0px; height: 1.25em; outline: none;" dir="ltr" spellcheck="false" placeholder="Search Elements">
-<span class="gsc-search-button">
-  <input type="submit" class="search-button">
-</span>
-
-                </div>
-              </form>
-            </li>
-
-            <li class="user">
-              <a href="/login">Log in</a>
-              <span>or</span>
-              <a class="sign-up highlight" data-trackable="{&quot;category&quot;:&quot;Sign Up Links&quot;,&quot;action&quot;:&quot;Clicked&quot;,&quot;label&quot;:&quot;www-header&quot;}" href="https://signup.heroku.com?c=70130000001x9jFAAQ">Sign up</a>
-            </li>
-        </ul>
-      </div>
-
-    </div>
-  </nav>
-
-
-</header>
-
-    <div id="page-subnav" class="page-subnav is-hidden-tablet">
-    <nav class="wrapper">
-      <ul>
-        <li>
-          <a class="addons" href="/addons">
-            <span class="hk-icon hk-icon-addon"></span>Add-ons
-</a>        </li>
-        <li><a class="buttons" href="/buttons">
-            <span class="hk-icon hk-icon-deploy"></span>Buttons
-</a>        </li>
-        <li>
-          <a class="buildpacks active" href="/buildpacks">
-            <span class="hk-icon hk-icon-buildpack"></span>Buildpacks
-</a>        </li>
-      </ul>
-
-    </nav>
-</div>
-
-
-    
-
-<div id="buildpacks" class="affix-container">
-  <div class="wrapper">
-    <div class="content-with-sidebar left">
-      <div class="brand-details">
-        <div class="brand-logo"><img alt="lm-tools" src="https://avatars0.githubusercontent.com/u/12998430?size=120" /></div>
-        <h4 class="brand-title text-dark">heroku-buildpack-princexml</h4>
-        <p>by <a href="https://github.com/lm-tools" target="_blank">lm-tools</a></p>
-      </div>
-
-      <section class="markdown">
-        <p class="github">
-          <span class="hk-icon hk-icon-github-2"></span>GitHub Readme.md
-        </p>
-        <div class="announce instapaper_body md">
-<h1>
-<a class="anchor" href="https://github.com/lm-tools/heroku-buildpack-princexml#heroku-buildpack-princexml"></a>Heroku Buildpack PrinceXML</h1>
-<p>A buildpack that installs PrinceXML on Heroku.</p>
-</div>
-      </section>
-
-      <section id="buildpack-instructions" class="hidden-xs hidden-sm">
-        <div class="cli-install">
-          <div class="category-label">
-            <h5 class="text-dark">CLI Installation</h5>
-          </div>
-
-          <div class="terminal">
-            <div class="dots">
-              <div class="dot"></div>
-              <div class="dot"></div>
-              <div class="dot"></div>
-            </div>
-            <div class="cli">
-              <input id="cli-text" value="heroku create --buildpack https://github.com/lm-tools/heroku-buildpack-princexml.git" disabled />
-            </div>
-          </div>
-
-          <p class="meta">
-            <button class="btn-text" data-clipboard-text="heroku create --buildpack https://github.com/lm-tools/heroku-buildpack-princexml.git">Copy above snippet into CLI</button>
-            </button>
-          </p>
+      <div class="col-md-6">
+        <div class="row">
+          <p class="col-6">Height</p>
+          <p class="col-3">192</p>
+          <p class="col-3">cms</p>
         </div>
-      </section>
-    </div>
-
-    <div class="sidebar right" id="sidebar">
-      <section class="is-hidden-mobile">
-        <a class="btn btn-primary-lightning btn-sm btn-block" href="#buildpack-instructions">CLI Install Details</a>
-        <a class="btn btn-default btn-sm btn-block" href="https://github.com/lm-tools/heroku-buildpack-princexml">View on GitHub</a>
-      </section>
-
-      <div class="list-nav list-nav-sm">
-        <ul>
-          <li>
-            <span class="hk-icon hk-icon-deploy"></span> Recent Deploys: <span class="stats-value">9</span>
-          </li>
-          <li>
-            <span class="hk-icon hk-icon-stars"></span> Stars: <span class="stats-value">3</span>
-          </li>
-          <li>
-            <span class="hk-icon hk-icon-forks"></span> Forks: <span class="stats-value">13</span>
-          </li>
-        </ul>
-      </div>
-
-      <section class="twitter">
-        <a href="https://twitter.com/share"
-  class="twitter-share-button"
-  data-text="Check out heroku-buildpack-princexml on Heroku's Elements Marketplace"
-  data-via="heroku"
-  data-size="large"
-  data-count="none">Tweet</a>
-
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
-      </section>
-    </div>
-  </div>
-</div>
-
-
-  </div>
-
-  <div class="elements-footer sub-footer">
-  <div class="wrapper">
-    <nav>
-      <ul>
-        <li><a href="https://addons.heroku.com/provider/home">
-          <span class="hk-icon hk-icon-control-2"></span>Add-on Provider Admin</a>
-        </li>
-        <li><a href="https://devcenter.heroku.com/articles/becoming-an-add-on-provider" target="_blank">
-          <span class="hk-icon hk-icon-addon"></span>Become an Add-on Provider</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</div>
-
-  <footer id="heroku-footer">
-  <div class="wrapper">
-    <div class="col heroku-footer-links">
-      <nav class="col">
-        <h4>Products</h4>
-        <ul>
-          <li><a href="https://www.heroku.com/platform">Heroku Platform</a></li>
-          <li><a href="https://www.heroku.com/connect">Heroku Connect</a></li>
-          <li><a href="https://www.heroku.com/postgres">Heroku Postgres</a></li>
-          <li><a href="https://www.heroku.com/redis">Heroku Redis</a></li>
-          <li><a href="https://www.heroku.com/kafka">Kafka on Heroku</a></li>
-          <li><a href="https://www.heroku.com/enterprise">Heroku Enterprise</a></li>
-          <li><a href="https://www.heroku.com/teams">Heroku Teams</a></li>
-          <li><a href="https://elements.heroku.com/">Elements Marketplace</a></li>
-          <li><a href="https://www.heroku.com/pricing">Pricing</a></li>
-        </ul>
-      </nav>
-      <nav class="col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="https://devcenter.heroku.com/">Documentation</a></li>
-          <li><a href="https://blog.heroku.com/">Blog</a></li>
-          <li><a href="https://devcenter.heroku.com/start">Get Started</a></li>
-        </ul>
-      </nav>
-      <nav class="col">
-        <h4>About</h4>
-        <ul>
-          <li><a href="https://www.heroku.com/about">About Us</a></li>
-          <li><a href="https://www.heroku.com/what">What is Heroku</a></li>
-          <li><a href="https://www.heroku.com/customers">Our Customers</a></li>
-          <li><a href="https://www.heroku.com/careers">Careers</a></li>
-          <li><a href="https://www.heroku.com/partnering">Partners</a></li>
-          <li><a href="https://www.heroku.com/elements">Elements</a></li>
-        </ul>
-      </nav>
-      <nav class="col">
-        <h4>Support</h4>
-        <ul>
-          <li><a href="https://help.heroku.com/">Help Center</a></li>
-          <li><a href="https://status.heroku.com/">Status</a></li>
-          <li><a href="https://www.heroku.com/critical">Premium Support</a></li>
-          <li><a href="https://www.heroku.com/contact">Contact Us</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="col heroku-footer-social">
-      <h3><span class="heroku-footer-icon-newsletter"></span>Subscribe to our monthly newsletter</h3>
-      <form id="bookends-newsletter" accept-charset="UTF-8" action="https://www.heroku.com/newsletter_signups" method="post">
-        <input name="utf8" type="hidden" value="✓">
-        <input type="text" name="website" id="bookends-website" placeholder="do not fill this in" tabindex="-1">
-        <input type="email" name="newsletter_signup[email]" id="newsletter_signup_email" placeholder="Your email address" required="required">
-        <input type="submit" name="commit" value="Go">
-        <p id="bookends-newsletter-result" class="hide"></p>
-      </form>
-      <ul class="social-list">
-        <li class="has-dropdown">
-          <a class="heroku-footer-icon-rss" href="https://blog.heroku.com/feed" target="_blank"> RSS</a>
-          <div class="dropdown">
-            <ul>
-              <li><a href="https://blog.heroku.com/feed" target="_blank"><span class="heroku-footer-icon-rss"></span>Heroku Blog</a></li>
-              <li><a href="https://blog.heroku.com/news/feed" target="_blank"><span class="heroku-footer-icon-rss"></span>Heroku News Blog</a></li>
-              <li><a href="https://blog.heroku.com/engineering/feed" target="_blank"><span class="heroku-footer-icon-rss"></span>Heroku Engineering Blog</a></li>
-              <li><a href="http://feeds.feedburner.com/herokudevcenterarticles" target="_blank"><span class="heroku-footer-icon-rss"></span>Dev Center Articles</a></li>
-              <li><a href="http://feeds.feedburner.com/herokuchangelog" target="_blank"><span class="heroku-footer-icon-rss"></span>Dev Center Changelog</a></li>
-              <li><a href="http://feeds.feedburner.com/herokustatus" target="_blank"><span class="heroku-footer-icon-rss"></span>Heroku Status</a></li>
-            </ul>
-          </div>
-        </li>
-        <li class="has-dropdown">
-          <a class="heroku-footer-icon-twitter" href="https://twitter.com/heroku" target="_blank"> Twitter</a>
-          <div class="dropdown">
-            <ul>
-              <li><a href="https://twitter.com/heroku" target="_blank"><span class="heroku-footer-icon-twitter"></span>Heroku</a></li>
-              <li><a href="https://twitter.com/herokudevcenter" target="_blank"><span class="heroku-footer-icon-twitter"></span>Dev Center Articles</a></li>
-              <li><a href="https://twitter.com/herokuchangelog" target="_blank"><span class="heroku-footer-icon-twitter"></span>Dev Center Changelog</a></li>
-              <li><a href="https://twitter.com/herokustatus" target="_blank"><span class="heroku-footer-icon-twitter"></span>Heroku Status</a></li>
-            </ul>
-          </div>
-        </li>
-        <li><a class="heroku-footer-icon-facebook" href="https://facebook.com/heroku" target="_blank" title="Heroku's Facebook">Facebook</a></li>
-        <li><a class="heroku-footer-icon-instagram" href="https://instagram.com/heroku" target="_blank" title="Heroku's Instagram">Instagram</a></li>
-        <li><a class="heroku-footer-icon-github" href="https://github.com/heroku" target="_blank" title="Heroku's GitHub">GitHub</a></li>
-        <li><a class="heroku-footer-icon-linkedin" href="https://www.linkedin.com/company/heroku" target="_blank" title="Heroku's LinkedIn">LinkedIn</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="tertiary">
-    <div class="wrapper">
-      <div class="col">
-        <a href="https://www.heroku.com/home" title="heroku.com" class="sfdc-logo">Heroku is a <span></span> company</a>
-      </div>
-      <div class="col">
-        <ul>
-          <li><a href="https://www.heroku.com/home">heroku.com</a></li>
-          <li><a href="https://www.heroku.com/policy/tos">Terms of Service</a></li>
-          <li><a href="https://www.salesforce.com/company/privacy/">Privacy</a></li>
-          <li><a href="https://www.salesforce.com/company/privacy/full_privacy.jsp#nav_info">Cookies</a></li>
-          <li class="copyright">
-            &copy;
-            <script type="text/javascript"> document.write(new Date().getFullYear()); </script>
-            Salesforce.com
-          </li>
-        </ul>
+        <div class="row">
+          <p class="col-6">Weight</p>
+          <p class="col-3">65.4</p>
+          <p class="col-3">kgs</p>
+        </div>
+        <div class="row">
+          <p class="col-6">BMI</p>
+          <p class="col-6">1.9</p>
+        </div>
+        <div class="row">
+          <p class="col-6">Allergies</p>
+          <p class="col-6">-</p>
+        </div>
+        <div class="row">
+          <p class="col-6">Alternate phone number</p>
+          <p class="col-6">50530</p>
+        </div>
       </div>
     </div>
   </div>
-</footer>
+</body>
 
-
-      <script type="text/javascript">
-      $(document).on('ready', function() {
-          Kindling.start('buildpacks', 'show');
-      });
-    </script>
-
-
-    <!-- Google Tag Manager -->
-  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-JD26" height="0" width="0" style="display:none;visibility:hidden"></iframe> </noscript>
-  <script data-turbolinks-eval="false">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-JD26');</script>
-  <!-- End Google Tag Manager -->
-
-<!-- Google Tag Manager "dataLayer" should always be initialized -->
-  <script type="text/javascript" data-turbolinks-eval="false">
-    var dataLayer = dataLayer || [];
-  </script>
-<!-- End -->
-
-
-
-  </body>
 </html>

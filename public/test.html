@@ -1,33 +1,52 @@
-<!-- views/patient.ejs -->
-
 <!DOCTYPE html>
-<html>
+<!-- saved from url=(0034)http://localhost:8080/patient/1037 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- fontawesome -->
+   <link href="./test_files/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="./test_files/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 
-<head>
-  <%- include('partials/head')%>
-  <%   var now = dateformat(new Date(), 'dd/mm/yyyy');%>
-  <script type="text/x-handlebars-template" id="testsTypeaheadTemplate">
-    <div class="d-flex w-100 justify-content-between align-items-center">
-      <div>
-        <div class="row">{{name}}</div> 
-        <div class="text-muted row"><small>{{cat}}</small></div>
-      </div>
-      <small class="pl-4 text-muted">{{units}}</small>
-    </div>
-  </script>
+    <!-- Custom CSS -->
+    <link href="./test_files/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+
+    <!-- jQuery -->
+    <script src="./test_files/jquery.min.js"></script>
+
+    <!-- tether.io required for bootstrap 4 -->
+    <script src="./test_files/tether.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="./test_files/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <!-- handlebars -->
+    <script src="./test_files/handlebars.min.js"></script>
+
+    <!-- typeahead -->
+  <script src="./test_files/typeahead.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./test_files/typeaheadjs.css">
+
+    <!-- bootstrap datepicker -->
+    <link rel="stylesheet" type="text/css" href="./test_files/bootstrap-datepicker.min.css">
+    <script src="./test_files/bootstrap-datepicker.min.js"></script>
+  
   <script type="text/x-handlebars-template" id="investigationTemplate">
     <div class="form-inline-special">
       <div class="form-group row">
         <div class="col-2 pr-0 pr-md-3">
-          <input class="form-control" id="dateDisplay" value="<%= now%>">
-          <input type="hidden" id="date" name="date[]" value="<%= dateformat(new Date(), 'yyyy-mm-dd')%>">
+          <input class="form-control" id="dateDisplay" value="23/06/2017">
+          <input type="hidden" id="date" name="date[]" value="2017-06-23">
         </div>
         <div class="col-4 pr-0 pr-md-3">
           <input type="text" class="form-control" id="investigationName" name="name[]" placeholder="Test name">
         </div>
         <div class="col-2 pr-0 pr-md-3">
           <input type="text" class="form-control" id="units" name="units[]" placeholder="Units">
-          <input type="hidden" name="cat[]" id="cat">
         </div>
         <div class="col-2 pr-0 pr-md-3">
           <input type="text" class="form-control" id="value" name="value[]" placeholder="Value">
@@ -47,7 +66,7 @@
     <div class="form-inline-special">
       <div class="form-group row">
         <div class="col-10 col-md-4 pr-0 pr-md-3">
-          <input type="text" class="form-control" id="investigationName" name="investigationsRequired[]" placeholder="Investigation name">
+          <input type="text" class="form-control" id="investigationName" name="investigationsRequired[]" placeholder="Test name">
         </div>
         <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
           <button class="btn btn-danger pull-right" data-role="remove">
@@ -62,8 +81,7 @@
   </script>
   <script type="text/javascript">
     console.log("hello")
-    var testsSource;
-    var investigationsRequiredSource;
+    var global_source;
     invTmpl = Handlebars.compile($('#investigationTemplate').html())
     invRqdTmpl = Handlebars.compile($('#investigationRequiredTemplate').html())
     function getNewInvestigationElement() {
@@ -77,13 +95,12 @@
       {
         name: 'states',
         display: 'name', 
-        source: testsSource,
+        source: global_source,
         templates: {
-          suggestion: Handlebars.compile($('#testsTypeaheadTemplate').html())
+          suggestion: Handlebars.compile('<div class="d-flex w-100 justify-content-between align-items-center"><text>{{name}}</text> <small class="pl-4 text-muted">{{units}}</small></div>')
         }
       }).on('typeahead:select', function(ev, suggestion) {
-        $(this).parents().eq(1).next().children('#units').val(suggestion.units)
-        $(this).parents().eq(1).next().children('#cat').val(suggestion.cat)
+        $(this).parents().eq(1).next().children().val(suggestion.units)
       })
       $('#dateDisplay', $jqueryElement).datepicker({
         format: {
@@ -109,28 +126,20 @@
       },
       {
         name: 'states',
-        source: investigationsRequiredSource,
+        display: 'name', 
+        source: global_source,
+        templates: {
+          suggestion: Handlebars.compile('<div class="d-flex w-100 justify-content-between align-items-center"><text>{{name}}</text> <small class="pl-4 text-muted">{{units}}</small></div>')
+        }
       })
       return $jqueryElement
     }
     
-    $.get('/json/investigationsRequired.json', function(data) {
 
-      // constructs the suggestion engine
-      investigationsRequiredSource = new Bloodhound({
-        datumTokenizer: Bloodhound.tokenizers.nonword,
-        queryTokenizer: Bloodhound.tokenizers.nonword,
-        // `states` is an array of state names defined in "The Basics"
-        local: data
-      });
-      for (var i = 0; i < 5; i++) {
-        $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
-      }
-    }, 'json')
     $.get("/json/tests.json", function(data){
 
     // constructs the suggestion engine
-    testsSource = new Bloodhound({
+    global_source = new Bloodhound({
       datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
       queryTokenizer: Bloodhound.tokenizers.nonword,
       // `states` is an array of state names defined in "The Basics"
@@ -138,7 +147,7 @@
     });
     // add the first investigation input
     $('#investigationsDynamicContainer').append(getNewInvestigationElement())
-    // $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
+    $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
 
   },'json');
 
@@ -193,35 +202,74 @@
 
 <body>
   <div class="container">
-    <%- include('partials/navbar') %>
-    <%- include('partials/header')%>
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="http://localhost:8080/">dranurag.in</a>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item ">
+        <a class="nav-link" href="http://localhost:8080/">Home</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link" href="http://localhost:8080/addPatient">Add Patient</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="http://localhost:8080/patientSearch">Patients</a>
+      </li>
+
+    </ul>
+    
+      <ul class="navbar-nav">
+        <span class="navbar-text my-auto mr-lg-2">
+          Signed in as Arpit
+        </span>
+        <li class="nav-item"><a class="nav-link " href="http://localhost:8080/logout">Logout</a></li>
+      </ul>
+      
+  </div>
+</nav>
+
+
+
+
+
+
+
+    <header class="header">
+ 
+  
+
+</header>
     <div class="row">
       <div class="col-md-6">
-        <h1 class="display-3"><%=patient.name%></h1>
-        <p class="lead"><%-helpText%> </p>
+        <h1 class="display-3">arpit</h1>
+        <p class="lead"><i class="fa fa-venus pr-2"></i> /  <i class="fa fa-phone px-1"></i> sdfsd234234 </p>
       </div>
       <div class="col-md-6">
         <div class="row">
           <p class="col-6">Height</p>
-          <p class="col-3"><%=patient.height || "-"%></p>
+          <p class="col-3">-</p>
           <p class="col-3">cms</p>
         </div>
         <div class="row">
           <p class="col-6">Weight</p>
-          <p class="col-3"><%=patient.weight || "-"%></p>
+          <p class="col-3">-</p>
           <p class="col-3">kgs</p>
         </div>
         <div class="row">
           <p class="col-6">BMI</p>
-          <p class="col-6"><%=patient.bmi || "-"%></p>
+          <p class="col-6">-</p>
         </div>
         <div class="row">
           <p class="col-6">Allergies</p>
-          <p class="col-6"><%=patient.allergies || "-"%></p>
+          <p class="col-6">-</p>
         </div>
         <div class="row">
           <p class="col-6">Alternate phone number</p>
-          <p class="col-6"><%=patient.phone2 || "-"%></p>
+          <p class="col-6">-</p>
         </div>
       </div>
     </div>
@@ -229,60 +277,115 @@
     <div class="card">
       <div class="card-block">
         <h3 class="card-title">Investigations</h3>
-        <div class='table-responsive'>
-          <table class="table table-bordered">
-            <thead class="thead-inverse">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead>
               <tr>
                 <th>#</th>
-                <%table.colHeaders.forEach(elm => {%>
-                <th><%=elm%></th>
-                <%})%>
+                
+                <th>19/06/2017</th>
+                
+                <th>20/06/2017</th>
+                
+                <th>23/06/2017</th>
+                
               </tr>
             </thead>
             <tbody>
-              <%var prevCat = ""%>
-              <%table.rowHeaders.forEach((elm, idx) => {%>
-              <% if(elm.cat != prevCat) {%>
-                <thead class='thead-default'>
-                  <tr><th colspan='<%=table.colHeaders.length+1%>'>
-                    <%=elm.cat%>
-                  </th></tr>
-                </thead>
-              <%}%>
-              <%prevCat = elm.cat%>
+              
               <tr>
                 <th scope="row">
                   <div class="d-flex w-100 justify-content-start align-items-baseline">
-                    <span class="mb-1"><%=elm.name%></span>
-                    <small class="pl-2 text-muted"><%=elm.units%></small>
+                    <span class="mb-1">444</span>
+                    <small class="pl-2 text-muted"></small>
                   </div>
                 </th>
-                <%table.values[idx].forEach(elm => {%>
-                <td><%=elm%></td>
-                <%})%>
+                
+                <td>-</td>
+                
+                <td>-</td>
+                
+                <td>33</td>
+                
               </tr>
-              <%})%>
+              
+              <tr>
+                <th scope="row">
+                  <div class="d-flex w-100 justify-content-start align-items-baseline">
+                    <span class="mb-1">Total Protein</span>
+                    <small class="pl-2 text-muted">g/dL</small>
+                  </div>
+                </th>
+                
+                <td>-</td>
+                
+                <td>5</td>
+                
+                <td>5</td>
+                
+              </tr>
+              
+              <tr>
+                <th scope="row">
+                  <div class="d-flex w-100 justify-content-start align-items-baseline">
+                    <span class="mb-1">Eosinophils</span>
+                    <small class="pl-2 text-muted">%</small>
+                  </div>
+                </th>
+                
+                <td>3</td>
+                
+                <td>-</td>
+                
+                <td>4</td>
+                
+              </tr>
+              
             </tbody>
           </table>
         </div>
         <h6 class="card-subtitle pt-4">New Investigations:</h6>
-        <form action='/addInvestigation/<%=patient._id %>' method='post'>
-          <div data-role="dynamic-fields" id="investigationsDynamicContainer" class='pt-3'>
+        <form action="http://localhost:8080/addInvestigation/1037" method="post">
+          <div data-role="dynamic-fields" id="investigationsDynamicContainer" class="pt-3">
 
-          </div>  <!-- /div[data-role="dynamic-fields"] -->
+          <div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-2 pr-0 pr-md-3">
+          <input class="form-control" id="dateDisplay" value="23/06/2017">
+          <input type="hidden" id="date" name="date[]" value="2017-06-23">
+        </div>
+        <div class="col-4 pr-0 pr-md-3">
+          <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1;"><input type="text" class="form-control tt-input" id="investigationName" name="name[]" placeholder="Test name" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-states"></div></div></span>
+        </div>
+        <div class="col-2 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="units" name="units[]" placeholder="Units">
+        </div>
+        <div class="col-2 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="value" name="value[]" placeholder="Value">
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline --></div>  <!-- /div[data-role="dynamic-fields"] -->
           <button type="submit" class="btn btn-outline-primary">Add Investigation(s)</button>
         </form>
       </div>
     </div>
-    <div class='pt-4'>
+    <div class="pt-4">
       <div class="card">
         <div class="card-block">
           <h3 class="card-title">New Prescription</h3>
-          <form action="/addPrescription/<%=patient._id %>" method="post">
+          <form action="http://localhost:8080/addPrescription/1037" method="post">
             <div class="form-group row required">
               <label for="diagnosis" class="col-form-label col-md-2">Diagnosis</label>
               <div class="col-md-10">
-                <textarea name="diagnosis" id="diagnosis" required="true" rows=3 cols=70 class="form-control"></textarea>
+                <textarea name="diagnosis" id="diagnosis" required="true" rows="3" cols="70" class="form-control"></textarea>
               </div>
             </div>
             <div class="row">
@@ -290,7 +393,7 @@
                 <label class="col-form-label">Chief Complaints</label>
               </div>
               <div class="col-md-10 pb-5">
-                <textarea name="chiefComplaints" id="chiefComplaints" rows=3 cols=70 class="form-control" placeholder="eg. Headache (3 days)"></textarea>
+                <textarea name="chiefComplaints" id="chiefComplaints" rows="3" cols="70" class="form-control" placeholder="eg. Headache (3 days)"></textarea>
                 <small class="text-muted form-text">One complaint each line</small>
               </div>
             </div>
@@ -327,9 +430,23 @@
             <div class="form-group row">
               <label class="col-form-label col-md-2">Investigations Required</label>
               <div class="col-md-10">
-                <div data-role="dynamic-fields" id="investigationsRequiredDynamicContainer" class='pt-3'>
+                <div data-role="dynamic-fields" id="investigationsRequiredDynamicContainer" class="pt-3">
 
-                </div>  <!-- /div[data-role="dynamic-fields"] -->
+                <div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-10 col-md-4 pr-0 pr-md-3">
+          <span class="twitter-typeahead" style="position: relative; display: inline-block;"><input type="text" class="form-control tt-hint" readonly="" autocomplete="off" spellcheck="false" tabindex="-1" dir="ltr" style="position: absolute; top: 0px; left: 0px; border-color: transparent; box-shadow: none; opacity: 1;"><input type="text" class="form-control tt-input" id="investigationName" name="investigationsRequired[]" placeholder="Test name" autocomplete="off" spellcheck="false" dir="auto" style="position: relative; vertical-align: top; background-color: transparent;"><pre aria-hidden="true" style="position: absolute; visibility: hidden; white-space: pre;"></pre><div class="tt-menu" style="position: absolute; top: 100%; left: 0px; z-index: 100; display: none;"><div class="tt-dataset tt-dataset-states"></div></div></span>
+        </div>
+        <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+          <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline --></div>  <!-- /div[data-role="dynamic-fields"] -->
               </div>
             </div>
             <div class="form-group row">
@@ -367,10 +484,14 @@
         </div>
       </div>
     </div>
-    <%- include('partials/footer') %>
+    <!-- views/partials/footer.ejs -->
+<footer class="footer">
+    <p>© 90210 Lawyer Stuff.</p>
+   
+</footer>
   </div>
 
   
-</body>
 
-</html>
+
+</body></html>
