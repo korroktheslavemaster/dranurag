@@ -86,4 +86,24 @@ module.exports = (app) => {
     res.render('partials/prescription', {})
   })
 
+  // testing html-pdf
+  app.get('/html-pdf', function(req, res) {
+    var pdf = require('html-pdf');
+    var fs = require('fs');
+    var options = { 
+      format: 'Letter',
+      base: process.env.BASE_URL || 'http://localhost:8080' 
+    };
+    saveHtml(req.query.url, "test.html")
+      .then(() => {
+        var html = fs.readFileSync('test.html', 'utf8');
+        pdf.create(html, options).toBuffer(function(err, buffer) {
+          if (err) return console.log(err);
+          res.contentType('application/pdf')
+          res.send(buffer)
+          // console.log(res); // { filename: '/app/businesscard.pdf' }
+        });
+      })
+  })
+
 }
