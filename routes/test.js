@@ -91,8 +91,18 @@ module.exports = (app) => {
     var pdf = require('html-pdf');
     var fs = require('fs');
     var options = { 
-      format: 'Letter',
-      base: process.env.BASE_URL || 'http://localhost:8080' 
+      format: 'A4',
+      viewportSize: {
+        width: 827,
+        height: 1169
+      },
+      base: process.env.BASE_URL || 'http://localhost:8080',
+      // HTTP Headers that are used for requests
+      httpHeaders: {
+        // e.g.
+        "Authorization": "Bearer ACEFAD8C-4B4D-4042-AB30-6C735F5BAC8B",
+        'User-Agent': " "
+      } 
     };
     saveHtml(req.query.url, "test.html")
       .then(() => {
