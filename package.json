@@ -21,6 +21,7 @@
     "express": "^4.15.3",
     "express-session": "^1.15.3",
     "forms-mongoose": "0.0.6",
+    "html-pdf": "^2.1.0",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "mongoose": "^4.10.6",
@@ -28,6 +29,7 @@
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "pdfmake": "^0.1.31",
+    "phantomjs": "^2.1.7",
     "prince": "^1.4.0",
     "request": "^2.81.0"
   },
