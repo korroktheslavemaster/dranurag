@@ -90,19 +90,27 @@ module.exports = (app) => {
   app.get('/html-pdf', function(req, res) {
     var pdf = require('html-pdf');
     var fs = require('fs');
-    var options = { 
-      format: 'A4',
+    var options = {
+      width: '827px',
+      height: '1169px',
       viewportSize: {
         width: 827,
         height: 1169
       },
+      zoomFactor: 10,
       base: process.env.BASE_URL || 'http://localhost:8080',
       // HTTP Headers that are used for requests
       httpHeaders: {
         // e.g.
         "Authorization": "Bearer ACEFAD8C-4B4D-4042-AB30-6C735F5BAC8B",
         'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0"
-      } 
+      } ,
+      // "border": {
+      //   "top": "2in",            // default is 0, units: mm, cm, in, px 
+      //   "right": "1in",
+      //   "bottom": "2in",
+      //   "left": "1.5in"
+      // },
     };
     saveHtml(req.query.url, "test.html")
       .then(() => {

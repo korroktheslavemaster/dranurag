@@ -39,14 +39,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0/js/bootstrap-datepicker.min.js"></script>
  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
  <script src="https://use.typekit.net/kac8cip.js"></script>
-<script>try{Typekit.load({ async: false });}catch(e){}</script>
-<style type="text/css">
+ <script>try{Typekit.load({ async: false });}catch(e){}</script>
+ <style type="text/css">
   h1, h2, h3, h4, h5, h6 {
     font-family: 'europa';
-}
-p, div {
+  }
+  p, div {
     font-family: 'europa';
-}
+    /*font-size: 0.75rem;*/
+  }
 </style>
 
 </head>
@@ -54,32 +55,94 @@ p, div {
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <small>Name: <strong>Deepak Agrawal</strong></small>
-        <p class="lead"><i class='fa fa-mars pr-2'></i> / 32 yrs /  <i class='fa fa-phone px-1'></i> 4122684272 </p>
+      <div class="col-7 offset-5">
+        <div class="row">
+          <div class="col-4"><strong>Name</strong></div>
+          <div class="col-6">Deepak Agarwal</div>
+          <div class="col-2 text-muted"><span class="pull-right">24/07/2011</span></div>
+        </div>
+        <div class="row">
+          <div class="col-4"><strong>Patient ID</strong></div>
+          <div class="col-8">1002</div>
+        </div>
+        <div class="row">
+          <div class="col-4"><strong>Age</strong></div>
+          <div class="col-8">24 yrs</div>
+        </div>
+        <div class="row">
+          <div class="col-4"><strong>Sex</strong></div>
+          <div class="col-8">Male</div>
+        </div>
+        <div class="row py-4">
+          <strong class="col-4">Diagnosis</strong>
+          <text class="col-8">something something someintg</text>
+        </div>
+        <div class="row py-4">
+          <strong class="col-4">Chief Complaints</strong>
+          <div class="col-8">
+            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
+            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
+            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
+            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
+          </div>
+        </div>
+        <div class="row py-4">
+          <strong class="col-4">On Examination</strong>
+          <div class="col-sm-4">Etiam porta sem malesuada magna mollis euismod.</div>
+          <div class="col-sm-4">
+            <div class="row">
+              <strong class="col-6">Pulse:</strong>
+              <span class="col-6 pull-right">103</span>
+            </div>
+            <div class="row">
+              <strong class="col-6">BP:</strong>
+              <span class="col-6 pull-right">103</span>
+            </div>
+            <div class="row">
+              <strong class="col-6">Temp:</strong>
+              <span class="col-6 pull-right">103</span>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-6">
-        <div class="row">
-          <p class="col-6">Height</p>
-          <p class="col-3">192</p>
-          <p class="col-3">cms</p>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="col-4">
+        <div class="card">
+          <div class="card-block">
+            <strong class="card-title">Investigations required</strong>
+          </div>
+          <ul>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+          </ul>
         </div>
-        <div class="row">
-          <p class="col-6">Weight</p>
-          <p class="col-3">65.4</p>
-          <p class="col-3">kgs</p>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div class="card-block">
+            <strong class="card-title">Medical Advice</strong>
+          </div>
+          <ul>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+          </ul>
         </div>
+      </div>
+      <div class="col-4">
         <div class="row">
-          <p class="col-6">BMI</p>
-          <p class="col-6">1.9</p>
-        </div>
-        <div class="row">
-          <p class="col-6">Allergies</p>
-          <p class="col-6">-</p>
-        </div>
-        <div class="row">
-          <p class="col-6">Alternate phone number</p>
-          <p class="col-6">50530</p>
+          <div class="col-4">Dietary Advice</div>
+          <div class="col-8">
+            <div>something something</div>
+            <div>something something</div>
+            <div>something something</div>
+            <div>something something</div>
+          </div>
         </div>
       </div>
     </div>
