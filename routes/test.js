@@ -101,7 +101,7 @@ module.exports = (app) => {
       httpHeaders: {
         // e.g.
         "Authorization": "Bearer ACEFAD8C-4B4D-4042-AB30-6C735F5BAC8B",
-        'User-Agent': " "
+        'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0"
       } 
     };
     saveHtml(req.query.url, "test.html")
@@ -115,5 +115,9 @@ module.exports = (app) => {
         });
       })
   })
+
+
+  // testing phantomjs directly
+  
 
 }
