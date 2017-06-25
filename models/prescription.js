@@ -2,6 +2,14 @@
 var mongoose = require('mongoose');
 var autoIncrement = require('mongoose-auto-increment');
 
+var medicineAdviceSchema = mongoose.Schema({
+    drug: String,
+    dosage: String,
+    frequency: String,
+    duration: String,
+    specialAdvice: String
+})
+
 var prescriptionSchema = mongoose.Schema({
     patient: {type: Number, ref: 'Patient', required: true},
     date: Date,
@@ -12,7 +20,7 @@ var prescriptionSchema = mongoose.Schema({
     onExaminationTemp: String,
     onExaminationNotes: String,
     investigationsRequired: [String],
-    medicineAdvice: String,
+    medicineAdvice: [medicineAdviceSchema],
     dietaryAdvice: String,
     otherAdvice: String,
     reviewAfterNumber: Number, // use duration?,

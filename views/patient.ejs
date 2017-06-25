@@ -9,7 +9,7 @@
   <script type="text/x-handlebars-template" id="testsTypeaheadTemplate">
     <div class="d-flex w-100 justify-content-between align-items-center">
       <div>
-        <div class="row">{{name}}</div> 
+        <div class="row">{{name}}</div>
         <div class="text-muted row"><small>{{cat}}</small></div>
       </div>
       <small class="pl-4 text-muted">{{units}}</small>
@@ -43,6 +43,35 @@
       </div>
     </div>  <!-- /div.form-inline -->
   </script>
+  <script type="text/x-handlebars-template" id="medicinesAdvisedTemplate">
+    <div class="form-inline-special">
+      <div class="form-group row">
+        <div class="col-4 pr-0 pr-md-0">
+          <input type="text" class="form-control" id="medicinesAdvisedDrug" name="medicinesAdvisedDrug[]" placeholder="Drug name">
+        </div>
+        <div class="col-1 pr-0 pr-md-0">
+          <input type="text" class="form-control" id="medicinesAdvisedDosage" name="medicinesAdvisedDosage[]" placeholder="Dosage">
+        </div>
+        <div class="col-2 pr-0 pr-md-0">
+          <input type="text" class="form-control" id="medicinesAdvisedFrequency" name="medicinesAdvisedFrequency[]" placeholder="Frequency">
+        </div>
+        <div class="col-2 pr-0 pr-md-0">
+          <input type="text" class="form-control" id="medicinesAdvisedDuration" name="medicinesAdvisedDuration[]" placeholder="Duration">
+        </div>
+        <div class="col-2 pr-0 pr-md-0">
+          <input type="text" class="form-control" id="medicinesAdvisedSpecialAdvice" name="medicinesAdvisedSpecialAdvice[]" placeholder="Special Advice">
+        </div>
+        <div class="col-1 col-auto pl-3 pl-md-0">
+          <button class="btn btn-success pull-right" data-role="add" id="medicinesAdvisedButton">
+            <i class="fa fa-plus"></i>
+          </button>
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
+          </button>
+        </div>
+      </div>
+    </div>  <!-- /div.form-inline -->
+  </script>
   <script type="text/x-handlebars-template" id="investigationRequiredTemplate">
     <div class="form-inline-special">
       <div class="form-group row">
@@ -66,6 +95,7 @@
     var investigationsRequiredSource;
     invTmpl = Handlebars.compile($('#investigationTemplate').html())
     invRqdTmpl = Handlebars.compile($('#investigationRequiredTemplate').html())
+    medicinesAdvisedTemplate = Handlebars.compile($('#medicinesAdvisedTemplate').html())
     function getNewInvestigationElement() {
       var $jqueryElement = $(invTmpl());
       // fix background-color transparent if possible
@@ -76,7 +106,7 @@
       },
       {
         name: 'states',
-        display: 'name', 
+        display: 'name',
         source: testsSource,
         templates: {
           suggestion: Handlebars.compile($('#testsTypeaheadTemplate').html())
@@ -113,7 +143,13 @@
       })
       return $jqueryElement
     }
-    
+
+    function getMedicinesAdvisedElement() {
+      var $jqueryElement = $(medicinesAdvisedTemplate());
+      // fix background-color transparent if possible
+      return $jqueryElement
+    }
+
     $.get('/json/investigationsRequired.json', function(data) {
 
       // constructs the suggestion engine
@@ -138,6 +174,8 @@
     });
     // add the first investigation input
     $('#investigationsDynamicContainer').append(getNewInvestigationElement())
+    $('#medicinesAdvisedDynamicContainer').append(getMedicinesAdvisedElement())
+
     // $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
 
   },'json');
@@ -164,8 +202,10 @@
         var container = $(this).closest('[data-role="dynamic-fields"]');
         if ($(this).attr('id') == 'investigationButton')
           container.prepend(getNewInvestigationElement());
-        else
+        else if ($(this).attr('id') == 'investigationRequiredButton')
           container.prepend(getNewInvestigationRequiredElement());
+        else
+          container.prepend(getMedicinesAdvisedElement());
       }
       );
   });
@@ -187,7 +227,7 @@
 
   [data-role="dynamic-fields"] > .form-inline-special:first-child [data-role="remove"] {
     display: none;
-  } 
+  }
 </style>
 </head>
 
@@ -333,10 +373,18 @@
               </div>
             </div>
             <div class="form-group row">
-              <label class="col-form-label col-md-2">Treatment Advised</label>
-              <div class="col-md-4">
-                <textarea name="medicineAdvice" class="form-control" placeholder="Medicines" rows="6"></textarea>
+              <label class="col-form-label col-md-2">Medicines Advised</label>
+              <div class="col-md-10">
+                <div data-role="dynamic-fields" id="medicinesAdvisedDynamicContainer" class='pt-3'>
+
+                </div>  <!-- /div[data-role="dynamic-fields"] -->
               </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">Treatment Advised</label>
+              <!-- <div class="col-md-4">
+                <textarea name="medicineAdvice" class="form-control" placeholder="Medicines" rows="6"></textarea>
+              </div> -->
               <div class="col-md-3 pt-2 pt-md-0">
                 <textarea name="dietaryAdvice" class="form-control" placeholder="Dietary Advice" rows="6"></textarea>
               </div>
@@ -370,7 +418,7 @@
     <%- include('partials/footer') %>
   </div>
 
-  
+
 </body>
 
 </html>
