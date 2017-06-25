@@ -30,6 +30,7 @@ patientSchema.methods.getHelpText = function() {
   return helpText
 }
 
+
 patientSchema.methods.getAge = function() {
   return moment(new Date()).diff(this.dateOfBirth, 'years')
 }

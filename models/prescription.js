@@ -10,19 +10,24 @@ var medicineAdviceSchema = mongoose.Schema({
     specialAdvice: String
 })
 
+medicineAdviceSchema.methods.getText = function () {
+  return this.drug + ", " + this.dosage + ", " + this.frequency + ", " + this.duration + ", " + this.specialAdvice
+}
+
 var prescriptionSchema = mongoose.Schema({
     patient: {type: Number, ref: 'Patient', required: true},
     date: Date,
     diagnosis: String,
-    chiefComplaints: String,
+    chiefComplaints: [String],
     onExaminationPulse: String,
-    onExaminationBp: String,
+    onExaminationBp1: String,
+    onExaminationBp2: String,
     onExaminationTemp: String,
-    onExaminationNotes: String,
+    onExaminationNotes: [String],
     investigationsRequired: [String],
     medicineAdvice: [medicineAdviceSchema],
-    dietaryAdvice: String,
-    otherAdvice: String,
+    dietaryAdvice: [String],
+    otherAdvice: [String],
     reviewAfterNumber: Number, // use duration?,
     reviewAfterType: String
 });

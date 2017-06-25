@@ -26,92 +26,125 @@
       <div class="col-7 offset-5">
         <div class="row">
           <div class="col-4"><strong>Name</strong></div>
-          <div class="col-6">Deepak Agarwal</div>
-          <div class="col-2 text-muted"><span class="pull-right">24/07/2011</span></div>
+          <div class="col-6"><%=patient.name%></div>
+          <div class="col-2 text-muted"><span class="pull-right"><%=dateformat(prescription.date, 'dd/mm/yyyy')%></span></div>
         </div>
         <div class="row">
           <div class="col-4"><strong>Patient ID</strong></div>
-          <div class="col-8">1002</div>
+          <div class="col-8"><%=patient._id%></div>
         </div>
         <div class="row">
           <div class="col-4"><strong>Age</strong></div>
-          <div class="col-8">24 yrs</div>
+          <div class="col-8"><%=patient.getAge() + " yrs"%></div>
         </div>
         <div class="row">
           <div class="col-4"><strong>Sex</strong></div>
-          <div class="col-8">Male</div>
+          <div class="col-8"><%=patient.sex%></div>
         </div>
         <div class="row py-4">
           <strong class="col-4">Diagnosis</strong>
-          <text class="col-8">something something someintg</text>
+          <text class="col-8"><%=prescription.diagnosis%></text>
         </div>
+        <%if (prescription.chiefComplaints) {%>
         <div class="row py-4">
           <strong class="col-4">Chief Complaints</strong>
           <div class="col-8">
-            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
-            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
-            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
-            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
+            <%prescription.chiefComplaints.forEach(elm => {%>
+              <div class="col-12 pl-0"><%=elm%></div>
+            <%})%>
           </div>
         </div>
+        <%}%>
+        <%const {onExaminationNotes, onExaminationPulse, onExaminationBp1, onExaminationBp2, onExaminationTemp} = prescription;
+          if (onExaminationNotes || onExaminationPulse || onExaminationBp1 || onExaminationBp2 || onExaminationTemp) {
+        %>
         <div class="row py-4">
           <strong class="col-4">On Examination</strong>
-          <div class="col-sm-4">Etiam porta sem malesuada magna mollis euismod.</div>
           <div class="col-sm-4">
+            <%onExaminationNotes.forEach(elm => {%>
+              <div class="col-12 pl-0"><%=elm%></div>
+            <%})%>
+          </div>
+          <div class="col-sm-4">
+            <%if (onExaminationPulse) {%>
             <div class="row">
               <strong class="col-6">Pulse:</strong>
-              <span class="col-6 pull-right">103</span>
+              <span class="col-6 pull-right"><%=onExaminationPulse%></span>
             </div>
+            <%}%>
+            <%if (onExaminationBp1 || onExaminationBp2) {%>
             <div class="row">
               <strong class="col-6">BP:</strong>
-              <span class="col-6 pull-right">103</span>
+              <span class="col-6 pull-right"><%=onExaminationBp1 + "/" + onExaminationBp2%></span>
             </div>
+            <%}%>
+            <%if (onExaminationTemp) {%>
             <div class="row">
               <strong class="col-6">Temp:</strong>
-              <span class="col-6 pull-right">103</span>
+              <span class="col-6 pull-right"><%=onExaminationTemp%></span>
             </div>
+            <%}%>
           </div>
         </div>
+        <%}%>
       </div>
     </div>
     <hr>
     <div class="card-deck">
+      <% const {investigationsRequired, medicineAdvice, dietaryAdvice, otherAdvice} = prescription
+        if (investigationsRequired) {
+      %>
       <div class="card">
         <div class="card-block">
           <strong class="card-title">Investigations Required</strong>
           <ul class="pl-3 pt-3">
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
+            <%investigationsRequired.forEach(elm => {%>
+              <li><%=elm%></li>
+            <%})%>
           </ul>
         </div>
-        
       </div>
+      <%}%>
+      <%if (medicineAdvice) {%>
       <div class="card">
         <div class="card-block">
           <strong class="card-title">Medical Advice</strong>
           <ul class="pl-3 pt-3">
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
-            <li>hello</li>
+            <%medicineAdvice.forEach(elm => {%>
+            <li><%=elm.getText()%></li>
+            <%})%>
           </ul>
         </div>
       </div>
-      
+      <%}%>
       <div class="col-4">
+        <%if (dietaryAdvice) {%>
         <div class="row py-2">
           <strong class="col-12">Dietary Advice</strong>
-          <span class="col-12">lskdjflskfj</span>
+          <span class="col-12">
+            <ul class="pl-3 pt-3">
+              <%dietaryAdvice.forEach(elm => {%>
+              <li><%=elm%></li>
+              <%})%>
+            </ul>
+          </span>
         </div>
+        <%}%>
+        <%if (otherAdvice) {%>
         <div class="row py-2">
           <strong class="col-12">Other Advice</strong>
-          <span class="col-12">lskdjflskfj</span>
+          <span class="col-12">
+            <ul class="pl-3 pt-3">
+              <%otherAdvice.forEach(elm => {%>
+              <li><%=elm%></li>
+              <%})%>
+            </ul>
+          </span>
         </div>
+        <%}%>
       </div>
     </div>
-    
+
   </div>
 </body>
 

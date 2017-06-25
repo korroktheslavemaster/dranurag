@@ -40,6 +40,7 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 app.set('view engine', 'ejs') 
 
 // test routing
+require('./routes/prescription.js')(app)
 require('./routes/test.js')(app)
 
 /// AUTH ROUTING
