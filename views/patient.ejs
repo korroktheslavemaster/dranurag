@@ -26,18 +26,18 @@
           <input type="text" class="form-control" id="investigationName" name="name[]" placeholder="Test name">
         </div>
         <div class="col-2 pr-0 pr-md-3">
+          <input type="text" class="form-control" id="value" name="value[]" placeholder="Value">
+        </div>
+        <div class="col-2 pr-0 pr-md-3">
           <input type="text" class="form-control" id="units" name="units[]" placeholder="Units">
           <input type="hidden" name="cat[]" id="cat">
         </div>
-        <div class="col-2 pr-0 pr-md-3">
-          <input type="text" class="form-control" id="value" name="value[]" placeholder="Value">
-        </div>
         <div class="col-2 col-auto pl-3 pl-md-0">
-          <button class="btn btn-danger pull-right" data-role="remove">
-            <i class="fa fa-minus"></i>
-          </button>
           <button class="btn btn-success pull-right" data-role="add" id="investigationButton">
             <i class="fa fa-plus"></i>
+          </button>
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
           </button>
         </div>
       </div>
@@ -50,11 +50,11 @@
           <input type="text" class="form-control" id="investigationName" name="investigationsRequired[]" placeholder="Investigation name">
         </div>
         <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
-          <button class="btn btn-danger pull-right" data-role="remove">
-            <i class="fa fa-minus"></i>
-          </button>
           <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
             <i class="fa fa-plus"></i>
+          </button>
+          <button class="btn btn-danger pull-right" data-role="remove">
+            <i class="fa fa-minus"></i>
           </button>
         </div>
       </div>
@@ -82,8 +82,8 @@
           suggestion: Handlebars.compile($('#testsTypeaheadTemplate').html())
         }
       }).on('typeahead:select', function(ev, suggestion) {
-        $(this).parents().eq(1).next().children('#units').val(suggestion.units)
-        $(this).parents().eq(1).next().children('#cat').val(suggestion.cat)
+        $(this).parents().eq(1).next().next().children('#units').val(suggestion.units)
+        $(this).parents().eq(1).next().next().children('#cat').val(suggestion.cat)
       })
       $('#dateDisplay', $jqueryElement).datepicker({
         format: {
