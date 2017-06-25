@@ -20,10 +20,10 @@ module.exports = (app) => {
           $match: {patient: {$eq: patient._id}}
         }, {
           $group: {
-            _id: {name: '$name', units: '$units', cat: '$cat'}, 
+            _id: {name: '$name', units: '$units', cat: '$cat'},
             cols: {
               $push: {
-                date: "$date", 
+                date: "$date",
                 value: "$value"
               }
             }}
@@ -40,7 +40,7 @@ module.exports = (app) => {
           .sort((a, b) => a.getTime() - b.getTime())
         dummyRow = dates.map(elm => ({date: elm, value: '-'}))
         rowHeaders = res.map(elm => elm._id)
-        values = 
+        values =
           res.map(elm => elm.cols)
           .map(elm => {
             return _.unionWith(elm, dummyRow, (a, b) => _.isEqual(a.date, b.date))
@@ -63,10 +63,10 @@ module.exports = (app) => {
         }
       }).then(table => {
         res.render('patient', {
-          messages: req.flash(), 
-          req: req, 
-          patient: patient, 
-          helpText: patient.getHelpText(), 
+          messages: req.flash(),
+          req: req,
+          patient: patient,
+          helpText: patient.getHelpText(),
           dateformat: dateformat,
           table: table
         })
@@ -86,7 +86,7 @@ module.exports = (app) => {
         const {date, name, units, value, cat} = req.body
         const length = date.length
         const patient = _.times(length, _.constant(req.params.patientId))
-        investigations = 
+        investigations =
          _.zip(patient, date, name, units, value, cat)
           .filter(elm => elm[2] && elm[4]) // only consider investigations with non-empty name and value
           .map(elm => _.zipObject(['patient', 'date', 'name', 'units', 'value', 'cat'], elm))
@@ -109,11 +109,28 @@ module.exports = (app) => {
       if (!patient) {
         throw {message: 'Invalid patient ID.'}
       } else {
-        // console.log(req.body)
-        return new Prescription(Object.assign({date: new Date(), patient: patient._id}, req.body))
+        var drug = req.body.medicinesAdvisedDrug
+        var dosage = req.body.medicinesAdvisedDosage
+        var frequency = req.body.medicinesAdvisedFrequency
+        var duration = req.body.medicinesAdvisedDuration
+        var specialAdvice = req.body.medicinesAdvisedSpecialAdvice
+        var medicineAdvice =
+          _.zip(drug, dosage, frequency, duration, specialAdvice)
+           .filter(elm => elm[0])
+           .map(elm => _.zipObject(['drug', 'dosage', 'frequency', 'duration', 'specialAdvice'], elm))
+        console.log('~~~~~')
+        console.log(medicineAdvice)
+        var body = req.body
+        delete body.medicinesAdvisedDrug
+        delete body.medicinesAdvisedDosage
+        delete body.medicinesAdvisedFrequency
+        delete body.medicinesAdvisedDuration
+        delete body.medicinesAdvisedSpecialAdvice
+        return new Prescription(Object.assign({date: new Date(), patient: patient._id, medicineAdvice: medicineAdvice}, body))
           .save()
           .then(prescription => {
             console.log(prescription)
+            req.flash("info", 'Added prescription')
             res.redirect('back')
           })
       }
