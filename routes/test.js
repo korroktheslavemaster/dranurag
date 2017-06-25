@@ -86,4 +86,38 @@ module.exports = (app) => {
     res.render('partials/prescription', {})
   })
 
+  // testing html-pdf
+  app.get('/html-pdf', function(req, res) {
+    var pdf = require('html-pdf');
+    var fs = require('fs');
+    var options = { 
+      format: 'A4',
+      viewportSize: {
+        width: 827,
+        height: 1169
+      },
+      base: process.env.BASE_URL || 'http://localhost:8080',
+      // HTTP Headers that are used for requests
+      httpHeaders: {
+        // e.g.
+        "Authorization": "Bearer ACEFAD8C-4B4D-4042-AB30-6C735F5BAC8B",
+        'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0"
+      } 
+    };
+    saveHtml(req.query.url, "test.html")
+      .then(() => {
+        var html = fs.readFileSync('test.html', 'utf8');
+        pdf.create(html, options).toBuffer(function(err, buffer) {
+          if (err) return console.log(err);
+          res.contentType('application/pdf')
+          res.send(buffer)
+          // console.log(res); // { filename: '/app/businesscard.pdf' }
+        });
+      })
+  })
+
+
+  // testing phantomjs directly
+  
+
 }
