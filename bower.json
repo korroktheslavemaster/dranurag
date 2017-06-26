@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "typeahead.js": "^0.11.1",
-    "bootstrap": "bootstrap4#^3.3.7"
+    "bootstrap": "bootstrap4#^3.3.7",
+    "JsBarcode": "jsbarcode#^3.8.0"
   }
 }

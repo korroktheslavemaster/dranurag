@@ -105,12 +105,11 @@ module.exports = (app) => {
         "Authorization": "Bearer ACEFAD8C-4B4D-4042-AB30-6C735F5BAC8B",
         'User-Agent': "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:27.0) Gecko/20100101 Firefox/27.0"
       } ,
-      // "border": {
-      //   "top": "2in",            // default is 0, units: mm, cm, in, px 
-      //   "right": "1in",
-      //   "bottom": "2in",
-      //   "left": "1.5in"
-      // },
+      "border": {
+        "top": "2in",            // default is 0, units: mm, cm, in, px 
+        "right": "1in",
+        "left": "1in"
+      },
     };
     saveHtml(req.query.url, "test.html")
       .then(() => {

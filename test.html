@@ -38,6 +38,8 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0/css/bootstrap-datepicker.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.0/js/bootstrap-datepicker.min.js"></script>
  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+ <!-- jsbarcode -->
+ <script src="https://cdn.jsdelivr.net/jsbarcode/3.5.8/JsBarcode.all.min.js"></script>
  <script src="https://use.typekit.net/kac8cip.js"></script>
  <script>try{Typekit.load({ async: false });}catch(e){}</script>
  <style type="text/css">
@@ -46,20 +48,35 @@
   }
   p, div {
     font-family: 'europa';
-    /*font-size: 0.75rem;*/
+    font-size: 0.8rem;
   }
 </style>
+<script type="text/javascript">
+  // $(document).ready(() => {
+    $(()=> {
+    JsBarcode("#barcode", "1004", {
+      displayValue: false,
+      height: 40,
+    });
+      
+    })
+  // })
 
+</script>
 </head>
 
 <body>
   <div class="container">
     <div class="row">
       <div class="col-7 offset-5">
+        <div class="row pb-2">
+          <div class="col">
+            <span class="text-muted pull-right">25/06/2017</span>
+          </div>
+        </div>
         <div class="row">
           <div class="col-4"><strong>Name</strong></div>
           <div class="col-6">Arpit Tarang Saxena</div>
-          <div class="col-2 text-muted"><span class="pull-right">25/06/2017</span></div>
         </div>
         <div class="row">
           <div class="col-4"><strong>Patient ID</strong></div>
@@ -73,105 +90,145 @@
           <div class="col-4"><strong>Sex</strong></div>
           <div class="col-8">Male</div>
         </div>
-        <div class="row py-4">
+        <div class="row py-3">
           <strong class="col-4">Diagnosis</strong>
-          <text class="col-8">dead sorry</text>
+          <text class="col-8">dead boy</text>
         </div>
         
-        <div class="row py-4">
+        <div class="row py-3">
           <strong class="col-4">Chief Complaints</strong>
           <div class="col-8">
-            <div class="col-12 pl-0">headache for 3 days
-diahrrhea
-somehting lese
-</div>
-<!--             <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
-            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div>
-            <div class="col-12 pl-0">somehting sitnsdsklfjsdflkjd</div> -->
-          </div>
-        </div>
-        
-        
-        <div class="row py-4">
-          <strong class="col-4">On Examination</strong>
-          <div class="col-sm-4">don&#39;t know
-somehting
-somethienfdgk
-dsfsfasd
-</div>
-          <div class="col-sm-4">
             
-            <div class="row">
-              <strong class="col-6">Pulse:</strong>
-              <span class="col-6 pull-right">22</span>
-            </div>
+            <div class="col-12 pl-0">headache</div>
             
+            <div class="col-12 pl-0">nauesa</div>
             
+            <div class="col-12 pl-0">diarreha</div>
             
-            <div class="row">
-              <strong class="col-6">Temp:</strong>
-              <span class="col-6 pull-right">33</span>
-            </div>
+            <div class="col-12 pl-0">somehtin something somethign dont car</div>
             
           </div>
         </div>
         
-      </div>
-    </div>
-    <hr>
-    <div class="card-deck">
-      
-      <div class="card">
-        <div class="card-block">
-          <strong class="card-title">Investigations Required</strong>
-          <ul class="pl-3 pt-3">
-            
-              <li>Urine, R/E</li>
-            
-              <li>Alkaline Phosphatase (ALP)</li>
-            
-              <li>Protein, Total</li>
-            
-              <li></li>
-            
-              <li></li>
-            
-          </ul>
+        
+          <div class="row py-3">
+            <strong class="col-4">On Examination</strong>
+            <div class="col-sm-4">
+              
+              <div class="col-12 pl-0">some notes</div>
+              
+              <div class="col-12 pl-0">more notes</div>
+              
+              <div class="col-12 pl-0">such a long note youre not going to readit</div>
+              
+            </div>
+            <div class="col-sm-4">
+              
+              <div class="row">
+                <strong class="col-6">Pulse:</strong>
+                <span class="col-6 pull-right">55</span>
+              </div>
+              
+              
+              <div class="row">
+                <strong class="col-6">BP:</strong>
+                <span class="col-6 pull-right">80/120</span>
+              </div>
+              
+              
+              <div class="row">
+                <strong class="col-6">Temp:</strong>
+                <span class="col-6 pull-right">99</span>
+              </div>
+              
+            </div>
+          </div>
+          
         </div>
       </div>
-      
-      
-      <div class="card">
-        <div class="card-block">
-          <strong class="card-title">Medical Advice</strong>
-          <ul class="pl-3 pt-3">
+      <hr>
+      <div class="card-deck">
+        
+          <div class="card">
+            <div class="card-block">
+              <strong class="card-title">Investigations Required</strong>
+              <ul class="pl-3 pt-3">
+                
+                <li>Urine, R/E</li>
+                
+                <li>Protein, Total</li>
+                
+                <li>Creatinine, Serum</li>
+                
+              </ul>
+            </div>
+          </div>
+          
+          
+          <div class="card">
+            <div class="card-block">
+              <strong class="card-title">Medical Advice</strong>
+              <ul class="pl-3 pt-3">
+                
+                <li>qutapine, 10mg, twice a day, 2 months, SOS</li>
+                
+                <li>lamictal, 50mg, once a day, 30 days, none</li>
+                
+              </ul>
+            </div>
+          </div>
+          
+          <div class="col-4">
             
-            <li>qutapin, 10mg, twice a day, 1 month, sfasf</li>
+            <div class="row py-2">
+              <strong class="col-12">Dietary Advice</strong>
+              <span class="col-12">
+                <ul class="pl-3 pt-3">
+                  
+                  <li>diabetic diet</li>
+                  
+                  <li>low fat diet</li>
+                  
+                  <li>low salt diet</li>
+                  
+                </ul>
+              </span>
+            </div>
             
-            <li>lamictal, 50mg, daily, 30 days, </li>
             
-          </ul>
+            <div class="row py-2">
+              <strong class="col-12">Other Advice</strong>
+              <span class="col-12">
+                <ul class="pl-3 pt-3">
+                  
+                  <li>regular exercise</li>
+                  
+                  <li>walk</li>
+                  
+                </ul>
+              </span>
+            </div>
+            
+          </div>
         </div>
-      </div>
-      
-      <div class="col-4">
-        
-        <div class="row py-2">
-          <strong class="col-12">Dietary Advice</strong>
-          <span class="col-12">low fat diet
-diabetic diet</span>
-        </div>
-        
-        
-        <div class="row py-2">
-          <strong class="col-12">Other Advice</strong>
-          <span class="col-12">regular exercise</span>
-        </div>
-        
-      </div>
-    </div>
+        <div class="row pt-5">
+          <div class="col-4 my-auto">
+            <strong>Review After: </strong>
+            10 days
+            <div class="row">
+            <img id="barcode"/>
 
-  </div>
-</body>
+            </div>
+          </div>
+          <div class="col-8 push-4">
+            <div class="row">
+              <img src="/signature.png" width="200" height="96" class="float-right my-auto"/>
+              </div>
+              <span class="row">Dr. Anurag Saxena</span>
+              <span class="row"><small>MBBS, MD, FICP</small></span>
+          </div>
+        </div>
+      </div>
+    </body>
 
-</html>
+    </html>

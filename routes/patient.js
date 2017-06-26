@@ -136,7 +136,7 @@ module.exports = (app) => {
           .then(prescription => {
             console.log(prescription)
             req.flash("info", 'Added prescription')
-            res.redirect('back')
+            res.redirect('/prescriptionPdf/'+prescription._id)
           })
       }
     }).catch((err) => {

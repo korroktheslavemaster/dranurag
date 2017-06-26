@@ -8,7 +8,7 @@ var patientSchema = mongoose.Schema({
     type: String,
     required: true
   },
-  dateOfBirth: Date,
+  age: Number,
   sex: String,
   phone1: String,
   phone2: String,
@@ -21,7 +21,7 @@ var patientSchema = mongoose.Schema({
 patientSchema.methods.getHelpText = function() {
   // <i class="fa fa-transgender px-2"></i> / <i class="fa fa-phone px-1"></i> +917407650530 / 24 yrs
   helpText = "<i class='fa fa-" + (this.sex == "Male" ? "mars" : "venus" ) + " pr-2'></i>" 
-  if (this.dateOfBirth) {
+  if (this.age) {
     helpText += " / " + this.getAge() + " yrs"
   }
   if (this.phone1) {
@@ -32,7 +32,8 @@ patientSchema.methods.getHelpText = function() {
 
 
 patientSchema.methods.getAge = function() {
-  return moment(new Date()).diff(this.dateOfBirth, 'years')
+  return String(this.age)
+  // return moment(new Date()).diff(this.dateOfBirth, 'years')
 }
 
 patientSchema.plugin(autoIncrement.plugin, { model: 'Patient', startAt: 1000 });

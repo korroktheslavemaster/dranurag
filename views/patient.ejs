@@ -159,7 +159,7 @@
         // `states` is an array of state names defined in "The Basics"
         local: data
       });
-      for (var i = 0; i < 5; i++) {
+      for (var i = 0; i < 3; i++) {
         $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
       }
     }, 'json')
@@ -174,7 +174,9 @@
     });
     // add the first investigation input
     $('#investigationsDynamicContainer').append(getNewInvestigationElement())
-    $('#medicinesAdvisedDynamicContainer').append(getMedicinesAdvisedElement())
+    for ( var i = 0; i <3; i++) {
+      $('#medicinesAdvisedDynamicContainer').append(getMedicinesAdvisedElement())
+    }
 
     // $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
 
