@@ -1,0 +1,54 @@
+<script type="text/x-handlebars-template" id="investigationsTemplate">
+  <div class="row-container">
+    <div class="form-group row">
+      <div class="col-10 col-md-4 pr-0 pr-md-3">
+        <input type="text" class="form-control" id="investigationName" name="investigationsRequired[]" placeholder="Investigation name">
+      </div>
+      <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
+        <a href="#" class="btn btn-success pull-right" data-role="add" id="add">
+          <i class="fa fa-plus"></i>
+        </a>
+        <a href="#" class="btn btn-danger pull-right" data-role="remove" id="remove">
+          <i class="fa fa-minus"></i>
+        </a>
+      </div>
+    </div>
+  </div>  <!-- /div.row-container-->
+</script>
+
+<script type="text/javascript">
+  $.fn.investigationsInput = function() {
+    const container = this;
+    tmpl = Handlebars.compile($('#investigationsTemplate').html())
+    var src = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.nonword,
+      queryTokenizer: Bloodhound.tokenizers.nonword,
+      prefetch: '/json/investigations.json'
+    });
+    var getNewRow = () => {
+      var $jqueryElement = $(tmpl())
+      $("#investigationName", $jqueryElement).typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'investigations',
+        source: src,
+      })
+      return $jqueryElement
+    }
+    this.on('click', '#add', function(e) {
+      e.preventDefault()
+      container.prepend(getNewRow())
+    })
+    this.on('click', '#remove', function(e) {
+      e.preventDefault()
+      $(this).closest('.row-container').remove();
+    })
+    // initialize with 3 rows
+    this.append(getNewRow())
+    this.append(getNewRow())
+    this.append(getNewRow())
+  }
+</script>

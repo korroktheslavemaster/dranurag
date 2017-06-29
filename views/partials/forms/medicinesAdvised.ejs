@@ -1,0 +1,70 @@
+<script type="text/x-handlebars-template" id="medicinesAdvisedTemplate">
+  <div class="row-container">
+    <div class="form-group row">
+      <div class="col-4 pr-0 pr-md-0">
+        <input type="text" class="form-control" id="medicinesAdvisedDrug" name="medicinesAdvisedDrug[]" placeholder="Drug name">
+      </div>
+      <div class="col-2 pr-0 pr-md-0">
+        <input type="text" class="form-control" id="medicinesAdvisedFrequency" name="medicinesAdvisedFrequency[]" placeholder="Frequency">
+      </div>
+      <div class="col-2 pr-0 pr-md-0">
+        <input type="text" class="form-control" id="medicinesAdvisedDuration" name="medicinesAdvisedDuration[]" placeholder="Duration">
+      </div>
+      <div class="col-3 pr-0 pr-md-0">
+        <input type="text" class="form-control" id="medicinesAdvisedSpecialAdvice" name="medicinesAdvisedSpecialAdvice[]" placeholder="Special Advice">
+      </div>
+      <div class="col-1 col-auto pl-3 pl-md-0">
+        <a href="#" class="btn btn-success pull-right" data-role="add" id="add">
+          <i class="fa fa-plus"></i>
+        </a>
+        <a href="#" class="btn btn-danger pull-right" data-role="remove" id="remove">
+          <i class="fa fa-minus"></i>
+        </a>
+      </div>
+    </div>
+  </div>  <!-- /div.row-container -->
+</script>
+
+
+<script type="text/javascript">
+  $.fn.medicinesAdvisedInput = function() {
+    const container = this;
+    tmpl = Handlebars.compile($('#medicinesAdvisedTemplate').html())
+    // using onemg source
+    var drugSrc = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
+      remote: {
+        url: '/experiments/1mg/products?q=%QUERY',
+        wildcard: '%QUERY'
+      }
+    });
+    var getNewRow = () => {
+      var $jqueryElement = $(tmpl())
+      $("#medicinesAdvisedDrug", $jqueryElement).typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'drugs',
+        display: 'pName',
+        source: drugSrc,
+      })
+      return $jqueryElement
+    }
+    this.on('click', '#add', function(e) {
+      e.preventDefault()
+      container.prepend(getNewRow())
+    })
+    this.on('click', '#remove', function(e) {
+      e.preventDefault()
+      $(this).closest('.row-container').remove();
+    })
+    // initialize with 3 rows
+    this.append(getNewRow())
+    this.append(getNewRow())
+    this.append(getNewRow())
+  }
+</script>

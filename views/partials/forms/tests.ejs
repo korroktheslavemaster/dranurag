@@ -1,0 +1,91 @@
+<script type="text/x-handlebars-template" id="testTemplate">
+  <div class="row-container">
+    <div class="form-group row">
+      <div class="col-2 pr-0 pr-md-3">
+        <input class="form-control" id="dateDisplay" value="<%= dateformat(new Date(), 'dd/mm/yyyy');%>">
+        <input type="hidden" id="date" name="date[]" value="<%= dateformat(new Date(), 'yyyy-mm-dd')%>">
+      </div>
+      <div class="col-4 pr-0 pr-md-3">
+        <input type="text" class="form-control" id="testName" name="name[]" placeholder="Test name">
+      </div>
+      <div class="col-2 pr-0 pr-md-3">
+        <input type="text" class="form-control" id="value" name="value[]" placeholder="Value">
+      </div>
+      <div class="col-2 pr-0 pr-md-3">
+        <input type="text" class="form-control" id="units" name="units[]" placeholder="Units">
+        <input type="hidden" name="cat[]" id="cat">
+      </div>
+      <div class="col-2 col-auto pl-3 pl-md-0">
+        <a href="#" class="btn btn-success pull-right" data-role="add" id="add">
+          <i class="fa fa-plus"></i>
+        </a>
+        <a href='#' class="btn btn-danger pull-right" data-role="remove" id="remove">
+          <i class="fa fa-minus"></i>
+        </a>
+      </div>
+    </div>
+  </div>  <!-- /div.row-container -->
+</script>
+
+<script type="text/x-handlebars-template" id="testTypeaheadTemplate">
+  <div class="d-flex w-100 justify-content-between align-items-center">
+    <div>
+      <span class="row"><span>{{name}}</span></span>
+      <div class="text-muted row"><small>{{cat}}</small></div>
+    </div>
+    <small class="pl-4 text-muted">{{units}}</small>
+  </div>
+</script>
+
+<script type="text/javascript">
+  $.fn.testsInput = function() {
+    const container = this;
+    tmpl = Handlebars.compile($('#testTemplate').html())
+    var src = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
+      queryTokenizer: Bloodhound.tokenizers.nonword,
+      prefetch: '/json/tests.json'
+    });
+    var getNewRow = () => {
+      var $jqueryElement = $(tmpl())
+      $("#testName", $jqueryElement).typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'tests',
+        display: 'name',
+        source: src,
+        templates: {
+          suggestion: Handlebars.compile($('#testTypeaheadTemplate').html())
+        }
+      }).on('typeahead:select', function(ev, suggestion) {
+        $('#units', $jqueryElement).val(suggestion.units)
+        $('#cat', $jqueryElement).val(suggestion.cat)
+      })
+      $('#dateDisplay', $jqueryElement).datepicker({
+          format: {
+            toDisplay: function (date, format, language) {
+              $('#date', $jqueryElement).val(date.toISOString().slice(0, 10))
+              return date.toISOString().replace( /(\d{4})-(\d{2})-(\d{2}).*/, "$3/$2/$1")
+            },
+            toValue: function (date, format, language) {
+             return new Date(date.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1"))
+           }
+         }
+      })
+      return $jqueryElement
+    }
+    this.on('click', '#add', function(e) {
+      e.preventDefault()
+      container.prepend(getNewRow())
+    })
+    this.on('click', '#remove', function(e) {
+      e.preventDefault()
+      $(this).closest('.row-container').remove();
+    })
+    // initialize with one row
+    this.append(getNewRow())
+  }
+</script>

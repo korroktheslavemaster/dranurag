@@ -1,0 +1,71 @@
+<!-- views/home.ejs -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <%- include('../partials/head')%>
+</head>
+<script type="x-handlebars-template"></script>
+<script type="text/javascript">
+var drugbank = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
+  remote: {
+    url: '/experiments/drugbank/products?q=%QUERY',
+    wildcard: '%QUERY'
+  }
+});
+
+var onemg =  new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
+  remote: {
+    url: '/experiments/1mg/products?q=%QUERY',
+    wildcard: '%QUERY'
+  }
+});
+$(() => {
+  $("#drugbank").typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        display: 'name',
+        source: drugbank,
+        // templates: {
+        //   suggestion: Handlebars.compile($('#testsTypeaheadTemplate').html())
+        // }
+      })
+   $("#1mg").typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'states',
+        display: 'pName',
+        source: onemg,
+        // templates: {
+        //   suggestion: Handlebars.compile($('#testsTypeaheadTemplate').html())
+        // }
+      })
+  
+})
+</script>
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-3">Welcome</h1>
+      <p class="lead">This is the homepage</p>
+      <input type="text" id="drugbank" class="form-control">
+      <input type="text" id="1mg" class="form-control">
+    </div>
+  </div>
+</body>
+
+</html>

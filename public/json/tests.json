@@ -45,15 +45,17 @@
   {"name":"Casts", "units": "-", "cat": "Urine, R/E"},
   {"name":"Crystals", "units": "-", "cat": "Urine, R/E"},
   {"name":"Others", "units": "-", "cat": "Urine, R/E"},
-  {"name":"HbA1c", "units": "%", "cat": "Urine, R/E"},
-  {"name":"Glucose, Fasting", "units": "mg/dL", "cat": "Urine, R/E"},
-  {"name":"Glucose, PP", "units": "mg/dL", "cat": "Urine, R/E"},
-  {"name":"T4, Free; FT4", "units": "mg/dL", "cat": "Urine, R/E"},
-  {"name":"Vitamin D, 25 - Hydroxy, Serum", "units": "nmol/L", "cat": "Urine, R/E"},
-  {"name":"TSH, Ultrasensitive", "units": "ulU/mL", "cat": "Urine, R/E"}
+  {"name":"HbA1c", "units": "%", "cat": ""},
+  {"name":"Glucose, Fasting", "units": "mg/dL", "cat": ""},
+  {"name":"Glucose, PP", "units": "mg/dL", "cat": ""},
+  {"name":"T4, Free; FT4", "units": "mg/dL", "cat": ""},
+  {"name":"T3, Free; FT3", "units": "mg/dL", "cat": ""},
+  {"name":"Vitamin D, 25 - Hydroxy, Serum", "units": "nmol/L", "cat": ""},
+  {"name":"Vitamin B-12, Serum", "units": "nmol/L", "cat": ""},
+  {"name":"TSH, Ultrasensitive", "units": "ulU/mL", "cat": ""},
+  {"name": "S. Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"},
+  {"name": "S. Triglyceride", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"},
+  {"name": "LDL Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"},
+  {"name": "HDL Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"},
+  {"name": "VLDL Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}
 ]
-
-
-
-
-
