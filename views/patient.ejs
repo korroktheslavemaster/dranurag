@@ -6,25 +6,6 @@
 <head>
   <%- include('partials/head')%>
   <%   var now = dateformat(new Date(), 'dd/mm/yyyy');%>
-  
-  
-  <script type="text/x-handlebars-template" id="investigationRequiredTemplate">
-    <div class="form-inline-special">
-      <div class="form-group row">
-        <div class="col-10 col-md-4 pr-0 pr-md-3">
-          <input type="text" class="form-control" id="investigationName" name="investigationsRequired[]" placeholder="Investigation name">
-        </div>
-        <div class="col-2 col-auto pl-3 pl-md-0 offset-md-6">
-          <button class="btn btn-success pull-right" data-role="add" id="investigationRequiredButton">
-            <i class="fa fa-plus"></i>
-          </button>
-          <button class="btn btn-danger pull-right" data-role="remove">
-            <i class="fa fa-minus"></i>
-          </button>
-        </div>
-      </div>
-    </div>  <!-- /div.form-inline -->
-  </script>
   <%- include('partials/forms/tests')%>
   <%- include('partials/forms/investigations')%>
   <%- include('partials/forms/medicinesAdvised')%>
@@ -35,148 +16,32 @@
       $('#medicinesAdvisedDynamicContainer').medicinesAdvisedInput()
     })
   </script>
-  <script type="text/javascript">
-    console.log("hello")
-    // var testsSource;
-    // var investigationsRequiredSource;
-    // invTmpl = Handlebars.compile($('#investigationTemplate').html())
-    // invRqdTmpl = Handlebars.compile($('#investigationRequiredTemplate').html())
-    // medicinesAdvisedTemplate = Handlebars.compile($('#medicinesAdvisedTemplate').html())
-    // function getNewInvestigationElement() {
-    //   var $jqueryElement = $(invTmpl());
-    //   // fix background-color transparent if possible
-    //   $("#investigationName", $jqueryElement).typeahead({
-    //     hint: true,
-    //     highlight: true,
-    //     minLength: 1
-    //   },
-    //   {
-    //     name: 'states',
-    //     display: 'name',
-    //     source: testsSource,
-    //     templates: {
-    //       suggestion: Handlebars.compile($('#testsTypeaheadTemplate').html())
-    //     }
-    //   }).on('typeahead:select', function(ev, suggestion) {
-    //     $(this).parents().eq(1).next().next().children('#units').val(suggestion.units)
-    //     $(this).parents().eq(1).next().next().children('#cat').val(suggestion.cat)
-    //   })
-    //   $('#dateDisplay', $jqueryElement).datepicker({
-    //     format: {
-    //       toDisplay: function (date, format, language) {
-    //         $('#date', $jqueryElement).val(date.toISOString().slice(0, 10))
-    //         return date.toISOString().replace( /(\d{4})-(\d{2})-(\d{2}).*/, "$3/$2/$1")
-    //       },
-    //       toValue: function (date, format, language) {
-    //        return new Date(date.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1"))
-    //      }
-    //    }
-    //  })
-    //   return $jqueryElement
-    // }
-
-  //   function getNewInvestigationRequiredElement() {
-  //     var $jqueryElement = $(invRqdTmpl());
-  //     // fix background-color transparent if possible
-  //     $("#investigationName", $jqueryElement).typeahead({
-  //       hint: true,
-  //       highlight: true,
-  //       minLength: 1
-  //     },
-  //     {
-  //       name: 'states',
-  //       source: investigationsRequiredSource,
-  //     })
-  //     return $jqueryElement
-  //   }
-
-  //   function getMedicinesAdvisedElement() {
-  //     var $jqueryElement = $(medicinesAdvisedTemplate());
-  //     // fix background-color transparent if possible
-  //     return $jqueryElement
-  //   }
-
-  //   $.get('/json/investigationsRequired.json', function(data) {
-
-  //     // constructs the suggestion engine
-  //     investigationsRequiredSource = new Bloodhound({
-  //       datumTokenizer: Bloodhound.tokenizers.nonword,
-  //       queryTokenizer: Bloodhound.tokenizers.nonword,
-  //       // `states` is an array of state names defined in "The Basics"
-  //       local: data
-  //     });
-  //     for (var i = 0; i < 3; i++) {
-  //       $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
-  //     }
-  //   }, 'json')
-  //   $.get("/json/tests.json", function(data){
-
-  //   // constructs the suggestion engine
-  //   testsSource = new Bloodhound({
-  //     datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
-  //     queryTokenizer: Bloodhound.tokenizers.nonword,
-  //     // `states` is an array of state names defined in "The Basics"
-  //     local: data
-  //   });
-  //   // add the first investigation input
-  //   $('#investigationsDynamicContainer').append(getNewInvestigationElement())
-  //   for ( var i = 0; i <3; i++) {
-  //     $('#medicinesAdvisedDynamicContainer').append(getMedicinesAdvisedElement())
-  //   }
-
-  //   // $('#investigationsRequiredDynamicContainer').append(getNewInvestigationRequiredElement())
-
-  // },'json');
-
-</script>
-
-<script type="text/javascript">
- // $(function() {
- //    // Remove button click
- //    $(document).on(
- //      'click',
- //      '[data-role="dynamic-fields"] > .form-inline-special [data-role="remove"]',
- //      function(e) {
- //        e.preventDefault();
- //        $(this).closest('.form-inline-special').remove();
- //      }
- //      );
- //    // Add button click
- //    $(document).on(
- //      'click',
- //      '[data-role="dynamic-fields"] > .form-inline-special [data-role="add"]',
- //      function(e) {
- //        e.preventDefault();
- //        var container = $(this).closest('[data-role="dynamic-fields"]');
- //        if ($(this).attr('id') == 'investigationButton')
- //          container.prepend(getNewInvestigationElement());
- //        else if ($(this).attr('id') == 'investigationRequiredButton')
- //          container.prepend(getNewInvestigationRequiredElement());
- //        else
- //          container.prepend(getMedicinesAdvisedElement());
- //      }
- //      );
- //  });
-
-</script>
-<style type="text/css">
-
-  [data-role="dynamic-fields"] > .row-container + .row-container {
-    margin-top: 0.5em;
+  
+  <style type="text/css">
+  #scrollable-dropdown-menu .tt-menu {
+    max-height: 150px;
+    overflow-y: auto;
   }
+  </style>
 
-  [data-role="add"] {
-    display: none;
-  }
+  <style type="text/css">
 
-  [data-role="dynamic-fields"] > .row-container:first-child [data-role="add"] {
-    display: inline;
-  }
+    [data-role="dynamic-fields"] > .row-container + .row-container {
+      margin-top: 0.5em;
+    }
 
-  [data-role="dynamic-fields"] > .row-container:first-child [data-role="remove"] {
-    display: none;
-  }
-</style>
+    [data-role="add"] {
+      display: none;
+    }
+
+    [data-role="dynamic-fields"] > .row-container:first-child [data-role="add"] {
+      display: inline;
+    }
+
+    [data-role="dynamic-fields"] > .row-container:first-child [data-role="remove"] {
+      display: none;
+    }
+  </style>
 </head>
 
 <body>

@@ -1,417 +1,415 @@
-[
-"5-HIAA",
-"17-Hydroxyprogesterone",
-"A/G Ratio",
-"A1c",
-"Absolute neutrophils",
-"ACE",
-"Acetaminophen",
-"Acetylcholinesterase",
-"AChR Antibody",
-"ACR",
-"ACT",
-"ACTH",
-"Adenosine Deaminase",
-"ADH",
-"AFB Testing",
-"AFP Maternal",
-"AFP Tumor Markers",
-"Albumin",
-"Aldolase",
-"Aldosterone",
-"ALK Mutation (Gene Rearrangement)",
-"Allergy Blood Testing",
-"Alpha-1 Antitrypsin",
-"ALT",
-"AMA",
-"Amikacin",
-"Aminoglycoside Antibiotics",
-"Ammonia",
-"Amniocentesis",
-"Amylase",
-"ANA",
-"ANCA",
-"Androstenedione",
-"Anion Gap",
-"Anti-CCP",
-"Anti-DNase B",
-"Anti-dsDNA",
-"Anti-LKM-1",
-"Anti-Mullerian Hormone",
-"Antibody ID, RBC",
-"Anticentromere Antibody",
-"Antiphospholipids",
-"Antithrombin",
-"APC Resistance",
-"Apo A-I",
-"Apo B",
-"APOE Genotyping, Alzheimer Disease",
-"APOE Genotyping, CVD",
-"aPTT",
-"Arbovirus Testing",
-"Arterial Blood Gases",
-"ASCA",
-"ASO",
-"AST",
-"Autoantibodies",
-"B Vitamins",
-"B-cell Ig Gene Rearrangement",
-"BCR-ABL1",
-"Beta-2 ",
-"Beta-2 ",
-"Beta-2 Microglobulin Tumor ",
-"Bicarbonate",
-"Bilirubin",
-"Blood Culture",
-"Blood Donation",
-"Blood Gases",
-"Blood Ketones",
-"Blood Smear",
-"Blood Transfusion",
-"Blood Typing",
-"BMP",
-"BNP",
-"Body Fluid Analysis",
-"Bone Markers",
-"Bone Marrow",
-"BRCA",
-"Breast Cancer, Gene Expression",
-"BUN",
-"c-ANCA",
-"C-peptide",
-"C-telopeptide",
-"C. difficile",
-"CA 15-3",
-"CA 19-9",
-"CA 27.29",
-"CA-125",
-"Caffeine",
-"Calcitonin",
-"Calprotectin",
-"CALR Mutation",
-"Carbamazepine",
-"Cardiac Biomarkers",
-"Cardiac Risk",
-"Cardiolipin Antibodies",
-"Catecholamines",
-"CCP Antibody",
-"CD4 Count",
-"CEA",
-"Celiac Disease Tests",
-"Cell-Free Fetal DNA",
-"Ceruloplasmin",
-"CF Gene Mutations",
-"Chem 7",
-"Chemistry Panels",
-"Chickenpox",
-"Chlamydia",
-"Chloride",
-"Cholesterol",
-"Cholinesterase",
-"Chromogranin A",
-"Chromosome Analysis",
-"Chymotrypsin",
-"CK",
-"CK-MB",
-"Clopidogrel",
-"Clostridium difficile",
-"CMP",
-"CMV Tests",
-"CO2, Total",
-"Coagulation Cascade",
-"Coagulation Factors",
-"Cold Agglutinins",
-"Complement",
-"Coombs, Direct",
-"Coombs, Indirect",
-"Copper",
-"Cortisol",
-"Creatinine Clearance",
-"CRP",
-"CRP, high-sensitivity",
-"Cryoglobulins",
-"CSF Analysis",
-"Cyclosporine",
-"Cystatin C",
-"D-dimer",
-"DCP",
-"Dengue Fever",
-"DHEAS",
-"Diabetes Autoantibodies",
-"Differential",
-"Digoxin",
-"Dilute Russell Viper Venom ",
-"Direct Antiglobulin Test",
-"Direct LDL-C",
-"Drug Abuse Testing",
-"E. coli (Shiga toxin-producing)",
-"EBV Antibodies",
-"eGFR",
-"EGFR [Her-1]",
-"Elastase",
-"Electrolytes",
-"Electrophoresis",
-"Emergency/Overdose Drug Testing",
-"ENA Panel",
-"Erythropoietin",
-"ESR",
-"Estradiol",
-"Estrogen/Progesterone ",
-"Estrogens",
-"Ethanol",
-"Factor V Leiden",
-"Fecal Fat",
-"Fecal Occult Blood Test",
-"Ferritin",
-"fFN",
-"Fibrinogen",
-"FIP1L1-PDGFRA",
-"First Trimester Screening",
-"Flu Tests",
-"Folate",
-"Free Light Chains",
-"Free T3",
-"Free T4",
-"Fructosamine",
-"FSH",
-"Fungal Tests",
-"G6PD",
-"Gastrin",
-"Genetic Tests ",
-"Gentamicin",
-"GFR",
-"GGT",
-"GI Pathogens Panel",
-"Glucose",
-"Gonorrhea",
-"Gram Stain",
-"Group B Strep Screen",
-"Growth Hormone",
-"H. pylori",
-"Haptoglobin",
-"hCG Pregnancy",
-"hCG Tumor Marker",
-"HDL",
-"HE4",
-"Heavy Metals",
-"Hematocrit",
-"Hemoglobin",
-"Hemoglobin A1c",
-"Hemoglobinopathy Eval",
-"Heparin Anti-Xa",
-"Hepatitis A",
-"Hepatitis B",
-"Hepatitis C",
-"Hepatitis Panel",
-"HER2/neu",
-"Herpes",
-"Histamine",
-"Histone Antibody",
-"HIT Antibody",
-"HIV Antiretroviral Drug ",
-"HIV Screening",
-"HIV Viral Load",
-"HLA Testing",
-"HLA-B27",
-"Homocysteine",
-"HPV",
-"hs-CRP",
-"HTLV",
-"IgE, Total",
-"IGF-1",
-"IMA",
-"Immunoelectrophoresis",
-"Immunoglobulins",
-"Immunophenotyping",
-"Influenza Tests",
-"Inhibin A",
-"INR",
-"Insulin",
-"Interleukin-6",
-"Intrinsic Factor Antibody",
-"Ionized Calcium",
-"Iron Tests",
-"Iron, serum",
-"IRT",
-"JAK2 Mutation",
-"Kappa/Lambda Ratio",
-"Karyotyping",
-"Ketones, blood",
-"Kidney Stone Analysis",
-"Kidney Stone Risk Panel",
-"KRAS Mutation",
-"Lactate",
-"Lactoferrin",
-"Lactose Tolerance Tests",
-"LD",
-"LDL",
-"LDL-P",
-"Lead",
-"Legionella",
-"Leptin",
-"Levetiracetam",
-"LH",
-"Lipase",
-"Lithium",
-"Liver Panel",
-"Lp(a)",
-"Lp-PLA2",
-"Lupus Anticoagulant Testing",
-"Lyme Disease",
-"Magnesium",
-"MCH",
-"MCHC",
-"MCV",
-"Measles",
-"Mercury",
-"Metanephrines",
-"Methotrexate",
-"Microalbumin",
-"MMA",
-"Mononucleosis Test",
-"MPA",
-"MRSA Screening",
-"MTHFR Mutation",
-"Mumps",
-"Mycoplasma",
-"Myoglobin",
-"Nicotine / Cotinine",
-"NIPT",
-"NT-proBNP",
-"Osmolality",
-"Ova and Parasite Exam",
-"p-ANCA",
-"P1NP",
-"Pap Test",
-"PAPP-A",
-"Parietal Cell Antibody",
-"Parvovirus B19",
-"Pericardial Fluid Analysis",
-"Peritoneal Fluid Analysis",
-"Pertussis",
-"Pharmacogenetic Tests",
-"Phenobarbital",
-"Phenytoin",
-"Phosphorus",
-"Plasma Metanephrines",
-"Platelet Count",
-"Platelet Function Tests",
-"Pleural Fluid Analysis",
-"PML-RARA",
-"Porphyrins",
-"Potassium",
-"Prealbumin",
-"Pregnancy Test",
-"Pregnenolone",
-"Procalcitonin",
-"Progesterone",
-"Progesterone Receptors",
-"Prolactin",
-"Protein C",
-"Protein Electrophoresis",
-"Protein S",
-"Prothrombin Time",
-"PSA",
-"PSEN1",
-"Pseudocholinesterase",
-"PT 20210",
-"PTH",
-"PTT",
-"Quad Screen",
-"RBC",
-"RBC Antibody ID",
-"RBC Antibody Screen",
-"RDW",
-"Renal Panel",
-"Renin",
-"Reticulocytes",
-"Rheumatoid Factor",
-"RSV",
-"Rubella",
-"Salicylates",
-"Second Trimester Screening",
-"Semen Analysis",
-"Sensitivity Testing",
-"Serotonin",
-"Serum Iron",
-"SHBG",
-"Shingles",
-"Sickle Cell Tests",
-"Sirolimus",
-"Smooth Muscle Antibody",
-"SMRP",
-"Sodium",
-"Soluble Transferrin ",
-"Sputum Culture",
-"Stool Culture",
-"Strep Throat Test",
-"Susceptibility Testing",
-"Sweat Chloride",
-"Synovial Fluid Analysis",
-"Syphilis",
-"T-Cell Receptor Gene Rearrangement",
-"T3",
-"T4",
-"Tacrolimus",
-"Tau/Aß42",
-"TB Screening Tests",
-"Testosterone",
-"Theophylline",
-"Therapeutic Drug Monitoring",
-"Throat Culture",
-"Thrombin Time",
-"Thyroglobulin",
-"Thyroid Antibodies",
-"Thyroid Panel",
-"TIBC",
-"Tobramycin",
-"TORCH",
-"Total Protein",
-"Toxoplasmosis",
-"TPMT",
-"Trace Minerals",
-"Transferrin",
-"Trichomonas",
-"Triglycerides",
-"Triple Screen",
-"Troponin",
-"Tryptase",
-"TSH",
-"tTG Antibody",
-"Tumor Markers",
-"UIBC",
-"UP/CR",
-"Urinalysis",
-"Urine Albumin",
-"Urine Culture",
-"Urine Metanephrines",
-"Urine Protein",
-"Valproic Acid",
-"Vancomycin",
-"Vitamin A",
-"Vitamin B12",
-"Vitamin D",
-"Vitamin K",
-"VLDL",
-"VMA",
-"von Willebrand Factor",
-"Warfarin Sensitivity ",
-"WBC",
-"WBC Differential",
-"West Nile Virus",
-"Whooping Cough",
-"Widal Test",
-"Wound Culture",
-"Xylose Absorption",
-"Zika Virus Testing",
-"ZPP",
-"Urea",
-"Creatinine, Serum",
-"Uric Acid",
-"Calcium",
-"Alkaline Phosphatase (ALP)",
-"Protein, Total",
-"Complete Blood Count (CBC)",
-"Urine, R/E",
-"Total Lipid Profile (TLP)"
-]
+{"val": "5-HIAA", "__v": 0, "freq": 1}
+{"val": "17-Hydroxyprogesterone", "__v": 0, "freq": 1}
+{"val": "A/G Ratio", "__v": 0, "freq": 1}
+{"val": "A1c", "__v": 0, "freq": 1}
+{"val": "Absolute neutrophils", "__v": 0, "freq": 1}
+{"val": "ACE", "__v": 0, "freq": 1}
+{"val": "Acetaminophen", "__v": 0, "freq": 1}
+{"val": "Acetylcholinesterase", "__v": 0, "freq": 1}
+{"val": "AChR Antibody", "__v": 0, "freq": 1}
+{"val": "ACR", "__v": 0, "freq": 1}
+{"val": "ACT", "__v": 0, "freq": 1}
+{"val": "ACTH", "__v": 0, "freq": 1}
+{"val": "Adenosine Deaminase", "__v": 0, "freq": 1}
+{"val": "ADH", "__v": 0, "freq": 1}
+{"val": "AFB Testing", "__v": 0, "freq": 1}
+{"val": "AFP Maternal", "__v": 0, "freq": 1}
+{"val": "AFP Tumor Markers", "__v": 0, "freq": 1}
+{"val": "Albumin", "__v": 0, "freq": 1}
+{"val": "Aldolase", "__v": 0, "freq": 1}
+{"val": "Aldosterone", "__v": 0, "freq": 1}
+{"val": "ALK Mutation (Gene Rearrangement)", "__v": 0, "freq": 1}
+{"val": "Allergy Blood Testing", "__v": 0, "freq": 1}
+{"val": "Alpha-1 Antitrypsin", "__v": 0, "freq": 1}
+{"val": "ALT", "__v": 0, "freq": 1}
+{"val": "AMA", "__v": 0, "freq": 1}
+{"val": "Amikacin", "__v": 0, "freq": 1}
+{"val": "Aminoglycoside Antibiotics", "__v": 0, "freq": 1}
+{"val": "Ammonia", "__v": 0, "freq": 1}
+{"val": "Amniocentesis", "__v": 0, "freq": 1}
+{"val": "Amylase", "__v": 0, "freq": 1}
+{"val": "ANA", "__v": 0, "freq": 1}
+{"val": "ANCA", "__v": 0, "freq": 1}
+{"val": "Androstenedione", "__v": 0, "freq": 1}
+{"val": "Anion Gap", "__v": 0, "freq": 1}
+{"val": "Anti-CCP", "__v": 0, "freq": 1}
+{"val": "Anti-DNase B", "__v": 0, "freq": 1}
+{"val": "Anti-dsDNA", "__v": 0, "freq": 1}
+{"val": "Anti-LKM-1", "__v": 0, "freq": 1}
+{"val": "Anti-Mullerian Hormone", "__v": 0, "freq": 1}
+{"val": "Antibody ID, RBC", "__v": 0, "freq": 1}
+{"val": "Anticentromere Antibody", "__v": 0, "freq": 1}
+{"val": "Antiphospholipids", "__v": 0, "freq": 1}
+{"val": "Antithrombin", "__v": 0, "freq": 1}
+{"val": "APC Resistance", "__v": 0, "freq": 1}
+{"val": "Apo A-I", "__v": 0, "freq": 1}
+{"val": "Apo B", "__v": 0, "freq": 1}
+{"val": "APOE Genotyping, Alzheimer Disease", "__v": 0, "freq": 1}
+{"val": "APOE Genotyping, CVD", "__v": 0, "freq": 1}
+{"val": "aPTT", "__v": 0, "freq": 1}
+{"val": "Arbovirus Testing", "__v": 0, "freq": 1}
+{"val": "Arterial Blood Gases", "__v": 0, "freq": 1}
+{"val": "ASCA", "__v": 0, "freq": 1}
+{"val": "ASO", "__v": 0, "freq": 1}
+{"val": "AST", "__v": 0, "freq": 1}
+{"val": "Autoantibodies", "__v": 0, "freq": 1}
+{"val": "B Vitamins", "__v": 0, "freq": 1}
+{"val": "B-cell Ig Gene Rearrangement", "__v": 0, "freq": 1}
+{"val": "BCR-ABL1", "__v": 0, "freq": 1}
+{"val": "Beta-2 ", "__v": 0, "freq": 1}
+{"val": "Beta-2 ", "__v": 0, "freq": 1}
+{"val": "Beta-2 Microglobulin Tumor ", "__v": 0, "freq": 1}
+{"val": "Bicarbonate", "__v": 0, "freq": 1}
+{"val": "Bilirubin", "__v": 0, "freq": 1}
+{"val": "Blood Culture", "__v": 0, "freq": 1}
+{"val": "Blood Donation", "__v": 0, "freq": 1}
+{"val": "Blood Gases", "__v": 0, "freq": 1}
+{"val": "Blood Ketones", "__v": 0, "freq": 1}
+{"val": "Blood Smear", "__v": 0, "freq": 1}
+{"val": "Blood Transfusion", "__v": 0, "freq": 1}
+{"val": "Blood Typing", "__v": 0, "freq": 1}
+{"val": "BMP", "__v": 0, "freq": 1}
+{"val": "BNP", "__v": 0, "freq": 1}
+{"val": "Body Fluid Analysis", "__v": 0, "freq": 1}
+{"val": "Bone Markers", "__v": 0, "freq": 1}
+{"val": "Bone Marrow", "__v": 0, "freq": 1}
+{"val": "BRCA", "__v": 0, "freq": 1}
+{"val": "Breast Cancer, Gene Expression", "__v": 0, "freq": 1}
+{"val": "BUN", "__v": 0, "freq": 1}
+{"val": "c-ANCA", "__v": 0, "freq": 1}
+{"val": "C-peptide", "__v": 0, "freq": 1}
+{"val": "C-telopeptide", "__v": 0, "freq": 1}
+{"val": "C. difficile", "__v": 0, "freq": 1}
+{"val": "CA 15-3", "__v": 0, "freq": 1}
+{"val": "CA 19-9", "__v": 0, "freq": 1}
+{"val": "CA 27.29", "__v": 0, "freq": 1}
+{"val": "CA-125", "__v": 0, "freq": 1}
+{"val": "Caffeine", "__v": 0, "freq": 1}
+{"val": "Calcitonin", "__v": 0, "freq": 1}
+{"val": "Calprotectin", "__v": 0, "freq": 1}
+{"val": "CALR Mutation", "__v": 0, "freq": 1}
+{"val": "Carbamazepine", "__v": 0, "freq": 1}
+{"val": "Cardiac Biomarkers", "__v": 0, "freq": 1}
+{"val": "Cardiac Risk", "__v": 0, "freq": 1}
+{"val": "Cardiolipin Antibodies", "__v": 0, "freq": 1}
+{"val": "Catecholamines", "__v": 0, "freq": 1}
+{"val": "CCP Antibody", "__v": 0, "freq": 1}
+{"val": "CD4 Count", "__v": 0, "freq": 1}
+{"val": "CEA", "__v": 0, "freq": 1}
+{"val": "Celiac Disease Tests", "__v": 0, "freq": 1}
+{"val": "Cell-Free Fetal DNA", "__v": 0, "freq": 1}
+{"val": "Ceruloplasmin", "__v": 0, "freq": 1}
+{"val": "CF Gene Mutations", "__v": 0, "freq": 1}
+{"val": "Chem 7", "__v": 0, "freq": 1}
+{"val": "Chemistry Panels", "__v": 0, "freq": 1}
+{"val": "Chickenpox", "__v": 0, "freq": 1}
+{"val": "Chlamydia", "__v": 0, "freq": 1}
+{"val": "Chloride", "__v": 0, "freq": 1}
+{"val": "Cholesterol", "__v": 0, "freq": 1}
+{"val": "Cholinesterase", "__v": 0, "freq": 1}
+{"val": "Chromogranin A", "__v": 0, "freq": 1}
+{"val": "Chromosome Analysis", "__v": 0, "freq": 1}
+{"val": "Chymotrypsin", "__v": 0, "freq": 1}
+{"val": "CK", "__v": 0, "freq": 1}
+{"val": "CK-MB", "__v": 0, "freq": 1}
+{"val": "Clopidogrel", "__v": 0, "freq": 1}
+{"val": "Clostridium difficile", "__v": 0, "freq": 1}
+{"val": "CMP", "__v": 0, "freq": 1}
+{"val": "CMV Tests", "__v": 0, "freq": 1}
+{"val": "CO2, Total", "__v": 0, "freq": 1}
+{"val": "Coagulation Cascade", "__v": 0, "freq": 1}
+{"val": "Coagulation Factors", "__v": 0, "freq": 1}
+{"val": "Cold Agglutinins", "__v": 0, "freq": 1}
+{"val": "Complement", "__v": 0, "freq": 1}
+{"val": "Coombs, Direct", "__v": 0, "freq": 1}
+{"val": "Coombs, Indirect", "__v": 0, "freq": 1}
+{"val": "Copper", "__v": 0, "freq": 1}
+{"val": "Cortisol", "__v": 0, "freq": 1}
+{"val": "Creatinine Clearance", "__v": 0, "freq": 1}
+{"val": "CRP", "__v": 0, "freq": 1}
+{"val": "CRP, high-sensitivity", "__v": 0, "freq": 1}
+{"val": "Cryoglobulins", "__v": 0, "freq": 1}
+{"val": "CSF Analysis", "__v": 0, "freq": 1}
+{"val": "Cyclosporine", "__v": 0, "freq": 1}
+{"val": "Cystatin C", "__v": 0, "freq": 1}
+{"val": "D-dimer", "__v": 0, "freq": 1}
+{"val": "DCP", "__v": 0, "freq": 1}
+{"val": "Dengue Fever", "__v": 0, "freq": 1}
+{"val": "DHEAS", "__v": 0, "freq": 1}
+{"val": "Diabetes Autoantibodies", "__v": 0, "freq": 1}
+{"val": "Differential", "__v": 0, "freq": 1}
+{"val": "Digoxin", "__v": 0, "freq": 1}
+{"val": "Dilute Russell Viper Venom ", "__v": 0, "freq": 1}
+{"val": "Direct Antiglobulin Test", "__v": 0, "freq": 1}
+{"val": "Direct LDL-C", "__v": 0, "freq": 1}
+{"val": "Drug Abuse Testing", "__v": 0, "freq": 1}
+{"val": "E. coli (Shiga toxin-producing)", "__v": 0, "freq": 1}
+{"val": "EBV Antibodies", "__v": 0, "freq": 1}
+{"val": "eGFR", "__v": 0, "freq": 1}
+{"val": "EGFR [Her-1]", "__v": 0, "freq": 1}
+{"val": "Elastase", "__v": 0, "freq": 1}
+{"val": "Electrolytes", "__v": 0, "freq": 1}
+{"val": "Electrophoresis", "__v": 0, "freq": 1}
+{"val": "Emergency/Overdose Drug Testing", "__v": 0, "freq": 1}
+{"val": "ENA Panel", "__v": 0, "freq": 1}
+{"val": "Erythropoietin", "__v": 0, "freq": 1}
+{"val": "ESR", "__v": 0, "freq": 1}
+{"val": "Estradiol", "__v": 0, "freq": 1}
+{"val": "Estrogen/Progesterone ", "__v": 0, "freq": 1}
+{"val": "Estrogens", "__v": 0, "freq": 1}
+{"val": "Ethanol", "__v": 0, "freq": 1}
+{"val": "Factor V Leiden", "__v": 0, "freq": 1}
+{"val": "Fecal Fat", "__v": 0, "freq": 1}
+{"val": "Fecal Occult Blood Test", "__v": 0, "freq": 1}
+{"val": "Ferritin", "__v": 0, "freq": 1}
+{"val": "fFN", "__v": 0, "freq": 1}
+{"val": "Fibrinogen", "__v": 0, "freq": 1}
+{"val": "FIP1L1-PDGFRA", "__v": 0, "freq": 1}
+{"val": "First Trimester Screening", "__v": 0, "freq": 1}
+{"val": "Flu Tests", "__v": 0, "freq": 1}
+{"val": "Folate", "__v": 0, "freq": 1}
+{"val": "Free Light Chains", "__v": 0, "freq": 1}
+{"val": "Free T3", "__v": 0, "freq": 1}
+{"val": "Free T4", "__v": 0, "freq": 1}
+{"val": "Fructosamine", "__v": 0, "freq": 1}
+{"val": "FSH", "__v": 0, "freq": 1}
+{"val": "Fungal Tests", "__v": 0, "freq": 1}
+{"val": "G6PD", "__v": 0, "freq": 1}
+{"val": "Gastrin", "__v": 0, "freq": 1}
+{"val": "Genetic Tests ", "__v": 0, "freq": 1}
+{"val": "Gentamicin", "__v": 0, "freq": 1}
+{"val": "GFR", "__v": 0, "freq": 1}
+{"val": "GGT", "__v": 0, "freq": 1}
+{"val": "GI Pathogens Panel", "__v": 0, "freq": 1}
+{"val": "Glucose", "__v": 0, "freq": 1}
+{"val": "Gonorrhea", "__v": 0, "freq": 1}
+{"val": "Gram Stain", "__v": 0, "freq": 1}
+{"val": "Group B Strep Screen", "__v": 0, "freq": 1}
+{"val": "Growth Hormone", "__v": 0, "freq": 1}
+{"val": "H. pylori", "__v": 0, "freq": 1}
+{"val": "Haptoglobin", "__v": 0, "freq": 1}
+{"val": "hCG Pregnancy", "__v": 0, "freq": 1}
+{"val": "hCG Tumor Marker", "__v": 0, "freq": 1}
+{"val": "HDL", "__v": 0, "freq": 1}
+{"val": "HE4", "__v": 0, "freq": 1}
+{"val": "Heavy Metals", "__v": 0, "freq": 1}
+{"val": "Hematocrit", "__v": 0, "freq": 1}
+{"val": "Hemoglobin", "__v": 0, "freq": 1}
+{"val": "Hemoglobin A1c", "__v": 0, "freq": 1}
+{"val": "Hemoglobinopathy Eval", "__v": 0, "freq": 1}
+{"val": "Heparin Anti-Xa", "__v": 0, "freq": 1}
+{"val": "Hepatitis A", "__v": 0, "freq": 1}
+{"val": "Hepatitis B", "__v": 0, "freq": 1}
+{"val": "Hepatitis C", "__v": 0, "freq": 1}
+{"val": "Hepatitis Panel", "__v": 0, "freq": 1}
+{"val": "HER2/neu", "__v": 0, "freq": 1}
+{"val": "Herpes", "__v": 0, "freq": 1}
+{"val": "Histamine", "__v": 0, "freq": 1}
+{"val": "Histone Antibody", "__v": 0, "freq": 1}
+{"val": "HIT Antibody", "__v": 0, "freq": 1}
+{"val": "HIV Antiretroviral Drug ", "__v": 0, "freq": 1}
+{"val": "HIV Screening", "__v": 0, "freq": 1}
+{"val": "HIV Viral Load", "__v": 0, "freq": 1}
+{"val": "HLA Testing", "__v": 0, "freq": 1}
+{"val": "HLA-B27", "__v": 0, "freq": 1}
+{"val": "Homocysteine", "__v": 0, "freq": 1}
+{"val": "HPV", "__v": 0, "freq": 1}
+{"val": "hs-CRP", "__v": 0, "freq": 1}
+{"val": "HTLV", "__v": 0, "freq": 1}
+{"val": "IgE, Total", "__v": 0, "freq": 1}
+{"val": "IGF-1", "__v": 0, "freq": 1}
+{"val": "IMA", "__v": 0, "freq": 1}
+{"val": "Immunoelectrophoresis", "__v": 0, "freq": 1}
+{"val": "Immunoglobulins", "__v": 0, "freq": 1}
+{"val": "Immunophenotyping", "__v": 0, "freq": 1}
+{"val": "Influenza Tests", "__v": 0, "freq": 1}
+{"val": "Inhibin A", "__v": 0, "freq": 1}
+{"val": "INR", "__v": 0, "freq": 1}
+{"val": "Insulin", "__v": 0, "freq": 1}
+{"val": "Interleukin-6", "__v": 0, "freq": 1}
+{"val": "Intrinsic Factor Antibody", "__v": 0, "freq": 1}
+{"val": "Ionized Calcium", "__v": 0, "freq": 1}
+{"val": "Iron Tests", "__v": 0, "freq": 1}
+{"val": "Iron, serum", "__v": 0, "freq": 1}
+{"val": "IRT", "__v": 0, "freq": 1}
+{"val": "JAK2 Mutation", "__v": 0, "freq": 1}
+{"val": "Kappa/Lambda Ratio", "__v": 0, "freq": 1}
+{"val": "Karyotyping", "__v": 0, "freq": 1}
+{"val": "Ketones, blood", "__v": 0, "freq": 1}
+{"val": "Kidney Stone Analysis", "__v": 0, "freq": 1}
+{"val": "Kidney Stone Risk Panel", "__v": 0, "freq": 1}
+{"val": "KRAS Mutation", "__v": 0, "freq": 1}
+{"val": "Lactate", "__v": 0, "freq": 1}
+{"val": "Lactoferrin", "__v": 0, "freq": 1}
+{"val": "Lactose Tolerance Tests", "__v": 0, "freq": 1}
+{"val": "LD", "__v": 0, "freq": 1}
+{"val": "LDL", "__v": 0, "freq": 1}
+{"val": "LDL-P", "__v": 0, "freq": 1}
+{"val": "Lead", "__v": 0, "freq": 1}
+{"val": "Legionella", "__v": 0, "freq": 1}
+{"val": "Leptin", "__v": 0, "freq": 1}
+{"val": "Levetiracetam", "__v": 0, "freq": 1}
+{"val": "LH", "__v": 0, "freq": 1}
+{"val": "Lipase", "__v": 0, "freq": 1}
+{"val": "Lithium", "__v": 0, "freq": 1}
+{"val": "Liver Panel", "__v": 0, "freq": 1}
+{"val": "Lp(a)", "__v": 0, "freq": 1}
+{"val": "Lp-PLA2", "__v": 0, "freq": 1}
+{"val": "Lupus Anticoagulant Testing", "__v": 0, "freq": 1}
+{"val": "Lyme Disease", "__v": 0, "freq": 1}
+{"val": "Magnesium", "__v": 0, "freq": 1}
+{"val": "MCH", "__v": 0, "freq": 1}
+{"val": "MCHC", "__v": 0, "freq": 1}
+{"val": "MCV", "__v": 0, "freq": 1}
+{"val": "Measles", "__v": 0, "freq": 1}
+{"val": "Mercury", "__v": 0, "freq": 1}
+{"val": "Metanephrines", "__v": 0, "freq": 1}
+{"val": "Methotrexate", "__v": 0, "freq": 1}
+{"val": "Microalbumin", "__v": 0, "freq": 1}
+{"val": "MMA", "__v": 0, "freq": 1}
+{"val": "Mononucleosis Test", "__v": 0, "freq": 1}
+{"val": "MPA", "__v": 0, "freq": 1}
+{"val": "MRSA Screening", "__v": 0, "freq": 1}
+{"val": "MTHFR Mutation", "__v": 0, "freq": 1}
+{"val": "Mumps", "__v": 0, "freq": 1}
+{"val": "Mycoplasma", "__v": 0, "freq": 1}
+{"val": "Myoglobin", "__v": 0, "freq": 1}
+{"val": "Nicotine / Cotinine", "__v": 0, "freq": 1}
+{"val": "NIPT", "__v": 0, "freq": 1}
+{"val": "NT-proBNP", "__v": 0, "freq": 1}
+{"val": "Osmolality", "__v": 0, "freq": 1}
+{"val": "Ova and Parasite Exam", "__v": 0, "freq": 1}
+{"val": "p-ANCA", "__v": 0, "freq": 1}
+{"val": "P1NP", "__v": 0, "freq": 1}
+{"val": "Pap Test", "__v": 0, "freq": 1}
+{"val": "PAPP-A", "__v": 0, "freq": 1}
+{"val": "Parietal Cell Antibody", "__v": 0, "freq": 1}
+{"val": "Parvovirus B19", "__v": 0, "freq": 1}
+{"val": "Pericardial Fluid Analysis", "__v": 0, "freq": 1}
+{"val": "Peritoneal Fluid Analysis", "__v": 0, "freq": 1}
+{"val": "Pertussis", "__v": 0, "freq": 1}
+{"val": "Pharmacogenetic Tests", "__v": 0, "freq": 1}
+{"val": "Phenobarbital", "__v": 0, "freq": 1}
+{"val": "Phenytoin", "__v": 0, "freq": 1}
+{"val": "Phosphorus", "__v": 0, "freq": 1}
+{"val": "Plasma Metanephrines", "__v": 0, "freq": 1}
+{"val": "Platelet Count", "__v": 0, "freq": 1}
+{"val": "Platelet Function Tests", "__v": 0, "freq": 1}
+{"val": "Pleural Fluid Analysis", "__v": 0, "freq": 1}
+{"val": "PML-RARA", "__v": 0, "freq": 1}
+{"val": "Porphyrins", "__v": 0, "freq": 1}
+{"val": "Potassium", "__v": 0, "freq": 1}
+{"val": "Prealbumin", "__v": 0, "freq": 1}
+{"val": "Pregnancy Test", "__v": 0, "freq": 1}
+{"val": "Pregnenolone", "__v": 0, "freq": 1}
+{"val": "Procalcitonin", "__v": 0, "freq": 1}
+{"val": "Progesterone", "__v": 0, "freq": 1}
+{"val": "Progesterone Receptors", "__v": 0, "freq": 1}
+{"val": "Prolactin", "__v": 0, "freq": 1}
+{"val": "Protein C", "__v": 0, "freq": 1}
+{"val": "Protein Electrophoresis", "__v": 0, "freq": 1}
+{"val": "Protein S", "__v": 0, "freq": 1}
+{"val": "Prothrombin Time", "__v": 0, "freq": 1}
+{"val": "PSA", "__v": 0, "freq": 1}
+{"val": "PSEN1", "__v": 0, "freq": 1}
+{"val": "Pseudocholinesterase", "__v": 0, "freq": 1}
+{"val": "PT 20210", "__v": 0, "freq": 1}
+{"val": "PTH", "__v": 0, "freq": 1}
+{"val": "PTT", "__v": 0, "freq": 1}
+{"val": "Quad Screen", "__v": 0, "freq": 1}
+{"val": "RBC", "__v": 0, "freq": 1}
+{"val": "RBC Antibody ID", "__v": 0, "freq": 1}
+{"val": "RBC Antibody Screen", "__v": 0, "freq": 1}
+{"val": "RDW", "__v": 0, "freq": 1}
+{"val": "Renal Panel", "__v": 0, "freq": 1}
+{"val": "Renin", "__v": 0, "freq": 1}
+{"val": "Reticulocytes", "__v": 0, "freq": 1}
+{"val": "Rheumatoid Factor", "__v": 0, "freq": 1}
+{"val": "RSV", "__v": 0, "freq": 1}
+{"val": "Rubella", "__v": 0, "freq": 1}
+{"val": "Salicylates", "__v": 0, "freq": 1}
+{"val": "Second Trimester Screening", "__v": 0, "freq": 1}
+{"val": "Semen Analysis", "__v": 0, "freq": 1}
+{"val": "Sensitivity Testing", "__v": 0, "freq": 1}
+{"val": "Serotonin", "__v": 0, "freq": 1}
+{"val": "Serum Iron", "__v": 0, "freq": 1}
+{"val": "SHBG", "__v": 0, "freq": 1}
+{"val": "Shingles", "__v": 0, "freq": 1}
+{"val": "Sickle Cell Tests", "__v": 0, "freq": 1}
+{"val": "Sirolimus", "__v": 0, "freq": 1}
+{"val": "Smooth Muscle Antibody", "__v": 0, "freq": 1}
+{"val": "SMRP", "__v": 0, "freq": 1}
+{"val": "Sodium", "__v": 0, "freq": 1}
+{"val": "Soluble Transferrin ", "__v": 0, "freq": 1}
+{"val": "Sputum Culture", "__v": 0, "freq": 1}
+{"val": "Stool Culture", "__v": 0, "freq": 1}
+{"val": "Strep Throat Test", "__v": 0, "freq": 1}
+{"val": "Susceptibility Testing", "__v": 0, "freq": 1}
+{"val": "Sweat Chloride", "__v": 0, "freq": 1}
+{"val": "Synovial Fluid Analysis", "__v": 0, "freq": 1}
+{"val": "Syphilis", "__v": 0, "freq": 1}
+{"val": "T-Cell Receptor Gene Rearrangement", "__v": 0, "freq": 1}
+{"val": "T3", "__v": 0, "freq": 1}
+{"val": "T4", "__v": 0, "freq": 1}
+{"val": "Tacrolimus", "__v": 0, "freq": 1}
+{"val": "Tau/Aß42", "__v": 0, "freq": 1}
+{"val": "TB Screening Tests", "__v": 0, "freq": 1}
+{"val": "Testosterone", "__v": 0, "freq": 1}
+{"val": "Theophylline", "__v": 0, "freq": 1}
+{"val": "Therapeutic Drug Monitoring", "__v": 0, "freq": 1}
+{"val": "Throat Culture", "__v": 0, "freq": 1}
+{"val": "Thrombin Time", "__v": 0, "freq": 1}
+{"val": "Thyroglobulin", "__v": 0, "freq": 1}
+{"val": "Thyroid Antibodies", "__v": 0, "freq": 1}
+{"val": "Thyroid Panel", "__v": 0, "freq": 1}
+{"val": "TIBC", "__v": 0, "freq": 1}
+{"val": "Tobramycin", "__v": 0, "freq": 1}
+{"val": "TORCH", "__v": 0, "freq": 1}
+{"val": "Total Protein", "__v": 0, "freq": 1}
+{"val": "Toxoplasmosis", "__v": 0, "freq": 1}
+{"val": "TPMT", "__v": 0, "freq": 1}
+{"val": "Trace Minerals", "__v": 0, "freq": 1}
+{"val": "Transferrin", "__v": 0, "freq": 1}
+{"val": "Trichomonas", "__v": 0, "freq": 1}
+{"val": "Triglycerides", "__v": 0, "freq": 1}
+{"val": "Triple Screen", "__v": 0, "freq": 1}
+{"val": "Troponin", "__v": 0, "freq": 1}
+{"val": "Tryptase", "__v": 0, "freq": 1}
+{"val": "TSH", "__v": 0, "freq": 1}
+{"val": "tTG Antibody", "__v": 0, "freq": 1}
+{"val": "Tumor Markers", "__v": 0, "freq": 1}
+{"val": "UIBC", "__v": 0, "freq": 1}
+{"val": "UP/CR", "__v": 0, "freq": 1}
+{"val": "Urinalysis", "__v": 0, "freq": 1}
+{"val": "Urine Albumin", "__v": 0, "freq": 1}
+{"val": "Urine Culture", "__v": 0, "freq": 1}
+{"val": "Urine Metanephrines", "__v": 0, "freq": 1}
+{"val": "Urine Protein", "__v": 0, "freq": 1}
+{"val": "Valproic Acid", "__v": 0, "freq": 1}
+{"val": "Vancomycin", "__v": 0, "freq": 1}
+{"val": "Vitamin A", "__v": 0, "freq": 1}
+{"val": "Vitamin B12", "__v": 0, "freq": 1}
+{"val": "Vitamin D", "__v": 0, "freq": 1}
+{"val": "Vitamin K", "__v": 0, "freq": 1}
+{"val": "VLDL", "__v": 0, "freq": 1}
+{"val": "VMA", "__v": 0, "freq": 1}
+{"val": "von Willebrand Factor", "__v": 0, "freq": 1}
+{"val": "Warfarin Sensitivity ", "__v": 0, "freq": 1}
+{"val": "WBC", "__v": 0, "freq": 1}
+{"val": "WBC Differential", "__v": 0, "freq": 1}
+{"val": "West Nile Virus", "__v": 0, "freq": 1}
+{"val": "Whooping Cough", "__v": 0, "freq": 1}
+{"val": "Widal Test", "__v": 0, "freq": 1}
+{"val": "Wound Culture", "__v": 0, "freq": 1}
+{"val": "Xylose Absorption", "__v": 0, "freq": 1}
+{"val": "Zika Virus Testing", "__v": 0, "freq": 1}
+{"val": "ZPP", "__v": 0, "freq": 1}
+{"val": "Urea", "__v": 0, "freq": 1}
+{"val": "Creatinine, Serum", "__v": 0, "freq": 1}
+{"val": "Uric Acid", "__v": 0, "freq": 1}
+{"val": "Calcium", "__v": 0, "freq": 1}
+{"val": "Alkaline Phosphatase (ALP)", "__v": 0, "freq": 1}
+{"val": "Protein, Total", "__v": 0, "freq": 1}
+{"val": "Complete Blood Count (CBC)", "__v": 0, "freq": 1}
+{"val": "Urine, R/E", "__v": 0, "freq": 1}
+{"val": "Total Lipid Profile (TLP)", "__v": 0, "freq": 1}

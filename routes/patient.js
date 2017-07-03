@@ -114,24 +114,16 @@ module.exports = (app) => {
         req.body.onExaminationNotes = _.split(req.body.onExaminationNotes, '\r\n').filter(elm => elm)
         req.body.dietaryAdvice = _.split(req.body.dietaryAdvice, '\r\n').filter(elm => elm)
         req.body.otherAdvice = _.split(req.body.otherAdvice, '\r\n').filter(elm => elm)
-        var drug = req.body.medicinesAdvisedDrug
-        var dosage = req.body.medicinesAdvisedDosage
-        var frequency = req.body.medicinesAdvisedFrequency
-        var duration = req.body.medicinesAdvisedDuration
-        var specialAdvice = req.body.medicinesAdvisedSpecialAdvice
+        var {
+          medicinesAdvisedDrug: drug, 
+          medicinesAdvisedFrequency: frequency, 
+          medicinesAdvisedDuration: duration, 
+          medicinesAdvisedSpecialAdvice: specialAdvice} = req.body
         var medicineAdvice =
-          _.zip(drug, dosage, frequency, duration, specialAdvice)
+          _.zip(drug, frequency, duration, specialAdvice)
            .filter(elm => elm[0])
-           .map(elm => _.zipObject(['drug', 'dosage', 'frequency', 'duration', 'specialAdvice'], elm))
-        console.log('~~~~~')
-        console.log(medicineAdvice)
-        var body = req.body
-        delete body.medicinesAdvisedDrug
-        delete body.medicinesAdvisedDosage
-        delete body.medicinesAdvisedFrequency
-        delete body.medicinesAdvisedDuration
-        delete body.medicinesAdvisedSpecialAdvice
-        return new Prescription(Object.assign({date: new Date(), patient: patient._id, medicineAdvice: medicineAdvice}, body))
+           .map(elm => _.zipObject(['drug', 'frequency', 'duration', 'specialAdvice'], elm))
+        return new Prescription(Object.assign({date: new Date(), patient: patient._id, medicineAdvice: medicineAdvice}, req.body))
           .save()
           .then(prescription => {
             console.log(prescription)

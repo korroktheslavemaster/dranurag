@@ -64,7 +64,8 @@ require('./routes/home.js')(app)
 require('./routes/addPatient.js')(app); 
 require('./routes/addVisit.js')(app); 
 require('./routes/patientSearch.js')(app);
-require('./routes/patient.js')(app)
+require('./routes/patient.js')(app);
+require('./routes/autocomplete.js')(app);
 
 app.listen(port)
 

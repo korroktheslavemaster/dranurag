@@ -1,18 +1,32 @@
 // models/prescription.js
 var mongoose = require('mongoose');
 var autoIncrement = require('mongoose-auto-increment');
+var _ = require('lodash')
+const {Drug, Frequency, Duration, SpecialAdvice} = require('./autocomplete/medicineAdvice')
 
 var medicineAdviceSchema = mongoose.Schema({
     drug: String,
-    dosage: String,
     frequency: String,
     duration: String,
     specialAdvice: String
 })
 
 medicineAdviceSchema.methods.getText = function () {
-  return this.drug + ", " + this.dosage + ", " + this.frequency + ", " + this.duration + ", " + this.specialAdvice
+  return this.drug +  ", " + this.frequency + ", " + this.duration + ", " + this.specialAdvice
 }
+
+medicineAdviceSchema.post('save', function(doc) {
+  // add medicine advice entries to autocomplete collections
+  console.log("saving medicine advice")
+  const {drug, frequency, duration, specialAdvice} = doc
+  _.zip([drug, frequency, duration, specialAdvice], [Drug, Frequency, Duration, SpecialAdvice])
+   .filter(([val, model]) => val) // only non empty val's should be added
+   .map(([val, model]) => {
+      // empty function for .then? otherwise doesnt work?
+      model.findOneAndUpdate({val: val}, {$inc: {freq: 1}}, {upsert: true, setDefaultsOnInsert: true, new: true})
+        .then(()=>{})
+   })
+})
 
 var prescriptionSchema = mongoose.Schema({
     patient: {type: Number, ref: 'Patient', required: true},
@@ -31,6 +45,17 @@ var prescriptionSchema = mongoose.Schema({
     reviewAfterNumber: Number, // use duration?,
     reviewAfterType: String
 });
+
+prescriptionSchema.post('save', function(doc) {
+  var Investigation = require('./autocomplete/investigation')
+  // add investigations required entries to autocomplete table
+  doc.investigationsRequired.map(elm => {
+    Investigation.findOneAndUpdate({val: elm}, {$inc: {freq: 1}}, {upsert: true, setDefaultsOnInsert: true, new: true})
+      .then(()=>{})
+  })
+})
+
+
 
 prescriptionSchema.plugin(autoIncrement.plugin, { model: 'Prescription', startAt: 1000 });
 

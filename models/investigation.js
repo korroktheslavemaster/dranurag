@@ -3,6 +3,7 @@
 var mongoose = require('mongoose');
 var autoIncrement = require('mongoose-auto-increment');
 var moment = require('moment');
+var AC_Test = require('./autocomplete/test')
 
 var investigationSchema = mongoose.Schema({
   patient: {type: Number, ref: 'Patient'},
@@ -27,6 +28,25 @@ var investigationSchema = mongoose.Schema({
     required: true
   }
 });
+
+investigationSchema.post('save', function(doc) {
+  // save test in autocomplete table
+  // direct object matching not working? probably cuz investigationSchema has ObjectId..
+  AC_Test.findOneAndUpdate(
+    {
+      'val.name': doc.name,
+      'val.units': doc.units,
+      'val.cat': doc.cat
+    }, 
+    {
+      $inc: {freq: 1}
+    }, 
+    {
+      upsert: true, setDefaultsOnInsert: true, new: true
+    }
+  )
+  .then(()=>{})
+})
 
 
 investigationSchema.plugin(autoIncrement.plugin, { model: 'Investigation', startAt: 1000 });
