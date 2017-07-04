@@ -1,5 +1,8 @@
 // autocomplete/typeahead endpoints
-require('dnscache')({ enable: true });
+
+// dnscache not found in heroku??
+if (!process.env.NPM_CONFIG_PRODUCTION)
+  require('dnscache')({ enable: true });
 var jsonfile = require('jsonfile')
 var request = require('request')
 var _ = require('lodash')
