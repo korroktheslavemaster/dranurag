@@ -1,0 +1,81 @@
+<!-- views/home.ejs -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <%- include('../partials/head')%>
+ 
+ <!-- tagsinput -->
+ <link rel="stylesheet" type="text/css" href="https://rawgit.com/Nodws/bootstrap4-tagsinput/master/tagsinput.css">
+ <script src="https://rawgit.com/Nodws/bootstrap4-tagsinput/master/tagsinput.js"></script>
+ <script type="text/javascript">
+  var data = ["Amsterdam",
+  "London",
+  "Paris",
+  "Washington",
+  "New York",
+  "New Jersey",
+  "New Orleans",
+  "Los Angeles",
+  "Sydney",
+  "Melbourne",
+  "Canberra",
+  "Beijing",
+  "New Delhi",
+  "Kathmandu",
+  "Cairo",
+  "Cape Town",
+  "Kinshasa"];
+  var citynames = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.nonword,
+      queryTokenizer: Bloodhound.tokenizers.nonword,
+      // need to add _ to prevent caching
+      prefetch: '/autocomplete/investigations?_=' + (new Date().getTime())
+    });
+  citynames.initialize();
+  $("#category").ready(function () {
+      $("#category").tagsinput({
+      typeaheadjs: [{
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'investigations',
+        source: citynames.ttAdapter(),
+        limit: 10,
+      }],
+      freeInput: true
+    });
+  });
+
+  // $('.category-container > > input').tagsinput({
+  //   typeaheadjs: [{
+  //     minLength: 1,
+  //     highlight: true,
+  //   },{
+  //     minlength: 1,
+  //     name: 'citynames',
+  //     displayKey: 'name',
+  //     valueKey: 'name',
+  //     source: citynames.ttAdapter()
+  //   }],
+  //   freeInput: true
+  // });
+</script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-3">Welcome</h1>
+      <p class="lead">This is the homepage</p>
+      <div class="category-container">
+        <input type="text" id="category" />
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

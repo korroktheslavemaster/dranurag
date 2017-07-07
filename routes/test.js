@@ -190,9 +190,6 @@ module.exports = (app) => {
     })
   })
 
-  app.get('/experiments/drugbank', function(req, res) {
-    res.render('experiments/drugbank', {})
-  })
   // testing phantomjs directly
   app.get('/experiments/1mg', function(req, res) {
     request.get("https://www.1mg.com/", (err, response, body) => {
@@ -201,4 +198,7 @@ module.exports = (app) => {
     })
   })
 
+  app.use('/experiments', function(req, res) {
+    res.render('experiments' + req.path, {})
+  })
 }

@@ -42,7 +42,7 @@ module.exports = (app) => {
     };
 
     var options = {
-        url: 'https://www.1mg.com/api/v1/search/autocomplete?city=New%20Delhi&pageSize=10&name=' + req.query.q,
+        url: 'https://www.1mg.com/api/v1/search/autocomplete?city=New%20Delhi&pageSize=20&name=' + req.query.q,
         headers: headers,
         gzip: true,
         time: true,

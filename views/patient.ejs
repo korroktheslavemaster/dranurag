@@ -16,7 +16,55 @@
       $('#medicinesAdvisedDynamicContainer').medicinesAdvisedInput()
     })
   </script>
-  
+  <script>var emojis = {}
+/**
+  * @callback GitHubEmojiAPICallback
+  * @param {Object} resp
+  * @prop {Object} resp.meta
+  * @prop {Object} resp.data
+  * @see https://developer.github.com/v3/emojis/
+  * @example
+  * callback({
+  *   "meta": {
+  *     "Content-Type": "application/javascript; charset=utf-8",
+  *     ...
+  *   },
+  *   "data": {
+  *     "+1": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png?v5",
+  *     ...
+  *   }
+  * })
+  */
+var GitHubEmojiAPICallback = function(resp) {
+  window.emojis = resp.data;
+};</script><script src="https://api.github.com/emojis?callback=GitHubEmojiAPICallback"></script>
+  <!-- using textcomplete -->
+  <script src="/js/textcomplete.js"></script>
+  <script type="text/javascript">
+  $(function() {
+      // Shared strategy for all demos.
+      window.emojiStrategy = {
+        id: 'emoji',
+        match: /(^|\s):([a-z0-9+\-\_]*)$/,
+        search: function (term, callback) {
+          callback(Object.keys(emojis).filter(function (name) {
+            return name.startsWith(term);
+          }));
+        },
+        template: function (name) {
+          return '<img src="' + emojis[name] + '"></img> ' + name;
+        },
+        replace: function (name) {
+          return '$1:' + name + ': ';
+        }
+      };
+
+
+      var editor = new Textcomplete.editors.Textarea(document.getElementById('chiefComplaints'));
+      var textcomplete = new Textcomplete(editor);
+      textcomplete.register([emojiStrategy]);
+  })
+  </script>
   <style type="text/css">
   #scrollable-dropdown-menu .tt-menu {
     max-height: 150px;
@@ -143,7 +191,7 @@
                 <label class="col-form-label">Chief Complaints</label>
               </div>
               <div class="col-md-10 pb-5">
-                <textarea name="chiefComplaints" id="chiefComplaints" rows=3 cols=70 class="form-control" placeholder="eg. Headache (3 days)"></textarea>
+                <textarea name="chiefComplaints" id="chiefComplaints" rows=3 cols=70 class="" placeholder="eg. Headache (3 days)"></textarea>
                 <small class="text-muted form-text">One complaint each line</small>
               </div>
             </div>
