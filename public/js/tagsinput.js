@@ -59,6 +59,7 @@
 
     this.build(options);
     this.isInit = false;
+    return this;
   }
 
   TagsInput.prototype = {
