@@ -5,65 +5,66 @@
 
 <head>
   <%- include('partials/head')%>
+   <!-- tagsinput -->
+ <link rel="stylesheet" type="text/css" href="/css/tagsinput.css">
+ <script src="/js/tagsinput.js"></script>
+
   <%   var now = dateformat(new Date(), 'dd/mm/yyyy');%>
   <%- include('partials/forms/tests')%>
-  <%- include('partials/forms/investigations')%>
   <%- include('partials/forms/medicinesAdvised')%>
   <script type="text/javascript">
     $(() => {
       $('#testsDynamicContainer').testsInput()
-      $('#investigationsDynamicContainer').investigationsInput()
+      // $('#investigationsDynamicContainer').investigationsInput()
       $('#medicinesAdvisedDynamicContainer').medicinesAdvisedInput()
     })
   </script>
-  <script>var emojis = {}
-/**
-  * @callback GitHubEmojiAPICallback
-  * @param {Object} resp
-  * @prop {Object} resp.meta
-  * @prop {Object} resp.data
-  * @see https://developer.github.com/v3/emojis/
-  * @example
-  * callback({
-  *   "meta": {
-  *     "Content-Type": "application/javascript; charset=utf-8",
-  *     ...
-  *   },
-  *   "data": {
-  *     "+1": "https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png?v5",
-  *     ...
-  *   }
-  * })
-  */
-var GitHubEmojiAPICallback = function(resp) {
-  window.emojis = resp.data;
-};</script><script src="https://api.github.com/emojis?callback=GitHubEmojiAPICallback"></script>
-  <!-- using textcomplete -->
-  <script src="/js/textcomplete.js"></script>
   <script type="text/javascript">
-  $(function() {
-      // Shared strategy for all demos.
-      window.emojiStrategy = {
-        id: 'emoji',
-        match: /(^|\s):([a-z0-9+\-\_]*)$/,
-        search: function (term, callback) {
-          callback(Object.keys(emojis).filter(function (name) {
-            return name.startsWith(term);
-          }));
+  var investigationsSrc = new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.nonword,
+    queryTokenizer: Bloodhound.tokenizers.nonword,
+    // need to add _ to prevent caching
+    prefetch: '/autocomplete/investigations?_=' /*+ (new Date().getTime())*/
+  });
+  investigationsSrc.initialize()
+  $("#investigationsTagsInput").ready(function () {
+      myObject = $("#investigationsTagsInput").tagsinput({
+        delimiter: '|',
+        typeaheadjs: [{
+          hint: true,
+          highlight: true,
+          minLength: 1,
         },
-        template: function (name) {
-          return '<img src="' + emojis[name] + '"></img> ' + name;
-        },
-        replace: function (name) {
-          return '$1:' + name + ': ';
-        }
-      };
-
-
-      var editor = new Textcomplete.editors.Textarea(document.getElementById('chiefComplaints'));
-      var textcomplete = new Textcomplete(editor);
-      textcomplete.register([emojiStrategy]);
-  })
+        { 
+          name: 'drugs',
+          source: investigationsSrc.ttAdapter(),
+          limit: 10,
+        }],
+        freeInput: true
+      })
+      myObject[0].$input.on('typeahead:asyncrequest', function() {
+        console.log("show")
+          $('.investigationsTagsInputContainer .Typeahead-spinner').show();
+        })
+        .on('typeahead:asynccancel typeahead:asyncreceive', function() {
+          console.log("hide")
+          $('.investigationsTagsInputContainer .Typeahead-spinner').hide();
+        });
+      $("#prescriptionForm").submit(function(event) {
+        // event.preventDefault()
+        $("#investigationsTagsInput").tagsinput('items')
+          .map(elm => {
+            console.log(elm)
+            $('<input>').attr({
+                type: 'hidden',
+                name: 'investigationsRequired[]',
+                value: elm,
+            }).appendTo('form[id=prescriptionForm]');
+          })
+        // $("#investigationsRequiredHidden").val($("#investigationsTagsInput").tagsinput('items'))
+        // console.log($("#investigationsRequiredHidden").val())
+      })
+  });
   </script>
   <style type="text/css">
   #scrollable-dropdown-menu .tt-menu {
@@ -179,7 +180,7 @@ var GitHubEmojiAPICallback = function(resp) {
       <div class="card">
         <div class="card-block">
           <h3 class="card-title">New Prescription</h3>
-          <form action="/addPrescription/<%=patient._id %>" method="post">
+          <form action="/addPrescription/<%=patient._id %>" method="post" id="prescriptionForm">
             <div class="form-group row required">
               <label for="diagnosis" class="col-form-label col-md-2">Diagnosis</label>
               <div class="col-md-10">
@@ -191,7 +192,7 @@ var GitHubEmojiAPICallback = function(resp) {
                 <label class="col-form-label">Chief Complaints</label>
               </div>
               <div class="col-md-10 pb-5">
-                <textarea name="chiefComplaints" id="chiefComplaints" rows=3 cols=70 class="" placeholder="eg. Headache (3 days)"></textarea>
+                <input name="chiefComplaints" id="chiefComplaints" rows=3 cols=70 class="form-control" placeholder="eg. Headache (3 days)" data-role="tagsinput"/>
                 <small class="text-muted form-text">One complaint each line</small>
               </div>
             </div>
@@ -231,10 +232,11 @@ var GitHubEmojiAPICallback = function(resp) {
             </div>
             <div class="form-group row">
               <label class="col-form-label col-md-2">Investigations Required</label>
-              <div class="col-md-10">
-                <div data-role="dynamic-fields" id="investigationsDynamicContainer" class='pt-3'>
-
-                </div>  <!-- /div[data-role="dynamic-fields"] -->
+              <div class="col-md-10 investigationsTagsInputContainer">
+                <input type="text" id="investigationsTagsInput"/>
+                <!-- <input type="hidden" name="investigationsRequired[]" id="investigationsRequiredHidden"> -->
+                <!-- <select multiple id="investigationsTagsInput" class="form-control"/> -->
+                <img class="Typeahead-spinner" src="/img/ellipsis.svg" style="display: inline; display: none; position: absolute; bottom: 3px; right: 7px; width: 28px; height: 28px">
               </div>
             </div>
             <div class="form-group row">

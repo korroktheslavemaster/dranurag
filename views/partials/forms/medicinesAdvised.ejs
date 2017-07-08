@@ -90,7 +90,7 @@
           return new Bloodhound({
             datumTokenizer: Bloodhound.tokenizers.whitespace,
             queryTokenizer: Bloodhound.tokenizers.whitespace,
-            prefetch: '/autocomplete/medicineAdvice/' + str + '?_=' + (new Date().getTime()),
+            prefetch: '/autocomplete/medicineAdvice/' + str + '?_=' /*+ (new Date().getTime())*/,
           })
         })
 

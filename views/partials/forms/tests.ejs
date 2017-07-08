@@ -47,7 +47,7 @@
       datumTokenizer: Bloodhound.tokenizers.obj.nonword('name'),
       queryTokenizer: Bloodhound.tokenizers.nonword,
       // _ to prevent caching
-      prefetch: '/autocomplete/tests?_=' + (new Date().getTime())
+      prefetch: '/autocomplete/tests?_=' /*+ (new Date().getTime())*/
     });
     getNewRow = () => {
       var $jqueryElement = $(tmpl())

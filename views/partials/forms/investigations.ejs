@@ -26,7 +26,7 @@
       datumTokenizer: Bloodhound.tokenizers.nonword,
       queryTokenizer: Bloodhound.tokenizers.nonword,
       // need to add _ to prevent caching
-      prefetch: '/autocomplete/investigations?_=' + (new Date().getTime())
+      prefetch: '/autocomplete/investigations?_=' /*+ (new Date().getTime())*/
     });
     var getNewRow = () => {
       var $jqueryElement = $(tmpl())
