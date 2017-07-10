@@ -28,7 +28,7 @@
   });
   investigationsSrc.initialize()
   $("#investigationsTagsInput").ready(function () {
-      myObject = $("#investigationsTagsInput").tagsinput({
+      let myObject = $("#investigationsTagsInput").tagsinput({
         delimiter: '|',
         typeaheadjs: [{
           hint: true,
@@ -36,20 +36,12 @@
           minLength: 1,
         },
         { 
-          name: 'drugs',
+          name: 'investigations',
           source: investigationsSrc.ttAdapter(),
           limit: 10,
         }],
         freeInput: true
       })
-      myObject[0].$input.on('typeahead:asyncrequest', function() {
-        console.log("show")
-          $('.investigationsTagsInputContainer .Typeahead-spinner').show();
-        })
-        .on('typeahead:asynccancel typeahead:asyncreceive', function() {
-          console.log("hide")
-          $('.investigationsTagsInputContainer .Typeahead-spinner').hide();
-        });
       $("#prescriptionForm").submit(function(event) {
         // event.preventDefault()
         $("#investigationsTagsInput").tagsinput('items')
@@ -65,6 +57,93 @@
         // console.log($("#investigationsRequiredHidden").val())
       })
   });
+
+  var dietaryAdviceSrc =  new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.nonword,
+    queryTokenizer: Bloodhound.tokenizers.nonword,
+    // need to add _ to prevent caching
+    prefetch: '/autocomplete/treatmentAdvice/dietary?_=' /*+ (new Date().getTime())*/
+  });
+  dietaryAdviceSrc.initialize()
+
+  sourceWithDefaults = (src) => {
+      return (q, sync) => {
+          if (q === '') {
+          sync(src.all()); // This is the only change needed to get 'ALL' items as the defaults
+        }
+        else {
+          src.search(q, sync);
+        }
+      }
+    }
+  $("#dietaryAdviceTagsInput").ready( function () {
+    let myObject = $("#dietaryAdviceTagsInput").tagsinput({
+        delimiter: '|',
+        typeaheadjs: [{
+          hint: true,
+          highlight: true,
+          minLength: 0,
+        },
+        { 
+          name: 'dietaryAdvice',
+          source: sourceWithDefaults(dietaryAdviceSrc),
+          limit: 10,
+        }],
+        freeInput: true
+      })
+    $("#prescriptionForm").submit(function(event) {
+        // event.preventDefault()
+        $("#dietaryAdviceTagsInput").tagsinput('items')
+          .map(elm => {
+            console.log(elm)
+            $('<input>').attr({
+                type: 'hidden',
+                name: 'dietaryAdvice[]',
+                value: elm,
+            }).appendTo('form[id=prescriptionForm]');
+          })
+        // $("#investigationsRequiredHidden").val($("#investigationsTagsInput").tagsinput('items'))
+        // console.log($("#investigationsRequiredHidden").val())
+      })
+  })
+
+
+  var otherAdviceSrc =  new Bloodhound({
+    datumTokenizer: Bloodhound.tokenizers.nonword,
+    queryTokenizer: Bloodhound.tokenizers.nonword,
+    // need to add _ to prevent caching
+    prefetch: '/autocomplete/treatmentAdvice/other?_=' /*+ (new Date().getTime())*/
+  });
+  otherAdviceSrc.initialize()
+
+  $("#otherAdviceTagsInput").ready( function () {
+    let myObject = $("#otherAdviceTagsInput").tagsinput({
+        delimiter: '|',
+        typeaheadjs: [{
+          hint: true,
+          highlight: true,
+          minLength: 0,
+        },
+        { 
+          name: 'otherAdvice',
+          source: sourceWithDefaults(otherAdviceSrc),
+          limit: 10,
+        }],
+        freeInput: true
+      })
+    $("#prescriptionForm").submit(function(event) {
+        $("#otherAdviceTagsInput").tagsinput('items')
+          .map(elm => {
+            console.log(elm)
+            $('<input>').attr({
+                type: 'hidden',
+                name: 'otherAdvice[]',
+                value: elm,
+            }).appendTo('form[id=prescriptionForm]');
+          })
+      })
+  })
+
   </script>
   <style type="text/css">
   #scrollable-dropdown-menu .tt-menu {
@@ -233,10 +312,7 @@
             <div class="form-group row">
               <label class="col-form-label col-md-2">Investigations Required</label>
               <div class="col-md-10 investigationsTagsInputContainer">
-                <input type="text" id="investigationsTagsInput"/>
-                <!-- <input type="hidden" name="investigationsRequired[]" id="investigationsRequiredHidden"> -->
-                <!-- <select multiple id="investigationsTagsInput" class="form-control"/> -->
-                <img class="Typeahead-spinner" src="/img/ellipsis.svg" style="display: inline; display: none; position: absolute; bottom: 3px; right: 7px; width: 28px; height: 28px">
+                <input type="text" id="investigationsTagsInput" class="form-control"/>
               </div>
             </div>
             <div class="form-group row">
@@ -248,15 +324,15 @@
               </div>
             </div>
             <div class="form-group row">
-              <label class="col-form-label col-md-2">Treatment Advised</label>
-              <!-- <div class="col-md-4">
-                <textarea name="medicineAdvice" class="form-control" placeholder="Medicines" rows="6"></textarea>
-              </div> -->
-              <div class="col-md-4 pt-2 pt-md-0">
-                <textarea name="dietaryAdvice" class="form-control" placeholder="Dietary Advice" rows="6"></textarea>
+              <label class="col-form-label col-md-2">Dietary Advice</label>
+              <div class="col-md-8 pt-2 pt-md-0 dietaryAdviceTagsInputContainer">
+                <input type="text" id="dietaryAdviceTagsInput" class="form-control"/>
               </div>
-              <div class="col-md-4 pt-2 pt-md-0">
-                <textarea name="otherAdvice" class="form-control" placeholder="Other Advices" rows="6"></textarea>
+            </div>
+            <div class="form-group row">
+              <label class="col-form-label col-md-2">Other Advice</label>
+              <div class="col-md-8 pt-2 pt-md-0 otherAdviceTagsInputContainer">
+                <input type="text" id="otherAdviceTagsInput" class="form-control"/>
               </div>
             </div>
             <div class="form-group row">

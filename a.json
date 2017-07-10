@@ -1,0 +1,266 @@
+[
+  {
+    "name": "ACNESOL A NANO GEL",
+    "form": "GM of gel",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 189,
+    "size": "15 GM gel",
+    "manufacturer": "Systopic Laboratories Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Adapalene",
+        "strength": "0.1% w/w"
+      },
+      {
+        "name": "Clindamycin",
+        "strength": "1% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586aadd291c126fe0568ab21",
+    "medicine_id": "IV61Gz",
+    "search_score": 3.791189
+  },
+  {
+    "name": "ATM A GEL",
+    "form": "GM of gel",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 115.5,
+    "size": "15 GM gel",
+    "manufacturer": "Indoco Remedies Ltd",
+    "constituents": [
+      {
+        "name": "Azithromycin",
+        "strength": "2% w/v"
+      },
+      {
+        "name": "Adapalene",
+        "strength": "0.02% w/v"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586aae2c91c126fe0569030b",
+    "medicine_id": "Iz11G3",
+    "search_score": 3.791189
+  },
+  {
+    "name": "AZITHRAL-A 500MG TABLET",
+    "form": "tablet",
+    "standardUnits": 3,
+    "packageForm": "strip",
+    "price": 123.6,
+    "size": "3 tablets",
+    "manufacturer": "Alembic Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Azithromycin",
+        "strength": "500mg"
+      },
+      {
+        "name": "Ambroxol",
+        "strength": "75mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586aad9091c126fe05686a57",
+    "medicine_id": "IIVQ3I",
+    "search_score": 3.791189
+  },
+  {
+    "name": "ALERTUS A SYRUP",
+    "form": "ML of syrup",
+    "standardUnits": 1,
+    "packageForm": "bottle",
+    "price": 33.68,
+    "size": "60 ML syrup",
+    "manufacturer": "Megha Healthcare Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Levocetirizine",
+        "strength": "2.5mg"
+      },
+      {
+        "name": "Zinc Gluconate",
+        "strength": "7.5mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586ab1d091c126fe056c942b",
+    "medicine_id": "6w163I",
+    "search_score": 3.791189
+  },
+  {
+    "name": "ASCAPIL A TABLET",
+    "form": "tablet",
+    "standardUnits": 1,
+    "packageForm": "strip",
+    "price": 19,
+    "size": "1 tablet",
+    "manufacturer": "Abbott India Ltd",
+    "constituents": [
+      {
+        "name": "Ivermectin",
+        "strength": "6mg"
+      },
+      {
+        "name": "Albendazole",
+        "strength": "400mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586aae2991c126fe05690083",
+    "medicine_id": "Iz14wI",
+    "search_score": 3.7549317
+  },
+  {
+    "name": "AMLOSTAR A TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 28.61,
+    "size": "10 tablets",
+    "manufacturer": "Captab Biotec",
+    "constituents": [
+      {
+        "name": "Amlodipine",
+        "strength": "NA"
+      },
+      {
+        "name": "Atenolol",
+        "strength": "NA"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586ab0e991c126fe056bb295",
+    "medicine_id": "633GI4",
+    "search_score": 3.7549317
+  },
+  {
+    "name": "ALKOF A  SYRUP",
+    "form": "ML of syrup",
+    "standardUnits": 1,
+    "packageForm": "bottle",
+    "price": 31.25,
+    "size": "100 ML syrup",
+    "manufacturer": "Alkem Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Cetirizine",
+        "strength": "2 mg/5ml"
+      },
+      {
+        "name": "Dextromethorphan",
+        "strength": "10 mg/5ml"
+      },
+      {
+        "name": "Phenylephrine",
+        "strength": "2.5 mg/5ml"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586ab21491c126fe056cd703",
+    "medicine_id": "4GVVIQ",
+    "search_score": 3.7549317
+  },
+  {
+    "name": "ARVAST-A 150 CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 48.22,
+    "size": "10 capsules",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Rosuvastatin",
+        "strength": "10mg"
+      },
+      {
+        "name": "Aspirin(ASA)",
+        "strength": "150mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586aaf3791c126fe056a07f3",
+    "medicine_id": "6436IQ",
+    "search_score": 3.7419624
+  },
+  {
+    "name": "ACORD A TABLET",
+    "form": "tablet",
+    "standardUnits": 14,
+    "packageForm": "strip",
+    "price": 49,
+    "size": "14 tablets",
+    "manufacturer": "Invision Medi Sciences Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Amlodipine",
+        "strength": "NA"
+      },
+      {
+        "name": "Atenolol",
+        "strength": "NA"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586ab0c391c126fe056b8c8b",
+    "medicine_id": "6344VI",
+    "search_score": 3.7419624
+  },
+  {
+    "name": "AQUATEL A 40MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 73.5,
+    "size": "10 tablets",
+    "manufacturer": "Proqol Healthcare",
+    "constituents": [
+      {
+        "name": "Telmisartan",
+        "strength": "40mg"
+      },
+      {
+        "name": "Amlodipine",
+        "strength": "5mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "id": "586ab35b91c126fe056e16e1",
+    "medicine_id": "44Q3G6",
+    "search_score": 3.7419624
+  }
+]

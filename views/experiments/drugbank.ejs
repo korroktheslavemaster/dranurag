@@ -28,6 +28,16 @@ var onemg =  new Bloodhound({
   }
 });
 
+var healthos =  new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
+  remote: {
+    url: '/experiments/healthos/medicines?q=%QUERY',
+    wildcard: '%QUERY'
+  }
+});
+
 
 $(() => {
   $("#drugbank").typeahead({
@@ -55,6 +65,23 @@ $(() => {
         // templates: {
         //   suggestion: Handlebars.compile($('#testsTypeaheadTemplate').html())
         // }
+      }).on('typeahead:select', function(e, elm) {
+        console.log(elm)
+      })
+   $("#healthos").typeahead({
+        hint: true,
+        highlight: true,
+        minLength: 1
+      },
+      {
+        name: 'healthos',
+        display: 'name',
+        source: healthos,
+        // templates: {
+        //   suggestion: Handlebars.compile($('#testsTypeaheadTemplate').html())
+        // }
+      }).on('typeahead:select', function(e, elm) {
+        console.log(elm)
       })
   
 })
@@ -115,6 +142,7 @@ var GitHubEmojiAPICallback = function(resp) {
       <p class="lead">This is the homepage</p>
       <input type="text" id="drugbank" class="form-control">
       <input type="text" id="1mg" class="form-control">
+      <input type="text" id="healthos" class="form-control">
       <input type="textarea" id="textarea1">
     </div>
   </div>

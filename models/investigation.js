@@ -45,7 +45,7 @@ investigationSchema.post('save', function(doc) {
       upsert: true, setDefaultsOnInsert: true, new: true
     }
   )
-  .then(()=>{})
+  .exec()
 })
 
 

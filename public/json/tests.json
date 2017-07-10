@@ -1,59 +1,59 @@
-  {"val": {"name": "Urea", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 1}
-  {"val": {"name": "Creatinine, Serum", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 1}
-  {"val": {"name": "Uric Acid", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 1}
-  {"val": {"name": "Calcium", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 1}
-  {"val": {"name": "Phosphorus", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 1}
-  {"val": {"name": "Alkaline Phosphatase (ALP)", "units":   "U/L" , "cat" : ""}, "__v": 0, "freq": 1}
-  {"val": {"name": "Total Protein", "units":   "g/dL" , "cat": "Protein, Total"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Albumin", "units":   "g/dL" , "cat": "Protein, Total"}, "__v": 0, "freq": 1}
-  {"val": {"name": "A : G Ratio", "units":   "-" , "cat": "Protein, Total"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Sodium", "units":   "mEq/L" , "cat": "Protein, Total"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Potassium", "units":   "mEq/L" , "cat": "Protein, Total"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Chloride", "units":   "mEq/L" , "cat": "Protein, Total"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Hemoglobin", "units":   "g/dL" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Packed Cell Volume (PCV)", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "RBC Count", "units":   "mill/mm3" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "MCV", "units":   "fL" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "MCH", "units":   "pg" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "MCHC", "units":   "g/dL" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Red Cell Distribution Width (RCDW)", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Total Leukocyte Count (TLC)", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Segmented Neutrophils", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Lymphocytes", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Monocytes", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Eosinophils", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Basophils", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Neutrophils", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Lymphocytes", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Monocytes", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Eosinophils", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Basophils", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 1}
-  {"val": {"name": "Platelet Count", "units":   "thou/mm3", "cat": "CBC" }, "__v": 0, "freq": 1}
-  {"val": {"name":"Colour", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"pH", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Proteins", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Glucose", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Ketones", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Bilirubin", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Urobilinogen", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Leucocyte Esterase", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Nitrite", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Red Blood Cells (RBC)", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Pus Cells", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Epithelial Cells", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Casts", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Crystals", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"Others", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 1}
-  {"val": {"name":"HbA1c", "units": "%", "cat": ""}, "__v": 0, "freq": 1}
-  {"val": {"name":"Glucose, Fasting", "units": "mg/dL", "cat": ""}, "__v": 0, "freq": 1}
-  {"val": {"name":"Glucose, PP", "units": "mg/dL", "cat": ""}, "__v": 0, "freq": 1}
-  {"val": {"name":"T4, Free; FT4", "units": "mg/dL", "cat": ""}, "__v": 0, "freq": 1}
-  {"val": {"name":"T3, Free; FT3", "units": "mg/dL", "cat": ""}, "__v": 0, "freq": 1}
-  {"val": {"name":"Vitamin D, 25 - Hydroxy, Serum", "units": "nmol/L", "cat": ""}, "__v": 0, "freq": 1}
-  {"val": {"name":"Vitamin B-12, Serum", "units": "nmol/L", "cat": ""}, "__v": 0, "freq": 1}
-  {"val": {"name":"TSH, Ultrasensitive", "units": "ulU/mL", "cat": ""}, "__v": 0, "freq": 1}
-  {"val": {"name": "S. Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 1}
-  {"val": {"name": "S. Triglyceride", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 1}
-  {"val": {"name": "LDL Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 1}
-  {"val": {"name": "HDL Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 1}
-  {"val": {"name": "VLDL Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 1}
+  {"val": {"name": "Urea", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 0}
+  {"val": {"name": "Creatinine, Serum", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 0}
+  {"val": {"name": "Uric Acid", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 0}
+  {"val": {"name": "Calcium", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 0}
+  {"val": {"name": "Phosphorus", "units":   "mg/dL" , "cat" : ""}, "__v": 0, "freq": 0}
+  {"val": {"name": "Alkaline Phosphatase (ALP)", "units":   "U/L" , "cat" : ""}, "__v": 0, "freq": 0}
+  {"val": {"name": "Total Protein", "units":   "g/dL" , "cat": "Protein, Total"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Albumin", "units":   "g/dL" , "cat": "Protein, Total"}, "__v": 0, "freq": 0}
+  {"val": {"name": "A : G Ratio", "units":   "-" , "cat": "Protein, Total"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Sodium", "units":   "mEq/L" , "cat": "Protein, Total"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Potassium", "units":   "mEq/L" , "cat": "Protein, Total"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Chloride", "units":   "mEq/L" , "cat": "Protein, Total"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Hemoglobin", "units":   "g/dL" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Packed Cell Volume (PCV)", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "RBC Count", "units":   "mill/mm3" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "MCV", "units":   "fL" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "MCH", "units":   "pg" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "MCHC", "units":   "g/dL" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Red Cell Distribution Width (RCDW)", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Total Leukocyte Count (TLC)", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Segmented Neutrophils", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Lymphocytes", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Monocytes", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Eosinophils", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Basophils", "units":   "%" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Neutrophils", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Lymphocytes", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Monocytes", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Eosinophils", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Basophils", "units":   "thou/mm3" , "cat": "CBC"}, "__v": 0, "freq": 0}
+  {"val": {"name": "Platelet Count", "units":   "thou/mm3", "cat": "CBC" }, "__v": 0, "freq": 0}
+  {"val": {"name":"Colour", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"pH", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Proteins", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Glucose", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Ketones", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Bilirubin", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Urobilinogen", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Leucocyte Esterase", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Nitrite", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Red Blood Cells (RBC)", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Pus Cells", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Epithelial Cells", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Casts", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Crystals", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"Others", "units": "-", "cat": "Urine, R/E"}, "__v": 0, "freq": 0}
+  {"val": {"name":"HbA1c", "units": "%", "cat": ""}, "__v": 0, "freq": 0}
+  {"val": {"name":"Glucose, Fasting", "units": "mg/dL", "cat": ""}, "__v": 0, "freq": 0}
+  {"val": {"name":"Glucose, PP", "units": "mg/dL", "cat": ""}, "__v": 0, "freq": 0}
+  {"val": {"name":"T4, Free; FT4", "units": "mg/dL", "cat": ""}, "__v": 0, "freq": 0}
+  {"val": {"name":"T3, Free; FT3", "units": "mg/dL", "cat": ""}, "__v": 0, "freq": 0}
+  {"val": {"name":"Vitamin D, 25 - Hydroxy, Serum", "units": "nmol/L", "cat": ""}, "__v": 0, "freq": 0}
+  {"val": {"name":"Vitamin B-12, Serum", "units": "nmol/L", "cat": ""}, "__v": 0, "freq": 0}
+  {"val": {"name":"TSH, Ultrasensitive", "units": "ulU/mL", "cat": ""}, "__v": 0, "freq": 0}
+  {"val": {"name": "S. Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 0}
+  {"val": {"name": "S. Triglyceride", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 0}
+  {"val": {"name": "LDL Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 0}
+  {"val": {"name": "HDL Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 0}
+  {"val": {"name": "VLDL Cholesterol", "units": "mg/dL", "cat": "Total Lipid Profile (TLP)"}, "__v": 0, "freq": 0}

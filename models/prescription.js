@@ -22,9 +22,8 @@ medicineAdviceSchema.post('save', function(doc) {
   _.zip([drug, frequency, duration, specialAdvice], [Drug, Frequency, Duration, SpecialAdvice])
    .filter(([val, model]) => val) // only non empty val's should be added
    .map(([val, model]) => {
-      // empty function for .then? otherwise doesnt work?
       model.findOneAndUpdate({val: val}, {$inc: {freq: 1}}, {upsert: true, setDefaultsOnInsert: true, new: true})
-        .then(()=>{})
+        .exec()
    })
 })
 
@@ -47,12 +46,19 @@ var prescriptionSchema = mongoose.Schema({
 });
 
 prescriptionSchema.post('save', function(doc) {
-  var Investigation = require('./autocomplete/investigation')
+  let Investigation = require('./autocomplete/investigation')
+  let {Dietary, Other} = require('./autocomplete/treatmentAdvice')
   // add investigations required entries to autocomplete table
-  doc.investigationsRequired.map(elm => {
-    Investigation.findOneAndUpdate({val: elm}, {$inc: {freq: 1}}, {upsert: true, setDefaultsOnInsert: true, new: true})
-      .then(()=>{})
-  })
+  // add dietary advice and other advice entries to autocompelte table
+  let {investigationsRequired, dietaryAdvice, otherAdvice} = doc
+  _.zip([investigationsRequired, dietaryAdvice, otherAdvice], [Investigation, Dietary, Other])
+   .map(([elms, model]) => {
+      elms.filter(elm => elm).map(elm => {
+        // console.log(elm)
+        model.findOneAndUpdate({val: elm}, {$inc: {freq: 1}}, {upsert: true, setDefaultsOnInsert: true, new: true})
+          .exec()
+      })
+   })
 })
 
 

@@ -1,0 +1,5214 @@
+[
+  {
+    "name": "TOPINATE 0.05% CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 60,
+    "size": "30 GM cream",
+    "manufacturer": "Systopic Laboratories Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Clobetasol Topical",
+        "strength": "0.05%"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGGGz"
+  },
+  {
+    "name": "CLOP 0.05% W/W CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 43.4,
+    "size": "10 GM cream",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Clobetasol Topical",
+        "strength": "0.05% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGGIG"
+  },
+  {
+    "name": "TENOVATE 0.05% OINTMENT",
+    "form": "GM of ointment",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 61.85,
+    "size": "15 GM ointment",
+    "manufacturer": "Glaxo SmithKline Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Clobetasol Topical",
+        "strength": "0.05%w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGGIQ"
+  },
+  {
+    "name": "CLOP E CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 79,
+    "size": "20 GM cream",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Clobetasol Topical",
+        "strength": "0.1%"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGG6Q"
+  },
+  {
+    "name": "CUTISOFT 1% W/W CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 78,
+    "size": "10 GM cream",
+    "manufacturer": "Ipca Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Hydrocortisone Topical",
+        "strength": "1% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGGVV"
+  },
+  {
+    "name": "CLOP 0.05% W/W CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 96.6,
+    "size": "30 GM cream",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Clobetasol Topical",
+        "strength": "0.05% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGGV3"
+  },
+  {
+    "name": "ENTOFOAM 2 GM INHALER",
+    "form": "inhaler",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 536.5,
+    "size": "1 inhaler",
+    "manufacturer": "Cipla Ltd",
+    "constituents": [
+      {
+        "name": "Hydrocortisone",
+        "strength": "2 gm"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IGGQ3"
+  },
+  {
+    "name": "FLUTIVATE 0.05% W/W OINTMENT",
+    "form": "GM of ointment",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 109.15,
+    "size": "20 GM ointment",
+    "manufacturer": "Glaxo SmithKline Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluticasone (topical)",
+        "strength": "0.05% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGG11"
+  },
+  {
+    "name": "FLOMON 0.1%W/V EYE DROP",
+    "form": "ML of eye drop",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 52.44,
+    "size": "5 ML eye drop",
+    "manufacturer": "FDC Ltd",
+    "constituents": [
+      {
+        "name": "Fluorometholone",
+        "strength": "0.1%w/v"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGI6z"
+  },
+  {
+    "name": "DEDEP 20MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 21.15,
+    "size": "10 tablets",
+    "manufacturer": "S P Pharma",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IGI36"
+  },
+  {
+    "name": "F TIN 20MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 46,
+    "size": "10 tablets",
+    "manufacturer": "A N Pharmacia",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IGI14"
+  },
+  {
+    "name": "FLUVATOR 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 226,
+    "size": "10 tablets",
+    "manufacturer": "Torrent Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG6G1"
+  },
+  {
+    "name": "PRONIL 20 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 6,
+    "packageForm": "strip",
+    "price": 4.21,
+    "size": "6 capsules",
+    "manufacturer": "Psychotropics India Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG6Gw"
+  },
+  {
+    "name": "NUZAC 20 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 20.72,
+    "size": "10 capsules",
+    "manufacturer": "Cipla Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG661"
+  },
+  {
+    "name": "FLUNIL 10 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 29,
+    "size": "10 capsules",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG644"
+  },
+  {
+    "name": "TRIZAC 20MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 68.01,
+    "size": "10 capsules",
+    "manufacturer": "Unichem Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG6V4"
+  },
+  {
+    "name": "DEPZAC 20MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 28,
+    "size": "10 capsules",
+    "manufacturer": "Cipla Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG6zI"
+  },
+  {
+    "name": "FLUTIN 20MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 36,
+    "size": "10 capsules",
+    "manufacturer": "Helios Pharmaceuticals",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG6QG"
+  },
+  {
+    "name": "FLUTINE 20MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 34.62,
+    "size": "10 capsules",
+    "manufacturer": "Reliance Formulation Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG63z"
+  },
+  {
+    "name": "PRODEP 10 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 29.08,
+    "size": "10 capsules",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG633"
+  },
+  {
+    "name": "FLUTEE 20 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 35.49,
+    "size": "10 capsules",
+    "manufacturer": "Talent Healthcare",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG61I"
+  },
+  {
+    "name": "DAWNEX 20MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 39.16,
+    "size": "10 capsules",
+    "manufacturer": "Micro Labs Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG6w4"
+  },
+  {
+    "name": "FLUNIL 20 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 35.49,
+    "size": "10 capsules",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG6wV"
+  },
+  {
+    "name": "FLUTEE 40 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 58.5,
+    "size": "10 capsules",
+    "manufacturer": "Talent Healthcare",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "40 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG6wz"
+  },
+  {
+    "name": "PRODEP 20 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 35.49,
+    "size": "10 capsules",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG6ww"
+  },
+  {
+    "name": "FLUTEE 60 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 86.3,
+    "size": "10 capsules",
+    "manufacturer": "Talent Healthcare",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "60 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG4II"
+  },
+  {
+    "name": "FLUNIL 60 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 95.34,
+    "size": "10 capsules",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "60 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG4I6"
+  },
+  {
+    "name": "PRODEP 60 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 95.34,
+    "size": "10 capsules",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "60 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG4I4"
+  },
+  {
+    "name": "SPENZO 0.5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 30,
+    "size": "10 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Flupenthixol",
+        "strength": "0.5mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG46I"
+  },
+  {
+    "name": "FLUANXOL 1 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 52.95,
+    "size": "10 tablets",
+    "manufacturer": "Lundbeck India Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Flupenthixol",
+        "strength": "1 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG46Q"
+  },
+  {
+    "name": "FLUANXOL DEPOT 20 MG INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 175.1,
+    "size": "1 ML injection",
+    "manufacturer": "Lundbeck India Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Flupenthixol",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG44V"
+  },
+  {
+    "name": "PROLINATE 25 MG INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 59,
+    "size": "1 ML injection",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Fluphenazine",
+        "strength": "25 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG4V4"
+  },
+  {
+    "name": "KATADOL 100 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 78.5,
+    "size": "10 capsules",
+    "manufacturer": "Lupin Ltd",
+    "constituents": [
+      {
+        "name": "Flupirtine",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG4Vz"
+  },
+  {
+    "name": "ARFLUR 100MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 25,
+    "size": "10 tablets",
+    "manufacturer": "FDC Ltd",
+    "constituents": [
+      {
+        "name": "Aceclofenac",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG4z6"
+  },
+  {
+    "name": "FLURBIN 0.03% W/V EYE DROP",
+    "form": "ML of eye drop",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 59,
+    "size": "5 ML eye drop",
+    "manufacturer": "Optho Remedies Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Flurbiprofen Topical",
+        "strength": "0.03% w/v"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG436"
+  },
+  {
+    "name": "CYTOMID 250 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 99.85,
+    "size": "10 tablets",
+    "manufacturer": "Cipla Ltd",
+    "constituents": [
+      {
+        "name": "Flutamide",
+        "strength": "250 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG433"
+  },
+  {
+    "name": "FLUVATOR 50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 130,
+    "size": "10 tablets",
+    "manufacturer": "Torrent Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG41V"
+  },
+  {
+    "name": "OCIVOX 50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 95,
+    "size": "10 tablets",
+    "manufacturer": "Consern Pharma  P  Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG41z"
+  },
+  {
+    "name": "UVOX 50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 162,
+    "size": "10 tablets",
+    "manufacturer": "Abbott India Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG4w6"
+  },
+  {
+    "name": "SOREST 50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 147,
+    "size": "10 tablets",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG4w4"
+  },
+  {
+    "name": "FLUVOXIN 50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 135,
+    "size": "10 tablets",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IG4wz"
+  },
+  {
+    "name": "OCIVOX 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 172.5,
+    "size": "10 tablets",
+    "manufacturer": "Consern Pharma  P  Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IGVGG"
+  },
+  {
+    "name": "FREXT 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 244,
+    "size": "10 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IGVG4"
+  },
+  {
+    "name": "UVOX 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 301,
+    "size": "10 tablets",
+    "manufacturer": "Abbott India Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IGVGV"
+  },
+  {
+    "name": "FLUVOXIN 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 220,
+    "size": "10 tablets",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IGVG1"
+  },
+  {
+    "name": "VOXAMIN 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 208,
+    "size": "10 tablets",
+    "manufacturer": "Micro Labs Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IGVGw"
+  },
+  {
+    "name": "FREXT 100 MG TABLET CR",
+    "form": "tablet cr",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 247,
+    "size": "10 tablet cr",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IGVIG"
+  },
+  {
+    "name": "FLUVOXIN CR  100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 240,
+    "size": "10 tablets",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Fluvoxamine",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IGVI6"
+  },
+  {
+    "name": "FOLICON TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 19,
+    "size": "10 tablets",
+    "manufacturer": "Icon Pharma & Surgicals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Folic Acid",
+        "strength": "5mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGV64"
+  },
+  {
+    "name": "PUBERGEN 1000IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 243,
+    "size": "1 ML injection",
+    "manufacturer": "Sanzyme Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "1000IU"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGzVV"
+  },
+  {
+    "name": "FERTIGYN 2000 IU INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 400,
+    "size": "1 injection",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "2000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGzz1"
+  },
+  {
+    "name": "CORION 2000 IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 471.42,
+    "size": "1 ML injection",
+    "manufacturer": "Win-Medicare Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "2000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGzQV"
+  },
+  {
+    "name": "ZYHCG 5000 IU INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 417,
+    "size": "1 injection",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "5000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGzQz"
+  },
+  {
+    "name": "PUBERGEN 5000IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 580,
+    "size": "1 ML injection",
+    "manufacturer": "Sanzyme Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "5000IU"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGz3I"
+  },
+  {
+    "name": "OVIDAC 5000IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 457,
+    "size": "1 ML injection",
+    "manufacturer": "German Remedies",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "5000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGz31"
+  },
+  {
+    "name": "CHORAGON 5000 IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 462.5,
+    "size": "1 ML injection",
+    "manufacturer": "Ferring Pharmaceuticals",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "5000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGz3w"
+  },
+  {
+    "name": "HCG SP 10000 IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 750,
+    "size": "2 ML injection",
+    "manufacturer": "Samarth Life Sciences Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "10000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGz11"
+  },
+  {
+    "name": "FERTIGYN 5000 IU INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 550,
+    "size": "1 injection",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "5000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGzwI"
+  },
+  {
+    "name": "EEMA HP 5000IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 550,
+    "size": "10 ML injection",
+    "manufacturer": "Corona Remedies Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "5000IU"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGzw6"
+  },
+  {
+    "name": "PREGNYL 5000 IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 552.37,
+    "size": "1 ML injection",
+    "manufacturer": "Organon (India) Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "5000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGzwQ"
+  },
+  {
+    "name": "CORION 5000 IU INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 389.95,
+    "size": "1 injection",
+    "manufacturer": "Win-Medicare Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "5000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGzw3"
+  },
+  {
+    "name": "KORAGON HP 5000 IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 573.33,
+    "size": "1 ML injection",
+    "manufacturer": "Ferring Pharmaceuticals",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "5000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGQG6"
+  },
+  {
+    "name": "HMG SP 75 IU INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 850,
+    "size": "1 injection",
+    "manufacturer": "Samarth Life Sciences Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Menotrophin",
+        "strength": "75 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGQGw"
+  },
+  {
+    "name": "FERTIGYN 10000 IU INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 890,
+    "size": "1 injection",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "10000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGQI4"
+  },
+  {
+    "name": "HUMOG 75IU INJECTION INJECTION 75IU",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 713,
+    "size": "1 ML injection",
+    "manufacturer": "Bharat Serums & Vaccines Ltd",
+    "constituents": [
+      {
+        "name": "Menotrophin",
+        "strength": "75IU"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGQI3"
+  },
+  {
+    "name": "FOLICULIN 75 IU INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 826,
+    "size": "1 ML injection",
+    "manufacturer": "Bharat Serums & Vaccines Ltd",
+    "constituents": [
+      {
+        "name": "Urofollitropin",
+        "strength": "75 IU"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGQ4z"
+  },
+  {
+    "name": "HUMOG 150IU INJECTION INJECTION 150IU",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 1102,
+    "size": "1 ML injection",
+    "manufacturer": "Bharat Serums & Vaccines Ltd",
+    "constituents": [
+      {
+        "name": "Menotrophin",
+        "strength": "150IU"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGQQG"
+  },
+  {
+    "name": "FSHSP 150 IU INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 850,
+    "size": "1 injection",
+    "manufacturer": "Samarth Life Sciences Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Follicle Stimulating Hormone",
+        "strength": "150 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGQ3V"
+  },
+  {
+    "name": "RECAGON 300 IU CARTRIDGE",
+    "form": "cartridge",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 8846,
+    "size": "1 cartridge",
+    "manufacturer": "Organon (India) Ltd",
+    "constituents": [
+      {
+        "name": "Follicle Stimulating Hormone",
+        "strength": "300 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGQw4"
+  },
+  {
+    "name": "ARIXTRA 2.5 MG/0.5ML INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 680,
+    "size": "0.5 ML injection",
+    "manufacturer": "Glaxo SmithKline Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fondaparinux",
+        "strength": "2.5 mg/0.5ml"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGQww"
+  },
+  {
+    "name": "DERIFORM 12 MCG RESPULES",
+    "form": "ML of respules",
+    "standardUnits": 1,
+    "packageForm": "strip",
+    "price": 28,
+    "size": "2 ML respules",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Formoterol",
+        "strength": "12 mcg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG3GI"
+  },
+  {
+    "name": "PENIDURE 12LAC UNITS INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 12.47,
+    "size": "1 ML injection",
+    "manufacturer": "Pfizer Ltd",
+    "constituents": [
+      {
+        "name": "Penicillin G",
+        "strength": "12Lac units"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG366"
+  },
+  {
+    "name": "FRUSENEX 40 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 4.76,
+    "size": "10 tablets",
+    "manufacturer": "Geno Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Furosemide",
+        "strength": "40 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG3Vw"
+  },
+  {
+    "name": "FRUSENEX 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 5.2,
+    "size": "10 tablets",
+    "manufacturer": "Geno Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Furosemide",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG3zI"
+  },
+  {
+    "name": "FUROXONE 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 1.96,
+    "size": "10 tablets",
+    "manufacturer": "Glaxo SmithKline Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Furazolidone",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG3Q4"
+  },
+  {
+    "name": "LASIX 10 MG INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 2.32,
+    "size": "2 ML injection",
+    "manufacturer": "Sanofi India  Ltd",
+    "constituents": [
+      {
+        "name": "Furosemide",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG31z"
+  },
+  {
+    "name": "SOFINOX CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 88.63,
+    "size": "10 GM cream",
+    "manufacturer": "Apex Laboratories Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Sodium Fusidate (topical)",
+        "strength": "2% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG311"
+  },
+  {
+    "name": "SOFINOX CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 44.42,
+    "size": "5 GM cream",
+    "manufacturer": "Apex Laboratories Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Sodium Fusidate (topical)",
+        "strength": "2% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG3wG"
+  },
+  {
+    "name": "FUCIDIN 2% W/W OINTMENT",
+    "form": "GM of ointment",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 44.41,
+    "size": "5 GM ointment",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Sodium Fusidate (topical)",
+        "strength": "2% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG3wQ"
+  },
+  {
+    "name": "FUDIC 2% W/W CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 88.8,
+    "size": "10 GM cream",
+    "manufacturer": "Hegde and Hegde Pharmaceutical LLP",
+    "constituents": [
+      {
+        "name": "Fusidic Acid Topical",
+        "strength": "2% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IG1G3"
+  },
+  {
+    "name": "GENTIN  100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 29.62,
+    "size": "10 tablets",
+    "manufacturer": "Psycormedies",
+    "constituents": [
+      {
+        "name": "Gentamicin",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG14G"
+  },
+  {
+    "name": "GABAPIN 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 56,
+    "size": "10 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG144"
+  },
+  {
+    "name": "GABALEPT 300MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 162,
+    "size": "10 capsules",
+    "manufacturer": "Micro Labs Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "300 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG1V3"
+  },
+  {
+    "name": "GABAPIN 800MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 300,
+    "size": "10 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "800 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG1zz"
+  },
+  {
+    "name": "GABANTIN 100 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 54,
+    "size": "10 capsules",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "100mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG1QG"
+  },
+  {
+    "name": "GABATA 300 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 114,
+    "size": "10 capsules",
+    "manufacturer": "Alkem Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "300 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG1Q4"
+  },
+  {
+    "name": "GABATOL 300 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 98.75,
+    "size": "10 capsules",
+    "manufacturer": "Zeus Pharma",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "300 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG1QV"
+  },
+  {
+    "name": "GABATIN 300 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 105,
+    "size": "10 capsules",
+    "manufacturer": "Knoll Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "300mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG1Q1"
+  },
+  {
+    "name": "GABATOR 300MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 131,
+    "size": "10 capsules",
+    "manufacturer": "Torrent Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "300 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG1Qw"
+  },
+  {
+    "name": "GABANTIN 300 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 135,
+    "size": "10 capsules",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "300 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG116"
+  },
+  {
+    "name": "GABA 300 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 94.22,
+    "size": "10 tablets",
+    "manufacturer": "D D Pharmaceuticals",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "300 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG114"
+  },
+  {
+    "name": "GABAPIN 300 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 147,
+    "size": "10 capsules",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "300mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG11Q"
+  },
+  {
+    "name": "GALAMER 4 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 140,
+    "size": "10 tablets",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Galantamine",
+        "strength": "4 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGwG6"
+  },
+  {
+    "name": "GABAPIN 400MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 175,
+    "size": "10 capsules",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "400 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IG1wV"
+  },
+  {
+    "name": "GALAMER 8 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 247,
+    "size": "10 tablets",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Galantamine",
+        "strength": "8 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGwG4"
+  },
+  {
+    "name": "GALAMER OD 8 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 252,
+    "size": "10 tablets",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Galantamine",
+        "strength": "8 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGwGV"
+  },
+  {
+    "name": "GANGUARD 500 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 2650.5,
+    "size": "10 capsules",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Ganciclovir",
+        "strength": "500 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IGw63"
+  },
+  {
+    "name": "DIVALPRO XR 500 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 115.7,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Divalproex",
+        "strength": "500mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGVQ4"
+  },
+  {
+    "name": "2 DEP 20 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 49.92,
+    "size": "10 tablets",
+    "manufacturer": "Orchid Chemicals & Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Duloxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIGV1w"
+  },
+  {
+    "name": "ENTEHEP 1MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 1200,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Entecavir",
+        "strength": "1 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGz6G"
+  },
+  {
+    "name": "EDVAL 2MG TABLET",
+    "form": "tablet",
+    "standardUnits": 28,
+    "packageForm": "strip",
+    "price": 306.1,
+    "size": "28 tablets",
+    "manufacturer": "Maneesh Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Estradiol",
+        "strength": "2 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGzVz"
+  },
+  {
+    "name": "KINGCOX 90 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 89,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Etoricoxib",
+        "strength": "90 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGzz3"
+  },
+  {
+    "name": "KINGCOX 120 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 75.6,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Etoricoxib",
+        "strength": "120 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGzz1"
+  },
+  {
+    "name": "FAMODIN 40MG TABLET",
+    "form": "tablet",
+    "standardUnits": 14,
+    "packageForm": "strip",
+    "price": 5.08,
+    "size": "14 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Famotidine",
+        "strength": "40 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGzQ4"
+  },
+  {
+    "name": "ZURIG 40 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 30,
+    "packageForm": "strip",
+    "price": 256.6,
+    "size": "30 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Febuxostat",
+        "strength": "40 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGzQ1"
+  },
+  {
+    "name": "TRICHEK 200 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 80.02,
+    "size": "10 capsules",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Fenofibrate",
+        "strength": "200 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGz3I"
+  },
+  {
+    "name": "FLUMED 150 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 1,
+    "packageForm": "strip",
+    "price": 5,
+    "size": "1 tablet",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Fluconazole",
+        "strength": "150 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGz13"
+  },
+  {
+    "name": "FLUDEP  20MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 35.49,
+    "size": "10 capsules",
+    "manufacturer": "Cipla Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIGQGG"
+  },
+  {
+    "name": "FLUDAC 10 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 29.09,
+    "size": "10 capsules",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIGQG4"
+  },
+  {
+    "name": "SALIDEP 40 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 47.13,
+    "size": "10 tablets",
+    "manufacturer": "Orchid Chemicals & Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "40 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIGQGV"
+  },
+  {
+    "name": "FLUDAC 20 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 15,
+    "packageForm": "strip",
+    "price": 53.24,
+    "size": "15 capsules",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIGQGz"
+  },
+  {
+    "name": "FLUDAC 60 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 131.3,
+    "size": "10 capsules",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Fluoxetine",
+        "strength": "60 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIGQGQ"
+  },
+  {
+    "name": "HCG 2000 IU INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 269.93,
+    "size": "1 injection",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Human Chorionic Gonadotropin",
+        "strength": "2000 iu"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGQI4"
+  },
+  {
+    "name": "AFDIEX 5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 4.66,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Glibenclamide",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGQ41"
+  },
+  {
+    "name": "GLIMIPREX 1 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 31.32,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Glimepiride",
+        "strength": "1 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGQVz"
+  },
+  {
+    "name": "GLIMIPREX 3 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 59,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Glimepiride",
+        "strength": "3 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGQV1"
+  },
+  {
+    "name": "GLIMIPREX 2 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 55.45,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Glimepiride",
+        "strength": "2 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGQzI"
+  },
+  {
+    "name": "GLIMIPREX 4 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 93,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Glimepiride",
+        "strength": "4 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGQz4"
+  },
+  {
+    "name": "GLEZ 5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 4.97,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Glipizide",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGQz3"
+  },
+  {
+    "name": "DEXASONE 0.5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 2.2,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Dexamethasone",
+        "strength": "0.5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGQ14"
+  },
+  {
+    "name": "TRICORT 4 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 38.91,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Triamcinolone",
+        "strength": "4 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGQ1z"
+  },
+  {
+    "name": "TRICORT 40 MG INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 98,
+    "size": "1 ML injection",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Triamcinolone",
+        "strength": "40 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIGQw6"
+  },
+  {
+    "name": "LANSOFAST 30 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 50.58,
+    "size": "10 capsules",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Lansoprazole",
+        "strength": "30 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIG361"
+  },
+  {
+    "name": "LANCUS 30 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 59.84,
+    "size": "10 capsules",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Lansoprazole",
+        "strength": "30 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIG36w"
+  },
+  {
+    "name": "LEVEXX 500MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 115.19,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Levetiracetam",
+        "strength": "500mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG3VG"
+  },
+  {
+    "name": "LEVOCIDE 500MG TABLET",
+    "form": "tablet",
+    "standardUnits": 5,
+    "packageForm": "strip",
+    "price": 32.71,
+    "size": "5 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Levofloxacin",
+        "strength": "500mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG3zz"
+  },
+  {
+    "name": "LOSIUM 50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 30,
+    "packageForm": "strip",
+    "price": 91.31,
+    "size": "30 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Losartan",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG33Q"
+  },
+  {
+    "name": "WORMIN 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 6,
+    "packageForm": "strip",
+    "price": 30.6,
+    "size": "6 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Mebendazole",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG31I"
+  },
+  {
+    "name": "WORMIN 100 MG SUSPENSION",
+    "form": "ML of suspension",
+    "standardUnits": 1,
+    "packageForm": "bottle",
+    "price": 32.2,
+    "size": "30 ML suspension",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Mebendazole",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG316"
+  },
+  {
+    "name": "BIGOMET 250 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 6.06,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Metformin",
+        "strength": "250 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIG3wI"
+  },
+  {
+    "name": "MEXATE 2.5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 4,
+    "packageForm": "strip",
+    "price": 17.89,
+    "size": "4 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Methotrexate",
+        "strength": "2.5mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG3ww"
+  },
+  {
+    "name": "MEXATE 5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 4,
+    "packageForm": "strip",
+    "price": 31.29,
+    "size": "4 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Methotrexate",
+        "strength": "5mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG1GG"
+  },
+  {
+    "name": "CUTIZONE 0.10% W/W CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 144,
+    "size": "15 GM cream",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Mometasone Topical",
+        "strength": "0.10% w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIG163"
+  },
+  {
+    "name": "CELLCEPT 500MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 619.6,
+    "size": "10 tablets",
+    "manufacturer": "Roche Products India Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Mycophenolate Mofetil",
+        "strength": "500mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG143"
+  },
+  {
+    "name": "MYCOMUNE S 360MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 942.86,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Mycophenolate Mofetil",
+        "strength": "360 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG14w"
+  },
+  {
+    "name": "DECANEURABOL 50 MG INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 182.6,
+    "size": "1 ML injection",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Nandrolone",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG1zI"
+  },
+  {
+    "name": "NEBI 2.5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 47,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Nebivolol",
+        "strength": "2.5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG1zw"
+  },
+  {
+    "name": "NEBI 5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 68,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Nebivolol",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG1Q6"
+  },
+  {
+    "name": "CALNIF 10 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 15.25,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Nifedipine",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG1Q1"
+  },
+  {
+    "name": "DEPIN 5 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 50,
+    "packageForm": "packet",
+    "price": 53.3,
+    "size": "50 capsules",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Nifedipine",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG1Qw"
+  },
+  {
+    "name": "DEPIN 10 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 30,
+    "packageForm": "strip",
+    "price": 39.79,
+    "size": "30 capsules",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Nifedipine",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIG13G"
+  },
+  {
+    "name": "OLMESAFE 10 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 39.45,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Olmesartan",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGwIz"
+  },
+  {
+    "name": "XET CR PLUS 25 MG/0.25 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 174.8,
+    "size": "10 capsules",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Paroxetine",
+        "strength": "25 mg"
+      },
+      {
+        "name": "Clonazepam",
+        "strength": "0.25 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIGw1Q"
+  },
+  {
+    "name": "PEGSTIM 6MG PREFILLED SYRINGE",
+    "form": "ML of prefilled syringe",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 10990,
+    "size": "1 ML prefilled syringe",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Pegfilgrastim",
+        "strength": "6 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIGw11"
+  },
+  {
+    "name": "PITAVA 1 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 90,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Pitavastatin",
+        "strength": "1 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIGII"
+  },
+  {
+    "name": "PITAVA 2 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 153.97,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Pitavastatin",
+        "strength": "2 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIGI6"
+  },
+  {
+    "name": "PROPAL 40MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 22.15,
+    "size": "10 tablets",
+    "manufacturer": "Maneesh Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Propranolol",
+        "strength": "40 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIG61"
+  },
+  {
+    "name": "RABEZOL 20 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 43,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Rabeprazole",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIG44"
+  },
+  {
+    "name": "RABELOC 20 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 95,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Rabeprazole",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIG4w"
+  },
+  {
+    "name": "ACILOC 300 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 20,
+    "packageForm": "strip",
+    "price": 29.1,
+    "size": "20 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Ranitidine",
+        "strength": "300 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIGV1"
+  },
+  {
+    "name": "PAGE 0.5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 22,
+    "size": "10 tablets",
+    "manufacturer": "Orchid Chemicals & Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Repaglinide",
+        "strength": "0.5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIGzV"
+  },
+  {
+    "name": "ROSUPIL 10 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 101.05,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Rosuvastatin",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIGQ1"
+  },
+  {
+    "name": "VISTAGRA 50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 4,
+    "packageForm": "strip",
+    "price": 6.87,
+    "size": "4 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Sildenafil",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIGwV"
+  },
+  {
+    "name": "RAGACIN 400MG TABLET",
+    "form": "tablet",
+    "standardUnits": 5,
+    "packageForm": "strip",
+    "price": 56,
+    "size": "5 tablets",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Gatifloxacin",
+        "strength": "400 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIIIz"
+  },
+  {
+    "name": "ZYDALIS 10 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 4,
+    "packageForm": "strip",
+    "price": 83.68,
+    "size": "4 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Tadalafil",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIII3I"
+  },
+  {
+    "name": "ZYDALIS 20 MG TABLET MD",
+    "form": "tablet md",
+    "standardUnits": 4,
+    "packageForm": "strip",
+    "price": 186.6,
+    "size": "4 tablet md",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Tadalafil",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIII36"
+  },
+  {
+    "name": "FLODART 0.4 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 55,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Tamsulosin",
+        "strength": "0.4 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIII3Q"
+  },
+  {
+    "name": "TELI 20 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 35.49,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Telmisartan",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIII31"
+  },
+  {
+    "name": "THIORELAX 4 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 88,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Thiocolchicoside",
+        "strength": "4 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIII1w"
+  },
+  {
+    "name": "TORSID 5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 18.3,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Torasemide",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III6Gz"
+  },
+  {
+    "name": "TORSID 10 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 31,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Torasemide",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III6GQ"
+  },
+  {
+    "name": "TORSID 20 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 51.93,
+    "size": "10 tablets",
+    "manufacturer": "Aristo Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Torasemide",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III6G3"
+  },
+  {
+    "name": "TROZYD 20 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 141.3,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Trospium",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III66w"
+  },
+  {
+    "name": "VOLVO 0.2 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 64.2,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Voglibose",
+        "strength": "0.2 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III6V1"
+  },
+  {
+    "name": "DIACER 50 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 73.88,
+    "size": "10 capsules",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Diacerein",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III6zz"
+  },
+  {
+    "name": "OXALGIN 100 MG TABLET SR",
+    "form": "tablet sr",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 26.75,
+    "size": "10 tablet sr",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Diclofenac",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III6z3"
+  },
+  {
+    "name": "FRAGMIN 2500 IU PREFILLED SYRINGE",
+    "form": "ML of prefilled syringe",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 353.1,
+    "size": "0.2 ML prefilled syringe",
+    "manufacturer": "Pfizer Ltd",
+    "constituents": [
+      {
+        "name": "Dalteparin",
+        "strength": "2500 IU"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III636"
+  },
+  {
+    "name": "FRAGMIN 5000 IU PREFILLED SYRINGE",
+    "form": "ML of prefilled syringe",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 549,
+    "size": "0.2 ML prefilled syringe",
+    "manufacturer": "Pfizer Ltd",
+    "constituents": [
+      {
+        "name": "Dalteparin",
+        "strength": "5000 IU"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III63V"
+  },
+  {
+    "name": "LORDAY TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 47.25,
+    "size": "10 tablets",
+    "manufacturer": "Adcock Ingram Healthcare Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Desloratadine",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III633"
+  },
+  {
+    "name": "CV SPRIN 75MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 2.21,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Aspirin(ASA)",
+        "strength": "75mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III6w3"
+  },
+  {
+    "name": "CV SPRIN 150 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 54.7,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Aspirin(ASA)",
+        "strength": "150 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III6w1"
+  },
+  {
+    "name": "ZYALFA 10 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 106.4,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Alfuzosin",
+        "strength": "10mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III4I1"
+  },
+  {
+    "name": "MOX 250MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 15,
+    "packageForm": "strip",
+    "price": 32.28,
+    "size": "15 capsules",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Amoxicillin",
+        "strength": "250 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III4ww"
+  },
+  {
+    "name": "FEMISTRA 1 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 366.81,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Anastrozole",
+        "strength": "1 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIV66"
+  },
+  {
+    "name": "AVINDO 500 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 3,
+    "packageForm": "strip",
+    "price": 71.65,
+    "size": "3 tablets",
+    "manufacturer": "Adcock Ingram Healthcare Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Azithromycin",
+        "strength": "500 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIVQ4"
+  },
+  {
+    "name": "CEFIX  100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 86.66,
+    "size": "10 tablets",
+    "manufacturer": "Cipla Ltd",
+    "constituents": [
+      {
+        "name": "Cefixime",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIz61"
+  },
+  {
+    "name": "LGNIL 5 MG SYRUP",
+    "form": "ML of syrup",
+    "standardUnits": 1,
+    "packageForm": "bottle",
+    "price": 14.84,
+    "size": "30 ML syrup",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Cetirizine",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIzw1"
+  },
+  {
+    "name": "CINTAPRO 1 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 90,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Cinitapride",
+        "strength": "1mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIQGw"
+  },
+  {
+    "name": "TOPDEP 10 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 39,
+    "size": "10 tablets",
+    "manufacturer": "Orchid Chemicals & Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Citalopram",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIIQ4G"
+  },
+  {
+    "name": "CLARIMIN 500 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 4,
+    "packageForm": "strip",
+    "price": 275,
+    "size": "4 tablets",
+    "manufacturer": "United Biotech Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Clarithromycin",
+        "strength": "500 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIQ44"
+  },
+  {
+    "name": "DALACIN C 300 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 220.71,
+    "size": "10 capsules",
+    "manufacturer": "Pfizer Ltd",
+    "constituents": [
+      {
+        "name": "Clindamycin",
+        "strength": "300mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIQ4z"
+  },
+  {
+    "name": "DALACIN C 600 MG INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 310.2,
+    "size": "4 ML injection",
+    "manufacturer": "Pfizer Ltd",
+    "constituents": [
+      {
+        "name": "Clindamycin",
+        "strength": "600 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIQ4Q"
+  },
+  {
+    "name": "ZAC 10 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 74,
+    "size": "10 tablets",
+    "manufacturer": "Orchid Chemicals & Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Clobazam",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIIQ4w"
+  },
+  {
+    "name": "CLOFERT 50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 90.72,
+    "size": "10 tablets",
+    "manufacturer": "Maneesh Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Clomifene",
+        "strength": "50mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIQV6"
+  },
+  {
+    "name": "CLOFERT 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 5,
+    "packageForm": "strip",
+    "price": 69.77,
+    "size": "5 tablets",
+    "manufacturer": "Maneesh Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Clomifene",
+        "strength": "100mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIQV4"
+  },
+  {
+    "name": "ABZORB 1% W/V POWDER",
+    "form": "GM of powder",
+    "standardUnits": 1,
+    "packageForm": "box",
+    "price": 104,
+    "size": "100 GM powder",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Clotrimazole Topical",
+        "strength": "1% w/v"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIQVw"
+  },
+  {
+    "name": "ENDOXAN 50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 37.91,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Cyclophosphamide",
+        "strength": "50mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIQz3"
+  },
+  {
+    "name": "CAMPICILLIN 250 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 28.17,
+    "size": "10 capsules",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Ampicillin",
+        "strength": "250 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIQw4"
+  },
+  {
+    "name": "DIVAA -OD 125MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 47,
+    "size": "10 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Divalproex",
+        "strength": "125mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIQww"
+  },
+  {
+    "name": "HERFLAV 200 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 91,
+    "size": "10 tablets",
+    "manufacturer": "Torrent Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Flavoxate",
+        "strength": "200 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III3G3"
+  },
+  {
+    "name": "TRETIVA 30 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 249,
+    "size": "10 capsules",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Isotretinoin",
+        "strength": "30 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III34Q"
+  },
+  {
+    "name": "EBEXID TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 49,
+    "size": "10 tablets",
+    "manufacturer": "Maneesh Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Nicotinamide",
+        "strength": "25mg"
+      },
+      {
+        "name": "Thyroxine",
+        "strength": "15mg"
+      },
+      {
+        "name": "Vitamin B6 (Pyridoxine)",
+        "strength": "1mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III1G3"
+  },
+  {
+    "name": "ACIBAN DSR 30 MG/40 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 83.1,
+    "size": "10 capsules",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Domperidone",
+        "strength": "30 mg"
+      },
+      {
+        "name": "Pantoprazole",
+        "strength": "40 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III1VQ"
+  },
+  {
+    "name": "AMLODAC AT 5 MG/50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 80,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Amlodipine",
+        "strength": "5 mg"
+      },
+      {
+        "name": "Atenolol",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III1z1"
+  },
+  {
+    "name": "ATEN AM 5 MG/50 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 14,
+    "packageForm": "strip",
+    "price": 95,
+    "size": "14 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Amlodipine",
+        "strength": "5 mg"
+      },
+      {
+        "name": "Atenolol",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III1QQ"
+  },
+  {
+    "name": "ATEN-H 12.5MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 66.6,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Atenolol",
+        "strength": "50mg"
+      },
+      {
+        "name": "Hydrochlorothiazide",
+        "strength": "12.5mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III1Q3"
+  },
+  {
+    "name": "ATEN 100 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 14,
+    "packageForm": "strip",
+    "price": 47.63,
+    "size": "14 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Atenolol",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III1Q1"
+  },
+  {
+    "name": "CHYMORAL PLUS 50 MG/50000 AU TABLET",
+    "form": "tablet",
+    "standardUnits": 15,
+    "packageForm": "strip",
+    "price": 113,
+    "size": "15 tablets",
+    "manufacturer": "Torrent Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Diclofenac",
+        "strength": "50 mg"
+      },
+      {
+        "name": "Trypsin Chymotrypsin",
+        "strength": "50000 au"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III133"
+  },
+  {
+    "name": "DYSMEN TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 33,
+    "size": "10 tablets",
+    "manufacturer": "Maneesh Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Dicyclomine",
+        "strength": "10mg"
+      },
+      {
+        "name": "Mefenamic Acid",
+        "strength": "250mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III1wG"
+  },
+  {
+    "name": "ENZOMAC PLUS TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 193,
+    "size": "10 tablets",
+    "manufacturer": "Macleods Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Trypsin",
+        "strength": "48 mg"
+      },
+      {
+        "name": "Bromelain",
+        "strength": "90 mg"
+      },
+      {
+        "name": "Rutoside",
+        "strength": "100 mg"
+      },
+      {
+        "name": "Diclofenac",
+        "strength": "50 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "III1wQ"
+  },
+  {
+    "name": "ENZOMAC 90MG/48MG/100MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 187,
+    "size": "10 tablets",
+    "manufacturer": "Macleods Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Bromelain",
+        "strength": "90 mg"
+      },
+      {
+        "name": "Trypsin",
+        "strength": "48 mg"
+      },
+      {
+        "name": "Rutoside",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "III1w3"
+  },
+  {
+    "name": "GLISTA M 1 TABLET",
+    "form": "tablet",
+    "standardUnits": 30,
+    "packageForm": "strip",
+    "price": 168.4,
+    "size": "30 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Glimepiride",
+        "strength": "1 mg"
+      },
+      {
+        "name": "Metformin",
+        "strength": "500 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIwGz"
+  },
+  {
+    "name": "LORFAST AM TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 62.3,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Ambroxol",
+        "strength": "60 mg"
+      },
+      {
+        "name": "Loratadine",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIw6z"
+  },
+  {
+    "name": "LORFAST MELTAB  TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 74,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Loratadine",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIw63"
+  },
+  {
+    "name": "MEVA C 135MG/5MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 121.6,
+    "size": "10 capsules",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Mebeverine",
+        "strength": "135 mg"
+      },
+      {
+        "name": "Chlordiazepoxide",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "IIIw4Q"
+  },
+  {
+    "name": "NEOLORIDIN D 2.5MG/120MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 54,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Desloratadine",
+        "strength": "2.5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIwVz"
+  },
+  {
+    "name": "NUCOXIA 60MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 96.2,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Etoricoxib",
+        "strength": "60mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIwVw"
+  },
+  {
+    "name": "OLMY 20 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 114.3,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Olmesartan",
+        "strength": "20mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "IIIwz6"
+  },
+  {
+    "name": "RABELOC RD 30 MG/20 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 109,
+    "size": "10 capsules",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Domperidone",
+        "strength": "30 mg"
+      },
+      {
+        "name": "Rabeprazole",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIw36"
+  },
+  {
+    "name": "SYMBIOTIK CAPSULE",
+    "form": "capsule",
+    "standardUnits": 6,
+    "packageForm": "strip",
+    "price": 27.9,
+    "size": "6 capsules",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Amoxicillin",
+        "strength": "250 mg"
+      },
+      {
+        "name": "Cloxacillin",
+        "strength": "250 mg"
+      },
+      {
+        "name": "Lactobacillus",
+        "strength": "1700 million spores"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIw16"
+  },
+  {
+    "name": "TORGET PLUS 20MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 100.9,
+    "size": "10 tablets",
+    "manufacturer": "Zydus Cadila",
+    "constituents": [
+      {
+        "name": "Spironolactone",
+        "strength": "50mg"
+      },
+      {
+        "name": "Torasemide",
+        "strength": "20mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "IIIw13"
+  },
+  {
+    "name": "TRANSLIPO TRIPLE 0.025%/1%/0.1% CREAM",
+    "form": "GM of cream",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 47.02,
+    "size": "10 GM cream",
+    "manufacturer": "Centaur Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Beclometasone",
+        "strength": "0.025%"
+      },
+      {
+        "name": "Clotrimazole",
+        "strength": "1%"
+      },
+      {
+        "name": "Gentamicin",
+        "strength": "0.1%"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6GG1"
+  },
+  {
+    "name": "AUGPOD 50 MG/31.25 MG SYRUP",
+    "form": "ML of syrup",
+    "standardUnits": 1,
+    "packageForm": "bottle",
+    "price": 57.13,
+    "size": "30 ML syrup",
+    "manufacturer": "Elder Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Cefpodoxime",
+        "strength": "50 mg"
+      },
+      {
+        "name": "Clavulanic Acid",
+        "strength": "31.25 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6IQI"
+  },
+  {
+    "name": "SPASMODART TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 39.5,
+    "size": "10 tablets",
+    "manufacturer": "Juggat Pharma",
+    "constituents": [
+      {
+        "name": "Dicyclomine",
+        "strength": "20 mg"
+      },
+      {
+        "name": "Diclofenac",
+        "strength": "50 mg"
+      },
+      {
+        "name": "Paracetamol",
+        "strength": "325 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II663I"
+  },
+  {
+    "name": "COMVINE 30 MG/20 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 54,
+    "size": "10 capsules",
+    "manufacturer": "Alkem Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Domperidone",
+        "strength": "30 mg"
+      },
+      {
+        "name": "Rabeprazole",
+        "strength": "20 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II644V"
+  },
+  {
+    "name": "EFELIN TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 3.69,
+    "size": "10 tablets",
+    "manufacturer": "Indoco Remedies Ltd",
+    "constituents": [
+      {
+        "name": "Salbutamol",
+        "strength": "2 mg"
+      },
+      {
+        "name": "Bromhexine",
+        "strength": "200 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6411"
+  },
+  {
+    "name": "STELBID 5 MG/1 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 31.75,
+    "size": "10 tablets",
+    "manufacturer": "Glaxo SmithKline Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Isopropamide",
+        "strength": "5 mg"
+      },
+      {
+        "name": "Trifluoperazine",
+        "strength": "1 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6Vw3"
+  },
+  {
+    "name": "REFLORA R SACHET",
+    "form": "GM of sachet",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 29.79,
+    "size": "1 GM sachet",
+    "manufacturer": "Sundyota Numandis Pharmaceuticals Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Racecadotril",
+        "strength": "10 mg"
+      },
+      {
+        "name": "Lactic Acid Bacillus Rhamnosus",
+        "strength": "100 million spores"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6zGI"
+  },
+  {
+    "name": "PIOGLUCORED FORTE 5 MG/500 MG/15 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 68,
+    "size": "10 tablets",
+    "manufacturer": "Sun Pharmaceutical Industries Ltd",
+    "constituents": [
+      {
+        "name": "Glibenclamide",
+        "strength": "5 mg"
+      },
+      {
+        "name": "Metformin",
+        "strength": "500 mg"
+      },
+      {
+        "name": "Pioglitazone",
+        "strength": "15 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6QI3"
+  },
+  {
+    "name": "GLIMI DM FORTE 2 MG/500 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 65.71,
+    "size": "10 tablets",
+    "manufacturer": "Shrrishti Health Care Products Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Glimepiride",
+        "strength": "2 mg"
+      },
+      {
+        "name": "Metformin",
+        "strength": "500 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6QVI"
+  },
+  {
+    "name": "BECLOMIN 0.025W/W/2W/W OINTMENT",
+    "form": "GM of ointment",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 27,
+    "size": "15 GM ointment",
+    "manufacturer": "Leben Laboratories Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Beclometasone",
+        "strength": "2 w/w"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "II6343"
+  },
+  {
+    "name": "CLINSOFT GEL",
+    "form": "GM of gel",
+    "standardUnits": 1,
+    "packageForm": "tube",
+    "price": 40,
+    "size": "15 GM gel",
+    "manufacturer": "Invision Medi Sciences Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Triclosan",
+        "strength": "NA"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "II633w"
+  },
+  {
+    "name": "TRIOFLAM 100 MG/500 MG/15 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 70,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Aceclofenac",
+        "strength": "100 mg"
+      },
+      {
+        "name": "Paracetamol",
+        "strength": "500 mg"
+      },
+      {
+        "name": "Serratiopeptidase",
+        "strength": "15 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II61wz"
+  },
+  {
+    "name": "GENLIDE PLUS 100 MG/500 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 36.25,
+    "size": "10 tablets",
+    "manufacturer": "Cadila Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Nimesulide",
+        "strength": "100 mg"
+      },
+      {
+        "name": "Paracetamol",
+        "strength": "500 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6w63"
+  },
+  {
+    "name": "NILUP P 100 MG/500 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 25.71,
+    "size": "10 tablets",
+    "manufacturer": "Lupin Ltd",
+    "constituents": [
+      {
+        "name": "Nimesulide",
+        "strength": "100 mg"
+      },
+      {
+        "name": "Paracetamol",
+        "strength": "500 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6w4V"
+  },
+  {
+    "name": "NASORYL TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 15.31,
+    "size": "10 tablets",
+    "manufacturer": "Glenmark Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Caffeine",
+        "strength": "30 mg"
+      },
+      {
+        "name": "Chlorpheniramine",
+        "strength": "2 mg"
+      },
+      {
+        "name": "Paracetamol",
+        "strength": "500 mg"
+      },
+      {
+        "name": "Phenylephrine",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "II6wQ4"
+  },
+  {
+    "name": "KOLQ TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 36,
+    "size": "10 tablets",
+    "manufacturer": "Blue Cross Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Cetirizine",
+        "strength": "5 mg"
+      },
+      {
+        "name": "Paracetamol",
+        "strength": "325 mg"
+      },
+      {
+        "name": "Phenylephrine",
+        "strength": "5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II6wQw"
+  },
+  {
+    "name": "CORICO P SYRUP",
+    "form": "ML of syrup",
+    "standardUnits": 1,
+    "packageForm": "bottle",
+    "price": 38,
+    "size": "60 ML syrup",
+    "manufacturer": "Molekule India Pvt Ltd",
+    "constituents": [
+      {
+        "name": "Chlorpheniramine",
+        "strength": "1 mg"
+      },
+      {
+        "name": "Paracetamol",
+        "strength": "125 mg"
+      },
+      {
+        "name": "Phenylephrine",
+        "strength": "2.5 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "II6w3I"
+  },
+  {
+    "name": "RCLONAC TABLET SR",
+    "form": "tablet sr",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 69.5,
+    "size": "10 tablet sr",
+    "manufacturer": "Lupin Ltd",
+    "constituents": [
+      {
+        "name": "Diclofenac",
+        "strength": "100mg"
+      },
+      {
+        "name": "Rabeprazole",
+        "strength": "20mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4GQ1"
+  },
+  {
+    "name": "SN-15 TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 73.4,
+    "size": "10 tablets",
+    "manufacturer": "Serum Institute Of India Ltd",
+    "constituents": [
+      {
+        "name": "Nimesulide",
+        "strength": "100 mg"
+      },
+      {
+        "name": "Serratiopeptidase",
+        "strength": "15 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4I46"
+  },
+  {
+    "name": "GATE EYE DROP",
+    "form": "ML of eye drop",
+    "standardUnits": 1,
+    "packageForm": "bottle",
+    "price": 62.25,
+    "size": "5 ML eye drop",
+    "manufacturer": "Ajanta Pharma Ltd",
+    "constituents": [
+      {
+        "name": "Gatifloxacin",
+        "strength": "0.3% w/v"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "II4IQ"
+  },
+  {
+    "name": "MAGNEX 500MG/500MG INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 471.9,
+    "size": "10 ML injection",
+    "manufacturer": "Pfizer Ltd",
+    "constituents": [
+      {
+        "name": "Cefoperazone",
+        "strength": "500 mg"
+      },
+      {
+        "name": "Sulbactam",
+        "strength": "500 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4I13"
+  },
+  {
+    "name": "GATIQUIN 0.3% W/V EYE DROP",
+    "form": "ML of eye drop",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 52,
+    "size": "5 ML eye drop",
+    "manufacturer": "Cipla Ltd",
+    "constituents": [
+      {
+        "name": "Gatifloxacin Topical",
+        "strength": "0.3% w/v"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "II44G"
+  },
+  {
+    "name": "GEFTINAT 250 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 30,
+    "packageForm": "strip",
+    "price": 5900,
+    "size": "30 tablets",
+    "manufacturer": "Natco Pharma Ltd",
+    "constituents": [
+      {
+        "name": "Gefitinib",
+        "strength": "250 mg"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "II4V4"
+  },
+  {
+    "name": "ACITROM 2MG TABLET",
+    "form": "tablet",
+    "standardUnits": 30,
+    "packageForm": "packet",
+    "price": 258.3,
+    "size": "30 tablets",
+    "manufacturer": "Abbott India Ltd",
+    "constituents": [
+      {
+        "name": "NICOUMALONE",
+        "strength": "2mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4V31"
+  },
+  {
+    "name": "TAXIM O CV 200 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 290,
+    "size": "10 tablets",
+    "manufacturer": "Alkem Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Cefixime",
+        "strength": "200 mg"
+      },
+      {
+        "name": "Clavulanic Acid",
+        "strength": "125 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4V1w"
+  },
+  {
+    "name": "ZAXTER 1000 MG INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 2915,
+    "size": "1 injection",
+    "manufacturer": "Alkem Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Meropenem",
+        "strength": "1000 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H1",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4VwG"
+  },
+  {
+    "name": "LANTUS 100IU/ML CARTRIDGE",
+    "form": "ML of cartridge",
+    "standardUnits": 1,
+    "packageForm": "packet",
+    "price": 488.66,
+    "size": "3 ML cartridge",
+    "manufacturer": "Sanofi India  Ltd",
+    "constituents": [
+      {
+        "name": "Insulin Glargine",
+        "strength": "100IU/ml"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "II4z61"
+  },
+  {
+    "name": "GEMCHEM 200 MG INJECTION",
+    "form": "injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 331.25,
+    "size": "1 injection",
+    "manufacturer": "Neon Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Gemcitabine",
+        "strength": "200 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4z3"
+  },
+  {
+    "name": "CLOHEX PLUS MOUTH WASH",
+    "form": "ML of mouth wash",
+    "standardUnits": 1,
+    "packageForm": "bottle",
+    "price": 95,
+    "size": "150 ML mouth wash",
+    "manufacturer": "Dr Reddy's Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Chlorhexidine Gluconate",
+        "strength": "0.20% w/v"
+      },
+      {
+        "name": "Sodium Fluoride",
+        "strength": "0.05% w/v"
+      },
+      {
+        "name": "Zinc Chloride",
+        "strength": "0.09% w/v"
+      }
+    ],
+    "schedule": {
+      "category": "OTC",
+      "label": "It can be sold without a prescription"
+    },
+    "medicine_id": "II4QI4"
+  },
+  {
+    "name": "MUCOLITE 30MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 27.5,
+    "size": "10 tablets",
+    "manufacturer": "Dr Reddy's Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Ambroxol",
+        "strength": "30mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4QI3"
+  },
+  {
+    "name": "ORDENT 200MG/500MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 106.5,
+    "size": "10 tablets",
+    "manufacturer": "Dr Reddy's Laboratories Ltd",
+    "constituents": [
+      {
+        "name": "Ofloxacin",
+        "strength": "200 mg"
+      },
+      {
+        "name": "Ornidazole",
+        "strength": "500 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4QI1"
+  },
+  {
+    "name": "DUBAGEST 300 MG CAPSULE",
+    "form": "capsule",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 418,
+    "size": "10 capsules",
+    "manufacturer": "Glenmark Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Progesterone",
+        "strength": "300 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4Q44"
+  },
+  {
+    "name": "GABAPIN ME 100 TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 75,
+    "size": "10 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Gabapentin",
+        "strength": "100mg"
+      },
+      {
+        "name": "Methylcobalamin",
+        "strength": "500mcg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4Qzw"
+  },
+  {
+    "name": "OLIZA 10MG INJECTION",
+    "form": "ML of injection",
+    "standardUnits": 1,
+    "packageForm": "vial",
+    "price": 68,
+    "size": "2 ML injection",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Olanzapine",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4QQG"
+  },
+  {
+    "name": "PROVANOL FORTE 0.25MG/20MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 45,
+    "size": "10 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Clonazepam",
+        "strength": "0.25mg"
+      },
+      {
+        "name": "Propranolol",
+        "strength": "20mg"
+      }
+    ],
+    "schedule": {
+      "category": "X",
+      "label": "It cannot be sold online"
+    },
+    "medicine_id": "II4QQI"
+  },
+  {
+    "name": "LEVERA 100MG SOLUTION",
+    "form": "ML of solution",
+    "standardUnits": 1,
+    "packageForm": "bottle",
+    "price": 354.9,
+    "size": "100 ML solution",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Levetiracetam",
+        "strength": "100 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4QQ1"
+  },
+  {
+    "name": "LIPICURE 10 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 30,
+    "packageForm": "strip",
+    "price": 160.34,
+    "size": "30 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Atorvastatin",
+        "strength": "10 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4Q3G"
+  },
+  {
+    "name": "LIPICURE 40 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 15,
+    "packageForm": "strip",
+    "price": 282.08,
+    "size": "15 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Atorvastatin",
+        "strength": "40 mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4Q3I"
+  },
+  {
+    "name": "LIPICURE 5 MG TABLET",
+    "form": "tablet",
+    "standardUnits": 10,
+    "packageForm": "strip",
+    "price": 43.05,
+    "size": "10 tablets",
+    "manufacturer": "Intas Pharmaceuticals Ltd",
+    "constituents": [
+      {
+        "name": "Atorvastatin",
+        "strength": "5mg"
+      }
+    ],
+    "schedule": {
+      "category": "H",
+      "label": "It needs a valid prescription to be sold"
+    },
+    "medicine_id": "II4Q36"
+  }
+]

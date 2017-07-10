@@ -55,6 +55,25 @@ module.exports = (app) => {
     })
   })
 
+  // healthos endpoint for drug
+  app.get('/autocomplete/medicineAdvice/drug/healthos', function(req, res) {
+    var headers = {
+      'Authorization' : 'Bearer 55ad7d70367adad2c453aa02de5814898735f8addaa1b11b5e6c18f7c084f573'
+    }
+    var options = {
+      headers: headers,
+      url: 'https://www.healthos.co/api/v1/autocomplete/medicines/brands/' + req.query.q,
+      time: true,
+      forever: true,
+    }
+    request.get(options, (err, response, body) => {
+      // console.log(body)
+      console.log(response.timingPhases)
+      // console.log(body)
+      // console.log(response)
+      res.json(JSON.parse(body))
+    })
+  })
 
   app.get('/autocomplete/medicineAdvice/frequency', (req, res) => {
     Frequency.find()
@@ -73,5 +92,20 @@ module.exports = (app) => {
   app.get('/autocomplete/medicineAdvice/specialAdvice', (req, res) => {
     SpecialAdvice.find()
       .then(docs => res.json(docs.map(elm => elm.val)))
+  })
+
+  var {Dietary, Other} = require('../models/autocomplete/treatmentAdvice')
+  app.get('/autocomplete/treatmentAdvice/dietary', (req, res) => {
+    Dietary.find()
+      .then(docs => {
+        res.json(docs.map(elm => elm.val))
+      })
+  })
+
+  app.get('/autocomplete/treatmentAdvice/other', (req, res) => {
+    Other.find()
+      .then(docs => {
+        res.json(docs.map(elm => elm.val))
+      })
   })
 }

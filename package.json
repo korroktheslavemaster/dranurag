@@ -27,13 +27,14 @@
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
     "mongoose": "^4.10.6",
-    "mongoose-auto-increment": "^5.0.1", 
+    "mongoose-auto-increment": "^5.0.1",
     "passport": "^0.3.2",
     "passport-local": "^1.0.0",
     "pdfmake": "^0.1.31",
     "phantomjs": "^2.1.7",
     "prince": "^1.4.0",
-    "request": "^2.81.0"
+    "request": "^2.81.0",
+    "request-promise-native": "^1.0.4"
   },
   "engines": {
     "node": "6.11.0"
