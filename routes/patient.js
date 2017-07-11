@@ -110,7 +110,7 @@ module.exports = (app) => {
         throw {message: 'Invalid patient ID.'}
       } else {
         req.body.investigationsRequired = _.filter(req.body.investigationsRequired, elm => elm)
-        req.body.chiefComplaints = _.split(req.body.chiefComplaints, '\r\n').filter(elm => elm)
+        // req.body.chiefComplaints = _.split(req.body.chiefComplaints, '\r\n').filter(elm => elm)
         req.body.onExaminationNotes = _.split(req.body.onExaminationNotes, '\r\n').filter(elm => elm)
         // req.body.dietaryAdvice = _.split(req.body.dietaryAdvice, '\r\n').filter(elm => elm)
         // req.body.otherAdvice = _.split(req.body.otherAdvice, '\r\n').filter(elm => elm)

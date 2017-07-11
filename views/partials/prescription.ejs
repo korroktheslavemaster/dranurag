@@ -66,7 +66,7 @@
         </div>
         <div class="row py-1">
           <strong class="col-4">Diagnosis</strong>
-          <text class="col-8"><%=prescription.diagnosis%></text>
+          <text class="col-8"><%=prescription.diagnosis.reduce((tot, str) => (tot + ' with ' + str))%></text>
         </div>
         <%if (prescription.chiefComplaints) {%>
         <div class="row py-1">

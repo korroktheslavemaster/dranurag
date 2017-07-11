@@ -1,0 +1,840 @@
+    {"val": "conscious proprioception", "__v": 0, "freq": 0}
+    {"val": "synovitis", "__v": 0, "freq": 0}
+    {"val": "loss of tendon reflex", "__v": 0, "freq": 0}
+    {"val": "sinus bradycardia", "__v": 0, "freq": 0}
+    {"val": "enanthem", "__v": 0, "freq": 0}
+    {"val": "loss of weight", "__v": 0, "freq": 0}
+    {"val": "hoarse voice", "__v": 0, "freq": 0}
+    {"val": "dyspneic enteritis", "__v": 0, "freq": 0}
+    {"val": "blister", "__v": 0, "freq": 0}
+    {"val": "severe abdominal cramp", "__v": 0, "freq": 0}
+    {"val": "acute weight loss", "__v": 0, "freq": 0}
+    {"val": "facial paralysis", "__v": 0, "freq": 0}
+    {"val": "fussy infant", "__v": 0, "freq": 0}
+    {"val": "right lower quadrant abdominal tenderness", "__v": 0, "freq": 0}
+    {"val": "syncope and collapse", "__v": 0, "freq": 0}
+    {"val": "alexia", "__v": 0, "freq": 0}
+    {"val": "septicemia", "__v": 0, "freq": 0}
+    {"val": "eschar", "__v": 0, "freq": 0}
+    {"val": "catatonia", "__v": 0, "freq": 0}
+    {"val": "leg swelling", "__v": 0, "freq": 0}
+    {"val": "decreased appetite", "__v": 0, "freq": 0}
+    {"val": "persistent vegetative state", "__v": 0, "freq": 0}
+    {"val": "low birth weight", "__v": 0, "freq": 0}
+    {"val": "granulomatous inflammation", "__v": 0, "freq": 0}
+    {"val": "spondylitis", "__v": 0, "freq": 0}
+    {"val": "proprioception symptom", "__v": 0, "freq": 0}
+    {"val": "muscle twitching", "__v": 0, "freq": 0}
+    {"val": "weariness", "__v": 0, "freq": 0}
+    {"val": "extracellular fluid alteration", "__v": 0, "freq": 0}
+    {"val": "peritonitis", "__v": 0, "freq": 0}
+    {"val": "sleep related movement disorder", "__v": 0, "freq": 0}
+    {"val": "lack of normal physiological development", "__v": 0, "freq": 0}
+    {"val": "delirium", "__v": 0, "freq": 0}
+    {"val": "afebrile", "__v": 0, "freq": 0}
+    {"val": "vertigo", "__v": 0, "freq": 0}
+    {"val": "progressive weakness", "__v": 0, "freq": 0}
+    {"val": "tracheitis", "__v": 0, "freq": 0}
+    {"val": "cornea symptom", "__v": 0, "freq": 0}
+    {"val": "dysuria", "__v": 0, "freq": 0}
+    {"val": "abdominal mass", "__v": 0, "freq": 0}
+    {"val": "weakness", "__v": 0, "freq": 0}
+    {"val": "respiratory abnormality", "__v": 0, "freq": 0}
+    {"val": "acute enteritis", "__v": 0, "freq": 0}
+    {"val": "thyroid abscesses", "__v": 0, "freq": 0}
+    {"val": "tachycardia", "__v": 0, "freq": 0}
+    {"val": "cytopenia", "__v": 0, "freq": 0}
+    {"val": "throat pain", "__v": 0, "freq": 0}
+    {"val": "lymphadenitis", "__v": 0, "freq": 0}
+    {"val": "hyperalgesia", "__v": 0, "freq": 0}
+    {"val": "cataplexy", "__v": 0, "freq": 0}
+    {"val": "parotid abscess", "__v": 0, "freq": 0}
+    {"val": "hind limb paralysis", "__v": 0, "freq": 0}
+    {"val": "disorientation", "__v": 0, "freq": 0}
+    {"val": "double vision", "__v": 0, "freq": 0}
+    {"val": "inability to lie flat", "__v": 0, "freq": 0}
+    {"val": "hemorrhage from throat", "__v": 0, "freq": 0}
+    {"val": "hypergammaglobulinemia", "__v": 0, "freq": 0}
+    {"val": "nystagmus", "__v": 0, "freq": 0}
+    {"val": "emaciation", "__v": 0, "freq": 0}
+    {"val": "vasculitis", "__v": 0, "freq": 0}
+    {"val": "vascular alteration", "__v": 0, "freq": 0}
+    {"val": "hemorrhagic gastroenteritis", "__v": 0, "freq": 0}
+    {"val": "neuropathic pain", "__v": 0, "freq": 0}
+    {"val": "reticulocytosis", "__v": 0, "freq": 0}
+    {"val": "severe headache", "__v": 0, "freq": 0}
+    {"val": "voice disturbance", "__v": 0, "freq": 0}
+    {"val": "splitting of urinary stream", "__v": 0, "freq": 0}
+    {"val": "dizziness", "__v": 0, "freq": 0}
+    {"val": "laryngitis", "__v": 0, "freq": 0}
+    {"val": "clonic seizure", "__v": 0, "freq": 0}
+    {"val": "liver symptom", "__v": 0, "freq": 0}
+    {"val": "corneal ulcers", "__v": 0, "freq": 0}
+    {"val": "aphasia", "__v": 0, "freq": 0}
+    {"val": "respiratory failure", "__v": 0, "freq": 0}
+    {"val": "icteric mucous membrane", "__v": 0, "freq": 0}
+    {"val": "diarrhea", "__v": 0, "freq": 0}
+    {"val": "progressive prostration", "__v": 0, "freq": 0}
+    {"val": "impaired gag reflex", "__v": 0, "freq": 0}
+    {"val": "poor enunciation", "__v": 0, "freq": 0}
+    {"val": "circling movement", "__v": 0, "freq": 0}
+    {"val": "meningoencephalitis", "__v": 0, "freq": 0}
+    {"val": "muscle necrosis", "__v": 0, "freq": 0}
+    {"val": "hypothermia", "__v": 0, "freq": 0}
+    {"val": "encephalitis", "__v": 0, "freq": 0}
+    {"val": "maculopapular rash", "__v": 0, "freq": 0}
+    {"val": "abdominal lump", "__v": 0, "freq": 0}
+    {"val": "leg weakness", "__v": 0, "freq": 0}
+    {"val": "anxiety", "__v": 0, "freq": 0}
+    {"val": "prostatic abscess", "__v": 0, "freq": 0}
+    {"val": "colic", "__v": 0, "freq": 0}
+    {"val": "sweaty", "__v": 0, "freq": 0}
+    {"val": "runny nose", "__v": 0, "freq": 0}
+    {"val": "nutrition, metabolism, and development symptom", "__v": 0, "freq": 0}
+    {"val": "phlegm", "__v": 0, "freq": 0}
+    {"val": "painful respiration", "__v": 0, "freq": 0}
+    {"val": "left upper quadrant abdominal pain", "__v": 0, "freq": 0}
+    {"val": "areflexia", "__v": 0, "freq": 0}
+    {"val": "severe myalgia", "__v": 0, "freq": 0}
+    {"val": "faint", "__v": 0, "freq": 0}
+    {"val": "dysfunctions associated with sleep stages", "__v": 0, "freq": 0}
+    {"val": "urethral discharge", "__v": 0, "freq": 0}
+    {"val": "acute suppurative parotiditis", "__v": 0, "freq": 0}
+    {"val": "spontaneous abortion", "__v": 0, "freq": 0}
+    {"val": "anuria", "__v": 0, "freq": 0}
+    {"val": "muscle soreness", "__v": 0, "freq": 0}
+    {"val": "urinary stream symptom", "__v": 0, "freq": 0}
+    {"val": "transient alteration of awareness", "__v": 0, "freq": 0}
+    {"val": "right upper quadrant pelvic swelling", "__v": 0, "freq": 0}
+    {"val": "spasticity", "__v": 0, "freq": 0}
+    {"val": "bloody stool", "__v": 0, "freq": 0}
+    {"val": "itching", "__v": 0, "freq": 0}
+    {"val": "sputum", "__v": 0, "freq": 0}
+    {"val": "dilated pupil", "__v": 0, "freq": 0}
+    {"val": "cyclic fever", "__v": 0, "freq": 0}
+    {"val": "objective vertigo", "__v": 0, "freq": 0}
+    {"val": "painful reginal lymphadenopathy", "__v": 0, "freq": 0}
+    {"val": "ophthalmoplegia", "__v": 0, "freq": 0}
+    {"val": "epididymitis", "__v": 0, "freq": 0}
+    {"val": "bronchopneumonia", "__v": 0, "freq": 0}
+    {"val": "decreased pharyngeal tone", "__v": 0, "freq": 0}
+    {"val": "disturbances of sensation of smell and taste", "__v": 0, "freq": 0}
+    {"val": "stillbirth", "__v": 0, "freq": 0}
+    {"val": "atrial fibrillation", "__v": 0, "freq": 0}
+    {"val": "slurred speech", "__v": 0, "freq": 0}
+    {"val": "blood vessel infection", "__v": 0, "freq": 0}
+    {"val": "motor weakness", "__v": 0, "freq": 0}
+    {"val": "otitis", "__v": 0, "freq": 0}
+    {"val": "left lower quadrant abdominal pain", "__v": 0, "freq": 0}
+    {"val": "deafness", "__v": 0, "freq": 0}
+    {"val": "wobble", "__v": 0, "freq": 0}
+    {"val": "cervical lymphadenopathy", "__v": 0, "freq": 0}
+    {"val": "hematemesis", "__v": 0, "freq": 0}
+    {"val": "cloudy cornea", "__v": 0, "freq": 0}
+    {"val": "confusion", "__v": 0, "freq": 0}
+    {"val": "extravasation of urine", "__v": 0, "freq": 0}
+    {"val": "agraphia", "__v": 0, "freq": 0}
+    {"val": "muscle weakness", "__v": 0, "freq": 0}
+    {"val": "dehydration", "__v": 0, "freq": 0}
+    {"val": "dry mucous membrane", "__v": 0, "freq": 0}
+    {"val": "right lower quadrant abdominal rigidity", "__v": 0, "freq": 0}
+    {"val": "prostration", "__v": 0, "freq": 0}
+    {"val": "ventricular tachycardia", "__v": 0, "freq": 0}
+    {"val": "multiple sites pelvic swelling", "__v": 0, "freq": 0}
+    {"val": "alteration of consciousness", "__v": 0, "freq": 0}
+    {"val": "coagulopathy", "__v": 0, "freq": 0}
+    {"val": "dyspareunia", "__v": 0, "freq": 0}
+    {"val": "hemiparesis", "__v": 0, "freq": 0}
+    {"val": "right upper quadrant abdominal tenderness", "__v": 0, "freq": 0}
+    {"val": "post-void dribbling", "__v": 0, "freq": 0}
+    {"val": "generalized pelvic mass", "__v": 0, "freq": 0}
+    {"val": "pain", "__v": 0, "freq": 0}
+    {"val": "asthenopia", "__v": 0, "freq": 0}
+    {"val": "nasal bleeding", "__v": 0, "freq": 0}
+    {"val": "anisocoria", "__v": 0, "freq": 0}
+    {"val": "nail discoloration", "__v": 0, "freq": 0}
+    {"val": "enlargement of lymph nodes", "__v": 0, "freq": 0}
+    {"val": "joint pain", "__v": 0, "freq": 0}
+    {"val": "papule", "__v": 0, "freq": 0}
+    {"val": "dyspepsia", "__v": 0, "freq": 0}
+    {"val": "miscarriage", "__v": 0, "freq": 0}
+    {"val": "lymphatic system symptom", "__v": 0, "freq": 0}
+    {"val": "tinnitus", "__v": 0, "freq": 0}
+    {"val": "right upper quadrant abdominal pain", "__v": 0, "freq": 0}
+    {"val": "abnormal heart rhythms", "__v": 0, "freq": 0}
+    {"val": "purpuric rash", "__v": 0, "freq": 0}
+    {"val": "ptosis", "__v": 0, "freq": 0}
+    {"val": "immune system symptom", "__v": 0, "freq": 0}
+    {"val": "cold clammy skin", "__v": 0, "freq": 0}
+    {"val": "expressive aphasia", "__v": 0, "freq": 0}
+    {"val": "febrile convulsion", "__v": 0, "freq": 0}
+    {"val": "acute cranial nerve dysfunction", "__v": 0, "freq": 0}
+    {"val": "hepatomegaly", "__v": 0, "freq": 0}
+    {"val": "localized superficial mass", "__v": 0, "freq": 0}
+    {"val": "staggering gait", "__v": 0, "freq": 0}
+    {"val": "hallucination", "__v": 0, "freq": 0}
+    {"val": "heart failure", "__v": 0, "freq": 0}
+    {"val": "low blood pressure", "__v": 0, "freq": 0}
+    {"val": "wheezing", "__v": 0, "freq": 0}
+    {"val": "functional hyperemia", "__v": 0, "freq": 0}
+    {"val": "left lower quadrant pelvic swelling", "__v": 0, "freq": 0}
+    {"val": "face hyperemia", "__v": 0, "freq": 0}
+    {"val": "oliguria", "__v": 0, "freq": 0}
+    {"val": "dry hacking cough", "__v": 0, "freq": 0}
+    {"val": "allodynia", "__v": 0, "freq": 0}
+    {"val": "tachypnea", "__v": 0, "freq": 0}
+    {"val": "excess lymphocytes in cerebrospinal fluid", "__v": 0, "freq": 0}
+    {"val": "failure to thrive", "__v": 0, "freq": 0}
+    {"val": "hemic and immune system symptom", "__v": 0, "freq": 0}
+    {"val": "hypoventilation", "__v": 0, "freq": 0}
+    {"val": "lymphangitis", "__v": 0, "freq": 0}
+    {"val": "light sensitivity", "__v": 0, "freq": 0}
+    {"val": "phlebitis", "__v": 0, "freq": 0}
+    {"val": "abdominal distention", "__v": 0, "freq": 0}
+    {"val": "periumbilic abdominal swelling", "__v": 0, "freq": 0}
+    {"val": "hyponatremia", "__v": 0, "freq": 0}
+    {"val": "nausea", "__v": 0, "freq": 0}
+    {"val": "pareses", "__v": 0, "freq": 0}
+    {"val": "cardiovascular system symptom", "__v": 0, "freq": 0}
+    {"val": "sinusitis", "__v": 0, "freq": 0}
+    {"val": "hyperventilation", "__v": 0, "freq": 0}
+    {"val": "decreased sucking", "__v": 0, "freq": 0}
+    {"val": "abdominal cramp", "__v": 0, "freq": 0}
+    {"val": "coordination symptom", "__v": 0, "freq": 0}
+    {"val": "eye discharge", "__v": 0, "freq": 0}
+    {"val": "severe conjunctivitis", "__v": 0, "freq": 0}
+    {"val": "wasting", "__v": 0, "freq": 0}
+    {"val": "genitourinary hemorrhage", "__v": 0, "freq": 0}
+    {"val": "drowsiness", "__v": 0, "freq": 0}
+    {"val": "right upper quadrant abdominal swelling", "__v": 0, "freq": 0}
+    {"val": "receptive aphasia", "__v": 0, "freq": 0}
+    {"val": "cheyne-stokes respiration", "__v": 0, "freq": 0}
+    {"val": "ear symptom", "__v": 0, "freq": 0}
+    {"val": "multiple sites abdominal pain", "__v": 0, "freq": 0}
+    {"val": "epigastric abdominal tenderness", "__v": 0, "freq": 0}
+    {"val": "thirst", "__v": 0, "freq": 0}
+    {"val": "impotence", "__v": 0, "freq": 0}
+    {"val": "stress incontinence", "__v": 0, "freq": 0}
+    {"val": "fluctuation of heart rate", "__v": 0, "freq": 0}
+    {"val": "pericardial effusion", "__v": 0, "freq": 0}
+    {"val": "lesions in pancreas", "__v": 0, "freq": 0}
+    {"val": "bradycardia", "__v": 0, "freq": 0}
+    {"val": "chronic pain", "__v": 0, "freq": 0}
+    {"val": "epigastric abdominal lump", "__v": 0, "freq": 0}
+    {"val": "head symptom", "__v": 0, "freq": 0}
+    {"val": "distended loops of intestines on rectal", "__v": 0, "freq": 0}
+    {"val": "paroxysmal tachycardia", "__v": 0, "freq": 0}
+    {"val": "hemolytic anemia", "__v": 0, "freq": 0}
+    {"val": "generalized seizure", "__v": 0, "freq": 0}
+    {"val": "chronic enteritis", "__v": 0, "freq": 0}
+    {"val": "active hyperemia", "__v": 0, "freq": 0}
+    {"val": "leukopenia", "__v": 0, "freq": 0}
+    {"val": "heartburn", "__v": 0, "freq": 0}
+    {"val": "epigastric pelvic lump", "__v": 0, "freq": 0}
+    {"val": "incontinence without sensory awareness", "__v": 0, "freq": 0}
+    {"val": "neurological dysfunction", "__v": 0, "freq": 0}
+    {"val": "moderate anemia", "__v": 0, "freq": 0}
+    {"val": "gangrene", "__v": 0, "freq": 0}
+    {"val": "cramp", "__v": 0, "freq": 0}
+    {"val": "hemorrhage", "__v": 0, "freq": 0}
+    {"val": "right lower quadrant pelvic swelling", "__v": 0, "freq": 0}
+    {"val": "recumbency", "__v": 0, "freq": 0}
+    {"val": "abnormal hemiwalking hemistanding", "__v": 0, "freq": 0}
+    {"val": "abnormal weight gain", "__v": 0, "freq": 0}
+    {"val": "periumbilic pelvic swelling", "__v": 0, "freq": 0}
+    {"val": "hilar lymphadenitis", "__v": 0, "freq": 0}
+    {"val": "severe backache", "__v": 0, "freq": 0}
+    {"val": "decreased tongue tone", "__v": 0, "freq": 0}
+    {"val": "muscle pain", "__v": 0, "freq": 0}
+    {"val": "abdominal discomfort", "__v": 0, "freq": 0}
+    {"val": "left lower quadrant abdominal swelling", "__v": 0, "freq": 0}
+    {"val": "inability to speak", "__v": 0, "freq": 0}
+    {"val": "overflow incontinence", "__v": 0, "freq": 0}
+    {"val": "mild fever", "__v": 0, "freq": 0}
+    {"val": "mass in chest", "__v": 0, "freq": 0}
+    {"val": "backache", "__v": 0, "freq": 0}
+    {"val": "pneumonitis", "__v": 0, "freq": 0}
+    {"val": "hypersomnia with sleep apnea", "__v": 0, "freq": 0}
+    {"val": "periumbilic abdominal pain", "__v": 0, "freq": 0}
+    {"val": "droopy ears", "__v": 0, "freq": 0}
+    {"val": "acute gastroenteritis", "__v": 0, "freq": 0}
+    {"val": "right upper quadrant abdominal lump", "__v": 0, "freq": 0}
+    {"val": "multiple sites pelvic mass", "__v": 0, "freq": 0}
+    {"val": "inability to comprehend speech", "__v": 0, "freq": 0}
+    {"val": "head swelling", "__v": 0, "freq": 0}
+    {"val": "abnormal hemistanding", "__v": 0, "freq": 0}
+    {"val": "periumbilic pelvic mass", "__v": 0, "freq": 0}
+    {"val": "insomnia with sleep apnea", "__v": 0, "freq": 0}
+    {"val": "hemorrhagic diarrhea", "__v": 0, "freq": 0}
+    {"val": "darkening of skin", "__v": 0, "freq": 0}
+    {"val": "transient paralysis of limb", "__v": 0, "freq": 0}
+    {"val": "periumbilic abdominal lump", "__v": 0, "freq": 0}
+    {"val": "weight loss", "__v": 0, "freq": 0}
+    {"val": "corneal opacity", "__v": 0, "freq": 0}
+    {"val": "digestive system symptom", "__v": 0, "freq": 0}
+    {"val": "malaise", "__v": 0, "freq": 0}
+    {"val": "reactive hyperemia", "__v": 0, "freq": 0}
+    {"val": "palate weakness", "__v": 0, "freq": 0}
+    {"val": "exhaustion", "__v": 0, "freq": 0}
+    {"val": "precordial pain", "__v": 0, "freq": 0}
+    {"val": "arm weakness", "__v": 0, "freq": 0}
+    {"val": "icteric skin", "__v": 0, "freq": 0}
+    {"val": "intense anxiety", "__v": 0, "freq": 0}
+    {"val": "decreased milk production", "__v": 0, "freq": 0}
+    {"val": "irritability", "__v": 0, "freq": 0}
+    {"val": "myoclonic seizure", "__v": 0, "freq": 0}
+    {"val": "undiagnosed cardiac murmur", "__v": 0, "freq": 0}
+    {"val": "muscle symptom", "__v": 0, "freq": 0}
+    {"val": "acute dyspnea", "__v": 0, "freq": 0}
+    {"val": "pharyngitis", "__v": 0, "freq": 0}
+    {"val": "tonic seizure", "__v": 0, "freq": 0}
+    {"val": "parotid pain", "__v": 0, "freq": 0}
+    {"val": "peripheral muscle weakness", "__v": 0, "freq": 0}
+    {"val": "renal colic", "__v": 0, "freq": 0}
+    {"val": "neurological and physiological symptom", "__v": 0, "freq": 0}
+    {"val": "short stature", "__v": 0, "freq": 0}
+    {"val": "neurologic neglect syndrome", "__v": 0, "freq": 0}
+    {"val": "loss of appetite", "__v": 0, "freq": 0}
+    {"val": "incomplete bladder emptying", "__v": 0, "freq": 0}
+    {"val": "abdominal swelling", "__v": 0, "freq": 0}
+    {"val": "nociceptive pain", "__v": 0, "freq": 0}
+    {"val": "mild tetanic convulsion", "__v": 0, "freq": 0}
+    {"val": "memory loss", "__v": 0, "freq": 0}
+    {"val": "stiff neck", "__v": 0, "freq": 0}
+    {"val": "aggressive behavior", "__v": 0, "freq": 0}
+    {"val": "nervous system symptom", "__v": 0, "freq": 0}
+    {"val": "loss of balance", "__v": 0, "freq": 0}
+    {"val": "diminished gag reflex", "__v": 0, "freq": 0}
+    {"val": "lip paralysis", "__v": 0, "freq": 0}
+    {"val": "hip pain", "__v": 0, "freq": 0}
+    {"val": "pustule", "__v": 0, "freq": 0}
+    {"val": "left upper quadrant abdominal mass", "__v": 0, "freq": 0}
+    {"val": "opisthotonus", "__v": 0, "freq": 0}
+    {"val": "sensory disturbance", "__v": 0, "freq": 0}
+    {"val": "constipation", "__v": 0, "freq": 0}
+    {"val": "hypoalgesia", "__v": 0, "freq": 0}
+    {"val": "lymphopenia", "__v": 0, "freq": 0}
+    {"val": "endocarditis", "__v": 0, "freq": 0}
+    {"val": "lameness", "__v": 0, "freq": 0}
+    {"val": "chest pain", "__v": 0, "freq": 0}
+    {"val": "acute mental dysfunction", "__v": 0, "freq": 0}
+    {"val": "hematogenous", "__v": 0, "freq": 0}
+    {"val": "hypersomnia", "__v": 0, "freq": 0}
+    {"val": "pneumonia", "__v": 0, "freq": 0}
+    {"val": "ataxia", "__v": 0, "freq": 0}
+    {"val": "ruffled feather", "__v": 0, "freq": 0}
+    {"val": "profound weakness", "__v": 0, "freq": 0}
+    {"val": "gas pain", "__v": 0, "freq": 0}
+    {"val": "multiple sites pelvic lump", "__v": 0, "freq": 0}
+    {"val": "paresthesia", "__v": 0, "freq": 0}
+    {"val": "hyperesthesia", "__v": 0, "freq": 0}
+    {"val": "severe chest pain", "__v": 0, "freq": 0}
+    {"val": "hypokinesia", "__v": 0, "freq": 0}
+    {"val": "increased appetite", "__v": 0, "freq": 0}
+    {"val": "acute renal failure", "__v": 0, "freq": 0}
+    {"val": "ascites", "__v": 0, "freq": 0}
+    {"val": "hepatitis", "__v": 0, "freq": 0}
+    {"val": "left upper quadrant pelvic lump", "__v": 0, "freq": 0}
+    {"val": "multiple organ failure", "__v": 0, "freq": 0}
+    {"val": "asthenia", "__v": 0, "freq": 0}
+    {"val": "hemodynamic instability", "__v": 0, "freq": 0}
+    {"val": "absent gag reflex", "__v": 0, "freq": 0}
+    {"val": "spleen symptom", "__v": 0, "freq": 0}
+    {"val": "lesions in mouth", "__v": 0, "freq": 0}
+    {"val": "lymphoblastoma", "__v": 0, "freq": 0}
+    {"val": "flat keratotic capsule", "__v": 0, "freq": 0}
+    {"val": "bronchopulmonary bleeding", "__v": 0, "freq": 0}
+    {"val": "muscle cramp", "__v": 0, "freq": 0}
+    {"val": "decreased flexor withdrawal reflex", "__v": 0, "freq": 0}
+    {"val": "inability to form words", "__v": 0, "freq": 0}
+    {"val": "liver inflammation", "__v": 0, "freq": 0}
+    {"val": "hepatic necrosis", "__v": 0, "freq": 0}
+    {"val": "pulmonary consolidation", "__v": 0, "freq": 0}
+    {"val": "sensation perception", "__v": 0, "freq": 0}
+    {"val": "skin desquamation", "__v": 0, "freq": 0}
+    {"val": "occasional diplopia", "__v": 0, "freq": 0}
+    {"val": "respiratory tract mucosa ulcer", "__v": 0, "freq": 0}
+    {"val": "stroke", "__v": 0, "freq": 0}
+    {"val": "arthritis", "__v": 0, "freq": 0}
+    {"val": "coma", "__v": 0, "freq": 0}
+    {"val": "depression", "__v": 0, "freq": 0}
+    {"val": "congestion", "__v": 0, "freq": 0}
+    {"val": "contracted pupil", "__v": 0, "freq": 0}
+    {"val": "freezing hypokinesia", "__v": 0, "freq": 0}
+    {"val": "exanthema", "__v": 0, "freq": 0}
+    {"val": "nocturia", "__v": 0, "freq": 0}
+    {"val": "general symptom", "__v": 0, "freq": 0}
+    {"val": "yellow dropping", "__v": 0, "freq": 0}
+    {"val": "lymph gland swelling", "__v": 0, "freq": 0}
+    {"val": "pelvic lump", "__v": 0, "freq": 0}
+    {"val": "neurological alteration", "__v": 0, "freq": 0}
+    {"val": "swelling symptom", "__v": 0, "freq": 0}
+    {"val": "leg cramp", "__v": 0, "freq": 0}
+    {"val": "lump in chest", "__v": 0, "freq": 0}
+    {"val": "right lower quadrant abdominal mass", "__v": 0, "freq": 0}
+    {"val": "epigastric abdominal pain", "__v": 0, "freq": 0}
+    {"val": "acute mesenteric lymphadenitis", "__v": 0, "freq": 0}
+    {"val": "left lower quadrant abdominal rigidity", "__v": 0, "freq": 0}
+    {"val": "inflammation", "__v": 0, "freq": 0}
+    {"val": "decreased conscious proprioception", "__v": 0, "freq": 0}
+    {"val": "renal alteration", "__v": 0, "freq": 0}
+    {"val": "right upper quadrant pelvic mass", "__v": 0, "freq": 0}
+    {"val": "jaundice", "__v": 0, "freq": 0}
+    {"val": "amaurosis", "__v": 0, "freq": 0}
+    {"val": "disturbed vision", "__v": 0, "freq": 0}
+    {"val": "hematoma", "__v": 0, "freq": 0}
+    {"val": "insomnia", "__v": 0, "freq": 0}
+    {"val": "abnormality of gait", "__v": 0, "freq": 0}
+    {"val": "meningismus", "__v": 0, "freq": 0}
+    {"val": "proximal paralysis of arm and leg", "__v": 0, "freq": 0}
+    {"val": "throat muscle paralysis", "__v": 0, "freq": 0}
+    {"val": "septic shock", "__v": 0, "freq": 0}
+    {"val": "bradykinesia", "__v": 0, "freq": 0}
+    {"val": "abnormal feces", "__v": 0, "freq": 0}
+    {"val": "abortion", "__v": 0, "freq": 0}
+    {"val": "extraocular muscles paralysis", "__v": 0, "freq": 0}
+    {"val": "syncope", "__v": 0, "freq": 0}
+    {"val": "boil", "__v": 0, "freq": 0}
+    {"val": "progressive emaciation", "__v": 0, "freq": 0}
+    {"val": "skin and integumentary tissue symptom", "__v": 0, "freq": 0}
+    {"val": "multiple sites abdominal rigidity", "__v": 0, "freq": 0}
+    {"val": "blindness", "__v": 0, "freq": 0}
+    {"val": "suppurative pneumonia", "__v": 0, "freq": 0}
+    {"val": "acute diarrhea", "__v": 0, "freq": 0}
+    {"val": "alteration of appetite", "__v": 0, "freq": 0}
+    {"val": "right upper quadrant abdominal mass", "__v": 0, "freq": 0}
+    {"val": "excessive crying of infant", "__v": 0, "freq": 0}
+    {"val": "abscess", "__v": 0, "freq": 0}
+    {"val": "microangiopathic hemolytic anemia", "__v": 0, "freq": 0}
+    {"val": "bifrontal headache", "__v": 0, "freq": 0}
+    {"val": "hemic system symptom", "__v": 0, "freq": 0}
+    {"val": "salivation", "__v": 0, "freq": 0}
+    {"val": "periumbilic abdominal tenderness", "__v": 0, "freq": 0}
+    {"val": "ischemic necrosis of jejunum", "__v": 0, "freq": 0}
+    {"val": "bleeding", "__v": 0, "freq": 0}
+    {"val": "painful lymph glands", "__v": 0, "freq": 0}
+    {"val": "appendicitis", "__v": 0, "freq": 0}
+    {"val": "nasal discharge", "__v": 0, "freq": 0}
+    {"val": "keratotic nodules of the skin", "__v": 0, "freq": 0}
+    {"val": "thrombocytopenia", "__v": 0, "freq": 0}
+    {"val": "left upper quadrant pelvic mass", "__v": 0, "freq": 0}
+    {"val": "abnormal vaginal bleeding", "__v": 0, "freq": 0}
+    {"val": "reproductive system symptom", "__v": 0, "freq": 0}
+    {"val": "diaphoresis", "__v": 0, "freq": 0}
+    {"val": "belching", "__v": 0, "freq": 0}
+    {"val": "renal failure", "__v": 0, "freq": 0}
+    {"val": "respiratory system and chest symptom", "__v": 0, "freq": 0}
+    {"val": "chronic cough", "__v": 0, "freq": 0}
+    {"val": "hypoxemia", "__v": 0, "freq": 0}
+    {"val": "hypotensive", "__v": 0, "freq": 0}
+    {"val": "lack of expected normal physiological development in childhood", "__v": 0, "freq": 0}
+    {"val": "slowing of urinary stream", "__v": 0, "freq": 0}
+    {"val": "reflex symptom", "__v": 0, "freq": 0}
+    {"val": "tremor", "__v": 0, "freq": 0}
+    {"val": "periumbilic pelvic lump", "__v": 0, "freq": 0}
+    {"val": "rales", "__v": 0, "freq": 0}
+    {"val": "laryngotracheitis", "__v": 0, "freq": 0}
+    {"val": "flushing", "__v": 0, "freq": 0}
+    {"val": "splenomegaly", "__v": 0, "freq": 0}
+    {"val": "sudden ataxis", "__v": 0, "freq": 0}
+    {"val": "cellulitis", "__v": 0, "freq": 0}
+    {"val": "postural instability hypokinesia", "__v": 0, "freq": 0}
+    {"val": "generalized hyperhidrosis", "__v": 0, "freq": 0}
+    {"val": "vaginal discharge", "__v": 0, "freq": 0}
+    {"val": "hematuria", "__v": 0, "freq": 0}
+    {"val": "mild conjunctivitis", "__v": 0, "freq": 0}
+    {"val": "limb weakness", "__v": 0, "freq": 0}
+    {"val": "terminal ileitis", "__v": 0, "freq": 0}
+    {"val": "mouth bleeding", "__v": 0, "freq": 0}
+    {"val": "diminished gastro-intestinal motility", "__v": 0, "freq": 0}
+    {"val": "urgency of urination", "__v": 0, "freq": 0}
+    {"val": "mild hypotension", "__v": 0, "freq": 0}
+    {"val": "inflammatory low back pain", "__v": 0, "freq": 0}
+    {"val": "motor paralysis", "__v": 0, "freq": 0}
+    {"val": "discharge", "__v": 0, "freq": 0}
+    {"val": "multiple abscesses", "__v": 0, "freq": 0}
+    {"val": "seizure", "__v": 0, "freq": 0}
+    {"val": "elbow pain", "__v": 0, "freq": 0}
+    {"val": "high fever", "__v": 0, "freq": 0}
+    {"val": "rash", "__v": 0, "freq": 0}
+    {"val": "amaurosis fugax", "__v": 0, "freq": 0}
+    {"val": "lightheadedness", "__v": 0, "freq": 0}
+    {"val": "low-grade fever", "__v": 0, "freq": 0}
+    {"val": "severe joint pain", "__v": 0, "freq": 0}
+    {"val": "rapid respiration", "__v": 0, "freq": 0}
+    {"val": "paraplegia", "__v": 0, "freq": 0}
+    {"val": "disruptions of 24-hour sleep-wake cycle", "__v": 0, "freq": 0}
+    {"val": "diffuse rash", "__v": 0, "freq": 0}
+    {"val": "bronchitis", "__v": 0, "freq": 0}
+    {"val": "sneezing", "__v": 0, "freq": 0}
+    {"val": "metrorrhagia", "__v": 0, "freq": 0}
+    {"val": "nose symptom", "__v": 0, "freq": 0}
+    {"val": "retrobulbar pain", "__v": 0, "freq": 0}
+    {"val": "abdominal symptom", "__v": 0, "freq": 0}
+    {"val": "left upper quadrant pelvic swelling", "__v": 0, "freq": 0}
+    {"val": "pallor", "__v": 0, "freq": 0}
+    {"val": "head pressing", "__v": 0, "freq": 0}
+    {"val": "conjunctivitis", "__v": 0, "freq": 0}
+    {"val": "wheelbarrowing", "__v": 0, "freq": 0}
+    {"val": "bubo", "__v": 0, "freq": 0}
+    {"val": "tache noire", "__v": 0, "freq": 0}
+    {"val": "symptom", "__v": 0, "freq": 0}
+    {"val": "skin ulcer", "__v": 0, "freq": 0}
+    {"val": "weight gain", "__v": 0, "freq": 0}
+    {"val": "change in skin color", "__v": 0, "freq": 0}
+    {"val": "dry cough", "__v": 0, "freq": 0}
+    {"val": "facial tremor", "__v": 0, "freq": 0}
+    {"val": "leukocytosis", "__v": 0, "freq": 0}
+    {"val": "facial muscle twitching", "__v": 0, "freq": 0}
+    {"val": "nephritis", "__v": 0, "freq": 0}
+    {"val": "keratitis", "__v": 0, "freq": 0}
+    {"val": "extreme fatigue", "__v": 0, "freq": 0}
+    {"val": "generalized pelvic swelling", "__v": 0, "freq": 0}
+    {"val": "chronic fatigue syndrome", "__v": 0, "freq": 0}
+    {"val": "hematopoietic system symptom", "__v": 0, "freq": 0}
+    {"val": "multiple sites abdominal mass", "__v": 0, "freq": 0}
+    {"val": "complex partial seizure", "__v": 0, "freq": 0}
+    {"val": "sternocleidomastoid weakness", "__v": 0, "freq": 0}
+    {"val": "lesions in swim bladder", "__v": 0, "freq": 0}
+    {"val": "hypopyon", "__v": 0, "freq": 0}
+    {"val": "breakthrough pain", "__v": 0, "freq": 0}
+    {"val": "mouth papules", "__v": 0, "freq": 0}
+    {"val": "polyphagia", "__v": 0, "freq": 0}
+    {"val": "ankle rash", "__v": 0, "freq": 0}
+    {"val": "inflamed eyes", "__v": 0, "freq": 0}
+    {"val": "right upper quadrant pelvic lump", "__v": 0, "freq": 0}
+    {"val": "anemia", "__v": 0, "freq": 0}
+    {"val": "conscious disturbance", "__v": 0, "freq": 0}
+    {"val": "muscle tenderness", "__v": 0, "freq": 0}
+    {"val": "left upper quadrant abdominal swelling", "__v": 0, "freq": 0}
+    {"val": "adult failure to thrive", "__v": 0, "freq": 0}
+    {"val": "skin lesion", "__v": 0, "freq": 0}
+    {"val": "atonic seizure", "__v": 0, "freq": 0}
+    {"val": "abnormal hemiwalking", "__v": 0, "freq": 0}
+    {"val": "left upper quadrant abdominal rigidity", "__v": 0, "freq": 0}
+    {"val": "impaired coordination", "__v": 0, "freq": 0}
+    {"val": "decreased motor response", "__v": 0, "freq": 0}
+    {"val": "mouth symptom", "__v": 0, "freq": 0}
+    {"val": "polydipsia", "__v": 0, "freq": 0}
+    {"val": "spontaneous ecchymoses", "__v": 0, "freq": 0}
+    {"val": "extensive ulcer", "__v": 0, "freq": 0}
+    {"val": "anasarca", "__v": 0, "freq": 0}
+    {"val": "joint inflammation", "__v": 0, "freq": 0}
+    {"val": "petechiae", "__v": 0, "freq": 0}
+    {"val": "mastitis", "__v": 0, "freq": 0}
+    {"val": "hypoesthesia", "__v": 0, "freq": 0}
+    {"val": "mydriasis", "__v": 0, "freq": 0}
+    {"val": "salivary gland symptom", "__v": 0, "freq": 0}
+    {"val": "night sweats", "__v": 0, "freq": 0}
+    {"val": "severe mastitis", "__v": 0, "freq": 0}
+    {"val": "renal involvement", "__v": 0, "freq": 0}
+    {"val": "papular rash", "__v": 0, "freq": 0}
+    {"val": "tiredness", "__v": 0, "freq": 0}
+    {"val": "pyrosis", "__v": 0, "freq": 0}
+    {"val": "hyperpigmentation", "__v": 0, "freq": 0}
+    {"val": "hypotension", "__v": 0, "freq": 0}
+    {"val": "visible peristalsis", "__v": 0, "freq": 0}
+    {"val": "breathing problems", "__v": 0, "freq": 0}
+    {"val": "rhinitis", "__v": 0, "freq": 0}
+    {"val": "cardiogenic shock", "__v": 0, "freq": 0}
+    {"val": "bronchiolitis", "__v": 0, "freq": 0}
+    {"val": "musculoskeletal system symptom", "__v": 0, "freq": 0}
+    {"val": "epigastric pelvic swelling", "__v": 0, "freq": 0}
+    {"val": "inibility to stand", "__v": 0, "freq": 0}
+    {"val": "limb edema", "__v": 0, "freq": 0}
+    {"val": "multiple sites abdominal tenderness", "__v": 0, "freq": 0}
+    {"val": "torticollis", "__v": 0, "freq": 0}
+    {"val": "joint symptom", "__v": 0, "freq": 0}
+    {"val": "panting respiration", "__v": 0, "freq": 0}
+    {"val": "diminished spontaneous movement", "__v": 0, "freq": 0}
+    {"val": "respiratory paralysis", "__v": 0, "freq": 0}
+    {"val": "cyanosis", "__v": 0, "freq": 0}
+    {"val": "inability to think clearly", "__v": 0, "freq": 0}
+    {"val": "earache", "__v": 0, "freq": 0}
+    {"val": "delayed milestones", "__v": 0, "freq": 0}
+    {"val": "tachypnoea", "__v": 0, "freq": 0}
+    {"val": "disturbance of skin sensation", "__v": 0, "freq": 0}
+    {"val": "mouth sore", "__v": 0, "freq": 0}
+    {"val": "body ache", "__v": 0, "freq": 0}
+    {"val": "lesions in myocardium", "__v": 0, "freq": 0}
+    {"val": "continuous profuse salivation", "__v": 0, "freq": 0}
+    {"val": "swelling in chest", "__v": 0, "freq": 0}
+    {"val": "prostatic infection", "__v": 0, "freq": 0}
+    {"val": "throat symptom", "__v": 0, "freq": 0}
+    {"val": "abdominal pain", "__v": 0, "freq": 0}
+    {"val": "intense toxemia", "__v": 0, "freq": 0}
+    {"val": "sleep disturbance", "__v": 0, "freq": 0}
+    {"val": "abnormal bowel sound", "__v": 0, "freq": 0}
+    {"val": "incoordination", "__v": 0, "freq": 0}
+    {"val": "gastrointestinal bleeding", "__v": 0, "freq": 0}
+    {"val": "tetanic convulsion", "__v": 0, "freq": 0}
+    {"val": "pupil symptom", "__v": 0, "freq": 0}
+    {"val": "adenopathy", "__v": 0, "freq": 0}
+    {"val": "flaccidity", "__v": 0, "freq": 0}
+    {"val": "left lower quadrant abdominal lump", "__v": 0, "freq": 0}
+    {"val": "acute pain", "__v": 0, "freq": 0}
+    {"val": "thymus symptom", "__v": 0, "freq": 0}
+    {"val": "dyspnea", "__v": 0, "freq": 0}
+    {"val": "neck pain", "__v": 0, "freq": 0}
+    {"val": "bradypnea", "__v": 0, "freq": 0}
+    {"val": "thick white exudate on tongue", "__v": 0, "freq": 0}
+    {"val": "cough with bloody sputum", "__v": 0, "freq": 0}
+    {"val": "abnormal loss of weight and underweight", "__v": 0, "freq": 0}
+    {"val": "abnormal posture", "__v": 0, "freq": 0}
+    {"val": "massive hepatic necrosis", "__v": 0, "freq": 0}
+    {"val": "fatigue", "__v": 0, "freq": 0}
+    {"val": "listlessness", "__v": 0, "freq": 0}
+    {"val": "generalized abdominal swelling", "__v": 0, "freq": 0}
+    {"val": "fever", "__v": 0, "freq": 0}
+    {"val": "neck symptom", "__v": 0, "freq": 0}
+    {"val": "macrocytosis", "__v": 0, "freq": 0}
+    {"val": "rigidity hypokinesia", "__v": 0, "freq": 0}
+    {"val": "acute arthritis", "__v": 0, "freq": 0}
+    {"val": "urinary frequency", "__v": 0, "freq": 0}
+    {"val": "hemorrhage into mucous membrane", "__v": 0, "freq": 0}
+    {"val": "eye symptom", "__v": 0, "freq": 0}
+    {"val": "periumbilic abdominal mass", "__v": 0, "freq": 0}
+    {"val": "polyuria", "__v": 0, "freq": 0}
+    {"val": "hepatosplenomegaly", "__v": 0, "freq": 0}
+    {"val": "prostate symptom", "__v": 0, "freq": 0}
+    {"val": "necrosis of jejunum", "__v": 0, "freq": 0}
+    {"val": "hemolysis", "__v": 0, "freq": 0}
+    {"val": "excessive tearing", "__v": 0, "freq": 0}
+    {"val": "menorrhagia", "__v": 0, "freq": 0}
+    {"val": "lesions in lung", "__v": 0, "freq": 0}
+    {"val": "moderate conjuctival injection", "__v": 0, "freq": 0}
+    {"val": "subconjunctival bleeding", "__v": 0, "freq": 0}
+    {"val": "hyperthermia", "__v": 0, "freq": 0}
+    {"val": "apnea", "__v": 0, "freq": 0}
+    {"val": "visceral pain", "__v": 0, "freq": 0}
+    {"val": "photophobia", "__v": 0, "freq": 0}
+    {"val": "epigastric pelvic mass", "__v": 0, "freq": 0}
+    {"val": "hiccough", "__v": 0, "freq": 0}
+    {"val": "chills", "__v": 0, "freq": 0}
+    {"val": "enteritis", "__v": 0, "freq": 0}
+    {"val": "memory impairment", "__v": 0, "freq": 0}
+    {"val": "partial hind limb paralysis", "__v": 0, "freq": 0}
+    {"val": "urinary system symptom", "__v": 0, "freq": 0}
+    {"val": "palpebral edema", "__v": 0, "freq": 0}
+    {"val": "chest hyperemia", "__v": 0, "freq": 0}
+    {"val": "hopping", "__v": 0, "freq": 0}
+    {"val": "convulsion", "__v": 0, "freq": 0}
+    {"val": "plasmacytosis", "__v": 0, "freq": 0}
+    {"val": "mild bronchitis", "__v": 0, "freq": 0}
+    {"val": "head and neck symptom", "__v": 0, "freq": 0}
+    {"val": "localized superficial swelling", "__v": 0, "freq": 0}
+    {"val": "tetany", "__v": 0, "freq": 0}
+    {"val": "scrotal abscess", "__v": 0, "freq": 0}
+    {"val": "inability to concentrate", "__v": 0, "freq": 0}
+    {"val": "yellow exudate from nose", "__v": 0, "freq": 0}
+    {"val": "uncoordinated gait", "__v": 0, "freq": 0}
+    {"val": "rectorrhagia", "__v": 0, "freq": 0}
+    {"val": "hemorrhage into skin", "__v": 0, "freq": 0}
+    {"val": "excess salivation", "__v": 0, "freq": 0}
+    {"val": "toothache", "__v": 0, "freq": 0}
+    {"val": "paralysis", "__v": 0, "freq": 0}
+    {"val": "inability to feed", "__v": 0, "freq": 0}
+    {"val": "dysfunctions associated with arousal from sleep", "__v": 0, "freq": 0}
+    {"val": "dysphagia", "__v": 0, "freq": 0}
+    {"val": "nocturnal enuresis", "__v": 0, "freq": 0}
+    {"val": "change in body sensation", "__v": 0, "freq": 0}
+    {"val": "dysphonia", "__v": 0, "freq": 0}
+    {"val": "altered mental status", "__v": 0, "freq": 0}
+    {"val": "continuous fever", "__v": 0, "freq": 0}
+    {"val": "unreactive mydriasis", "__v": 0, "freq": 0}
+    {"val": "low backache", "__v": 0, "freq": 0}
+    {"val": "prolonged fever", "__v": 0, "freq": 0}
+    {"val": "poor feeding", "__v": 0, "freq": 0}
+    {"val": "sleep apnea", "__v": 0, "freq": 0}
+    {"val": "hematochezia", "__v": 0, "freq": 0}
+    {"val": "right lower quadrant abdominal swelling", "__v": 0, "freq": 0}
+    {"val": "multiple sites abdominal swelling", "__v": 0, "freq": 0}
+    {"val": "generalized abdominal rigidity", "__v": 0, "freq": 0}
+    {"val": "generalized pelvic lump", "__v": 0, "freq": 0}
+    {"val": "muscles ache", "__v": 0, "freq": 0}
+    {"val": "hyperpyrexia", "__v": 0, "freq": 0}
+    {"val": "heart rhythm symptom", "__v": 0, "freq": 0}
+    {"val": "vomiting", "__v": 0, "freq": 0}
+    {"val": "male stress incontinence", "__v": 0, "freq": 0}
+    {"val": "crinkle", "__v": 0, "freq": 0}
+    {"val": "arrhythmia", "__v": 0, "freq": 0}
+    {"val": "anorexia", "__v": 0, "freq": 0}
+    {"val": "bloating", "__v": 0, "freq": 0}
+    {"val": "hyperreflexia", "__v": 0, "freq": 0}
+    {"val": "edema", "__v": 0, "freq": 0}
+    {"val": "dysarthria", "__v": 0, "freq": 0}
+    {"val": "hypermenorrhea", "__v": 0, "freq": 0}
+    {"val": "epididymorchitis", "__v": 0, "freq": 0}
+    {"val": "lesions in oropharynx", "__v": 0, "freq": 0}
+    {"val": "eczema", "__v": 0, "freq": 0}
+    {"val": "simple partial seizure", "__v": 0, "freq": 0}
+    {"val": "left lower quadrant abdominal mass", "__v": 0, "freq": 0}
+    {"val": "right lower quadrant abdominal lump", "__v": 0, "freq": 0}
+    {"val": "premature labor", "__v": 0, "freq": 0}
+    {"val": "fixed pupil", "__v": 0, "freq": 0}
+    {"val": "dry mouth", "__v": 0, "freq": 0}
+    {"val": "steatorrhea", "__v": 0, "freq": 0}
+    {"val": "left upper quadrant abdominal tenderness", "__v": 0, "freq": 0}
+    {"val": "severe pneumonia", "__v": 0, "freq": 0}
+    {"val": "sudden onset of fever", "__v": 0, "freq": 0}
+    {"val": "loss of height", "__v": 0, "freq": 0}
+    {"val": "infant symptom", "__v": 0, "freq": 0}
+    {"val": "proteinuria", "__v": 0, "freq": 0}
+    {"val": "weak cry", "__v": 0, "freq": 0}
+    {"val": "urinary incontinence", "__v": 0, "freq": 0}
+    {"val": "gum bleeding", "__v": 0, "freq": 0}
+    {"val": "acute painful vision loss", "__v": 0, "freq": 0}
+    {"val": "left upper quadrant abdominal lump", "__v": 0, "freq": 0}
+    {"val": "remittent fever", "__v": 0, "freq": 0}
+    {"val": "postphlebitic ulcer", "__v": 0, "freq": 0}
+    {"val": "left lower quadrant pelvic lump", "__v": 0, "freq": 0}
+    {"val": "change in skin texture", "__v": 0, "freq": 0}
+    {"val": "Pel-Epstein fever", "__v": 0, "freq": 0}
+    {"val": "ocular lesion", "__v": 0, "freq": 0}
+    {"val": "urinary retention", "__v": 0, "freq": 0}
+    {"val": "facial weakness", "__v": 0, "freq": 0}
+    {"val": "floppy head", "__v": 0, "freq": 0}
+    {"val": "inability to swallow", "__v": 0, "freq": 0}
+    {"val": "feces and droppings symptom", "__v": 0, "freq": 0}
+    {"val": "lateroventral deviation of the head", "__v": 0, "freq": 0}
+    {"val": "hemoptysis", "__v": 0, "freq": 0}
+    {"val": "referred pain", "__v": 0, "freq": 0}
+    {"val": "eye strain", "__v": 0, "freq": 0}
+    {"val": "herpetic lesion on upper lip", "__v": 0, "freq": 0}
+    {"val": "pelvic mass", "__v": 0, "freq": 0}
+    {"val": "anomia", "__v": 0, "freq": 0}
+    {"val": "intestinal hemorrhage", "__v": 0, "freq": 0}
+    {"val": "underweight", "__v": 0, "freq": 0}
+    {"val": "epigastric abdominal mass", "__v": 0, "freq": 0}
+    {"val": "icteric eyes", "__v": 0, "freq": 0}
+    {"val": "microangiopathy", "__v": 0, "freq": 0}
+    {"val": "cervical edema", "__v": 0, "freq": 0}
+    {"val": "abnormal chest sound", "__v": 0, "freq": 0}
+    {"val": "severe necrosis", "__v": 0, "freq": 0}
+    {"val": "testicular pain", "__v": 0, "freq": 0}
+    {"val": "right lower quadrant abdominal pain", "__v": 0, "freq": 0}
+    {"val": "shock", "__v": 0, "freq": 0}
+    {"val": "periumbilic abdominal rigidity", "__v": 0, "freq": 0}
+    {"val": "tonic-clonic seizure", "__v": 0, "freq": 0}
+    {"val": "colicky pain", "__v": 0, "freq": 0}
+    {"val": "hepatic dysfunction", "__v": 0, "freq": 0}
+    {"val": "claudication", "__v": 0, "freq": 0}
+    {"val": "very high fever", "__v": 0, "freq": 0}
+    {"val": "spastic paralysis", "__v": 0, "freq": 0}
+    {"val": "severe diarrhea", "__v": 0, "freq": 0}
+    {"val": "yellowish green diarrhea", "__v": 0, "freq": 0}
+    {"val": "epigastric abdominal rigidity", "__v": 0, "freq": 0}
+    {"val": "infertility", "__v": 0, "freq": 0}
+    {"val": "vaginismus", "__v": 0, "freq": 0}
+    {"val": "facial edema", "__v": 0, "freq": 0}
+    {"val": "cachexia", "__v": 0, "freq": 0}
+    {"val": "dermal abscess", "__v": 0, "freq": 0}
+    {"val": "flatulence", "__v": 0, "freq": 0}
+    {"val": "necrosis", "__v": 0, "freq": 0}
+    {"val": "knee pain", "__v": 0, "freq": 0}
+    {"val": "orthopnea", "__v": 0, "freq": 0}
+    {"val": "melena", "__v": 0, "freq": 0}
+    {"val": "postural reaction", "__v": 0, "freq": 0}
+    {"val": "pale mucous membrane", "__v": 0, "freq": 0}
+    {"val": "flaccid paralysis", "__v": 0, "freq": 0}
+    {"val": "tenesmus", "__v": 0, "freq": 0}
+    {"val": "muscle tightness", "__v": 0, "freq": 0}
+    {"val": "absence seizure", "__v": 0, "freq": 0}
+    {"val": "deltoid muscle weakness", "__v": 0, "freq": 0}
+    {"val": "generalized abdominal tenderness", "__v": 0, "freq": 0}
+    {"val": "intestinal hypermotility", "__v": 0, "freq": 0}
+    {"val": "toxemia", "__v": 0, "freq": 0}
+    {"val": "transient fever", "__v": 0, "freq": 0}
+    {"val": "aphonia", "__v": 0, "freq": 0}
+    {"val": "epigastric abdominal swelling", "__v": 0, "freq": 0}
+    {"val": "pleural effusion", "__v": 0, "freq": 0}
+    {"val": "right lower quadrant pelvic lump", "__v": 0, "freq": 0}
+    {"val": "myocarditis", "__v": 0, "freq": 0}
+    {"val": "left lower quadrant abdominal tenderness", "__v": 0, "freq": 0}
+    {"val": "pulmonary edema", "__v": 0, "freq": 0}
+    {"val": "hair loss", "__v": 0, "freq": 0}
+    {"val": "brain cyst", "__v": 0, "freq": 0}
+    {"val": "generalized abdominal mass", "__v": 0, "freq": 0}
+    {"val": "bloody sputum", "__v": 0, "freq": 0}
+    {"val": "urticaria", "__v": 0, "freq": 0}
+    {"val": "lethargy", "__v": 0, "freq": 0}
+    {"val": "junctional tachycardia", "__v": 0, "freq": 0}
+    {"val": "right lower quadrant pelvic mass", "__v": 0, "freq": 0}
+    {"val": "gross hematuria", "__v": 0, "freq": 0}
+    {"val": "acute meningoencephalitis", "__v": 0, "freq": 0}
+    {"val": "shakes", "__v": 0, "freq": 0}
+    {"val": "thyroid symptom", "__v": 0, "freq": 0}
+    {"val": "fixed dilated pupils", "__v": 0, "freq": 0}
+    {"val": "extreme exhaustion", "__v": 0, "freq": 0}
+    {"val": "subjective vertigo", "__v": 0, "freq": 0}
+    {"val": "intraretinal hemorrhage", "__v": 0, "freq": 0}
+    {"val": "hoarseness", "__v": 0, "freq": 0}
+    {"val": "urge incontinence", "__v": 0, "freq": 0}
+    {"val": "lack of coordination", "__v": 0, "freq": 0}
+    {"val": "mixed incontinence (female) (male)", "__v": 0, "freq": 0}
+    {"val": "hyperemia of the neck", "__v": 0, "freq": 0}
+    {"val": "pelvic swelling", "__v": 0, "freq": 0}
+    {"val": "vision distortion", "__v": 0, "freq": 0}
+    {"val": "spleen abscess", "__v": 0, "freq": 0}
+    {"val": "abnormal behavior", "__v": 0, "freq": 0}
+    {"val": "wound discharge", "__v": 0, "freq": 0}
+    {"val": "multiple sites abdominal lump", "__v": 0, "freq": 0}
+    {"val": "abnormal involuntary movement", "__v": 0, "freq": 0}
+    {"val": "giddiness", "__v": 0, "freq": 0}
+    {"val": "feeding difficulties and mismanagement", "__v": 0, "freq": 0}
+    {"val": "yellow exudate from eyes", "__v": 0, "freq": 0}
+    {"val": "pleuritic chest pain", "__v": 0, "freq": 0}
+    {"val": "abnormal sputum", "__v": 0, "freq": 0}
+    {"val": "left lower quadrant pelvic mass", "__v": 0, "freq": 0}
+    {"val": "stupor", "__v": 0, "freq": 0}
+    {"val": "cranial nerve palsies", "__v": 0, "freq": 0}
+    {"val": "abdominal tenderness", "__v": 0, "freq": 0}
+    {"val": "loss of consciousness", "__v": 0, "freq": 0}
+    {"val": "slow pulse", "__v": 0, "freq": 0}
+    {"val": "bloodshot eye", "__v": 0, "freq": 0}
+    {"val": "tracheobronchitis", "__v": 0, "freq": 0}
+    {"val": "generalized abdominal lump", "__v": 0, "freq": 0}
+    {"val": "pelvic symptom", "__v": 0, "freq": 0}
+    {"val": "neck weakness", "__v": 0, "freq": 0}
+    {"val": "hydrocephalus", "__v": 0, "freq": 0}
+    {"val": "decreased jaw tone", "__v": 0, "freq": 0}
+    {"val": "clubbing of fingers", "__v": 0, "freq": 0}
+    {"val": "congested sclera", "__v": 0, "freq": 0}
+    {"val": "ischemia", "__v": 0, "freq": 0}
+    {"val": "frontal headache", "__v": 0, "freq": 0}
+    {"val": "continuous leakage of urine", "__v": 0, "freq": 0}
+    {"val": "epistaxis", "__v": 0, "freq": 0}
+    {"val": "generalized abdominal pain", "__v": 0, "freq": 0}
+    {"val": "gastroenteritis", "__v": 0, "freq": 0}
+    {"val": "early satiety", "__v": 0, "freq": 0}
+    {"val": "renal abscess", "__v": 0, "freq": 0}
+    {"val": "loss of vision", "__v": 0, "freq": 0}
+    {"val": "localized superficial lump", "__v": 0, "freq": 0}
+    {"val": "relapsing fever", "__v": 0, "freq": 0}
+    {"val": "hepatic abscess", "__v": 0, "freq": 0}
+    {"val": "blotchy red rash", "__v": 0, "freq": 0}
+    {"val": "mild encephalitis", "__v": 0, "freq": 0}
+    {"val": "flaccid muscle tone", "__v": 0, "freq": 0}
+    {"val": "hyperemia", "__v": 0, "freq": 0}
+    {"val": "extreme prostration", "__v": 0, "freq": 0}
+    {"val": "meningitis", "__v": 0, "freq": 0}
+    {"val": "sinus tachycardia", "__v": 0, "freq": 0}
+    {"val": "vision symptom", "__v": 0, "freq": 0}
+    {"val": "right upper quadrant abdominal rigidity", "__v": 0, "freq": 0}
+    {"val": "bruise", "__v": 0, "freq": 0}
+    {"val": "focal seizure", "__v": 0, "freq": 0}
+    {"val": "hemorrhagic mediastinitis", "__v": 0, "freq": 0}
+    {"val": "cough", "__v": 0, "freq": 0}
+    {"val": "necrotic lesion", "__v": 0, "freq": 0}
+    {"val": "sore eyes", "__v": 0, "freq": 0}
+    {"val": "epileptic seizure", "__v": 0, "freq": 0}
+    {"val": "phantom pain", "__v": 0, "freq": 0}
+    {"val": "absence of knee jerk reflex", "__v": 0, "freq": 0}
+    {"val": "palpitation", "__v": 0, "freq": 0}
+    {"val": "miosis", "__v": 0, "freq": 0}
+    {"val": "decreased facial sensation", "__v": 0, "freq": 0}
+    {"val": "headache", "__v": 0, "freq": 0}
+    {"val": "stridor", "__v": 0, "freq": 0}
+    {"val": "abdominal rigidity", "__v": 0, "freq": 0}
+    {"val": "shoulder pain", "__v": 0, "freq": 0}
+    {"val": "nasal congestion", "__v": 0, "freq": 0}

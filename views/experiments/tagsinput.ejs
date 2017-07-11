@@ -28,42 +28,73 @@
   "Cape Town",
   "Kinshasa"];
   var citynames = new Bloodhound({
-      datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
-      queryTokenizer: Bloodhound.tokenizers.whitespace,
+      datumTokenizer: Bloodhound.tokenizers.obj.nonword('disease_name'),
+      queryTokenizer: Bloodhound.tokenizers.nonword,
       // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
       remote: {
-        url: '/autocomplete/medicineAdvice/drug?q=%QUERY',
+        url: '/autocomplete/diagnosis/healthos?q=%QUERY',
         wildcard: '%QUERY'
-      }
-    });
-  citynames.initialize();
-  $("#category").ready(function () {
-      myObject = $("#category").tagsinput({
-      typeaheadjs: [{
-        hint: true,
-        highlight: true,
-        minLength: 2,
-        valueKey: 'pName'
       },
-      { 
-        name: 'drugs',
-        display: 'pName',
-        source: citynames.ttAdapter(),
-        limit: 10,
-      }],
-      freeInput: true
-    })
-    myObject[0].$input.on('typeahead:asyncrequest', function() {
-      console.log("show")
-        $('.category-container .Typeahead-spinner').show();
-      })
-      .on('typeahead:asynccancel typeahead:asyncreceive', function() {
-        console.log("hide")
-        $('.category-container .Typeahead-spinner').hide();
-      });
+      identify: (datum) => datum['disease_id']
+    });
+  // citynames.initialize();
+  // $("#category").ready(function () {
+  //     myObject = $("#category").tagsinput({
+  //     typeaheadjs: [{
+  //       hint: true,
+  //       highlight: true,
+  //       minLength: 2,
+  //       valueKey: 'disease_name'
+  //     },
+  //     { 
+  //       name: 'drugs',
+  //       display: 'disease_name',
+  //       source: citynames.ttAdapter(),
+  //       limit: 10,
+  //     }],
+  //     freeInput: true
+  //   })
+  //   myObject[0].$input.on('typeahead:asyncrequest', function() {
+  //     console.log("show")
+  //       $('.category-container .Typeahead-spinner').show();
+  //     })
+  //     .on('typeahead:asynccancel typeahead:asyncreceive', function() {
+  //       console.log("hide")
+  //       $('.category-container .Typeahead-spinner').hide();
+  //     });
 
 
-  });
+  // });
+  $("#category").ready(function () {
+    $("#category").typeahead({
+          hint: true,
+          highlight: true,
+          minLength: 1
+        },
+        {
+          name: 'investigations',
+          source: citynames,
+          display: 'disease_name',
+          limit: Infinity,
+        }).on('typeahead:asyncrequest', function() {
+          $('.category-container .Typeahead-spinner').show();
+        })
+        .on('typeahead:asynccancel typeahead:asyncreceive', function() {
+          $('.category-container .Typeahead-spinner').hide();
+        });
+    
+  })
+
+    function sync(datums) {
+      console.log('datums from `local`, `prefetch`, and `#add`');
+      console.log(datums);
+    }
+
+    function async(datums) {
+      console.log('datums from `remote`');
+      console.log(datums);
+    }
+  citynames.search("poly", sync, async);
 
   // $(document).on('typeahead:asyncrequest', function(e) {
   //   console.log(e)
@@ -92,7 +123,7 @@
       <h1 class="display-3">Welcome</h1>
       <p class="lead">This is the homepage</p>
       <div class="category-container" style="position: relative">
-        <input type="text" id="category" />
+        <input type="text" id="category" class="form-control" />
          <img class="Typeahead-spinner" src="/img/ellipsis.svg" style="display: inline; display: none; position: absolute; bottom: 3px; right: 7px; width: 28px; height: 28px">
       </div>
     </div>

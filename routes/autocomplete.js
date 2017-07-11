@@ -75,6 +75,35 @@ module.exports = (app) => {
     })
   })
 
+  // healthos endpoint for diagnosis
+  app.get('/autocomplete/diagnosis/healthos', function(req, res) {
+    var headers = {
+      'Authorization' : 'Bearer 55ad7d70367adad2c453aa02de5814898735f8addaa1b11b5e6c18f7c084f573'
+    }
+    var options = {
+      headers: headers,
+      url: 'https://www.healthos.co/api/v1/autocomplete/diseases/' + req.query.q,
+      time: true,
+      forever: true,
+    }
+    request.get(options, (err, response, body) => {
+      console.log(response.timingPhases)
+      res.json(JSON.parse(body))
+    })
+  })
+
+  // normal diagnosis endpoint
+
+  app.get('/autocomplete/diagnosis', function(req, res) {
+    let Diagnosis = require('../models/autocomplete/diagnosis')
+    Diagnosis.find({val: new RegExp(req.query.q, 'g')})
+           .limit(10)
+           .exec()
+           .then(docs => {
+              res.json(docs.map(elm => elm.val))
+           })
+  })
+
   app.get('/autocomplete/medicineAdvice/frequency', (req, res) => {
     Frequency.find()
       .then(docs => {
@@ -107,5 +136,15 @@ module.exports = (app) => {
       .then(docs => {
         res.json(docs.map(elm => elm.val))
       })
+  })
+
+  app.get('/autocomplete/symptom', (req, res) => {
+    let Symptom = require('../models/autocomplete/symptom')
+    Symptom.find({val: new RegExp(req.query.q, 'g')})
+           .limit(10)
+           .exec()
+           .then(docs => {
+              res.json(docs.map(elm => elm.val))
+           })
   })
 }

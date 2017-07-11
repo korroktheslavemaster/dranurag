@@ -144,6 +144,97 @@
       })
   })
 
+  var diagnosisSrc = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.nonword,
+      queryTokenizer: Bloodhound.tokenizers.nonword,
+      // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
+      remote: {
+        url: '/autocomplete/diagnosis?q=%QUERY',
+        wildcard: '%QUERY'
+      }
+    });
+  diagnosisSrc.initialize();
+  $("#diagnosisTagsInput").ready(function () {
+      let myObject = $("#diagnosisTagsInput").tagsinput({
+      delimiter: '|',
+      typeaheadjs: [{
+        hint: true,
+        highlight: true,
+        minLength: 1,
+      },
+      { 
+        name: 'diagnosis',
+        source: diagnosisSrc.ttAdapter(),
+        limit: Infinity,
+      }],
+      freeInput: true
+    })
+    myObject[0].$input.on('typeahead:asyncrequest', function() {
+        $('.diagnosisTagsInputContainer .Typeahead-spinner').show();
+      })
+      .on('typeahead:asynccancel typeahead:asyncreceive', function() {
+        $('.diagnosisTagsInputContainer .Typeahead-spinner').hide();
+      });
+
+    $("#prescriptionForm").submit(function(event) {
+      $("#diagnosisTagsInput").tagsinput('items')
+        .map(elm => {
+          console.log(elm)
+          $('<input>').attr({
+              type: 'hidden',
+              name: 'diagnosis[]',
+              value: elm,
+          }).appendTo('form[id=prescriptionForm]');
+        })
+    })
+  });
+
+
+  var symptomSrc = new Bloodhound({
+      datumTokenizer: Bloodhound.tokenizers.nonword,
+      queryTokenizer: Bloodhound.tokenizers.nonword,
+      // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
+      remote: {
+        url: '/autocomplete/symptom?q=%QUERY',
+        wildcard: '%QUERY'
+      }
+    });
+  symptomSrc.initialize();
+  $("#chiefComplaintsTagsInput").ready(function () {
+      let myObject = $("#chiefComplaintsTagsInput").tagsinput({
+      delimiter: '|',
+      typeaheadjs: [{
+        hint: true,
+        highlight: true,
+        minLength: 1,
+      },
+      { 
+        name: 'chiefComplaints',
+        source: symptomSrc.ttAdapter(),
+        limit: Infinity,
+      }],
+      freeInput: true
+    })
+    myObject[0].$input.on('typeahead:asyncrequest', function() {
+        $('.chiefComplaintsTagsInputContainer .Typeahead-spinner').show();
+      })
+      .on('typeahead:asynccancel typeahead:asyncreceive', function() {
+        $('.chiefComplaintsTagsInputContainer .Typeahead-spinner').hide();
+      });
+
+    $("#prescriptionForm").submit(function(event) {
+      $("#chiefComplaintsTagsInput").tagsinput('items')
+        .map(elm => {
+          console.log(elm)
+          $('<input>').attr({
+              type: 'hidden',
+              name: 'chiefComplaints[]',
+              value: elm,
+          }).appendTo('form[id=prescriptionForm]');
+        })
+    })
+  });
+
   </script>
   <style type="text/css">
   #scrollable-dropdown-menu .tt-menu {
@@ -262,17 +353,22 @@
           <form action="/addPrescription/<%=patient._id %>" method="post" id="prescriptionForm">
             <div class="form-group row required">
               <label for="diagnosis" class="col-form-label col-md-2">Diagnosis</label>
-              <div class="col-md-10">
-                <textarea name="diagnosis" id="diagnosis" required="true" rows=3 cols=70 class="form-control"></textarea>
+              <div class="col-md-10 diagnosisTagsInputContainer">
+                <div id="scrollable-dropdown-menu">
+                  <input id="diagnosisTagsInput" class="form-control"/>
+                </div>
+                <img class="Typeahead-spinner" src="/img/ellipsis.svg" style="display: inline; display: none; position: absolute; top: 3px; right: 20px; width: 28px; height: 28px">
               </div>
             </div>
             <div class="row">
               <div class="col-md-2">
                 <label class="col-form-label">Chief Complaints</label>
               </div>
-              <div class="col-md-10 pb-5">
-                <input name="chiefComplaints" id="chiefComplaints" rows=3 cols=70 class="form-control" placeholder="eg. Headache (3 days)" data-role="tagsinput"/>
-                <small class="text-muted form-text">One complaint each line</small>
+              <div class="col-md-10 pb-3 chiefComplaintsTagsInputContainer">
+                <div id="scrollable-dropdown-menu">
+                  <input id="chiefComplaintsTagsInput"  class="form-control"/>
+                </div>
+                <img class="Typeahead-spinner" src="/img/ellipsis.svg" style="display: inline; display: none; position: absolute; top: 3px; right: 20px; width: 28px; height: 28px">
               </div>
             </div>
             <div class="form-group row">

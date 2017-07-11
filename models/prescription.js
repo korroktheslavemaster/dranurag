@@ -30,7 +30,7 @@ medicineAdviceSchema.post('save', function(doc) {
 var prescriptionSchema = mongoose.Schema({
     patient: {type: Number, ref: 'Patient', required: true},
     date: Date,
-    diagnosis: String,
+    diagnosis: [String],
     chiefComplaints: [String],
     onExaminationPulse: String,
     onExaminationBp1: String,
@@ -48,10 +48,12 @@ var prescriptionSchema = mongoose.Schema({
 prescriptionSchema.post('save', function(doc) {
   let Investigation = require('./autocomplete/investigation')
   let {Dietary, Other} = require('./autocomplete/treatmentAdvice')
+  let Diagnosis = require('./autocomplete/diagnosis')
+  let Symptom = require('./autocomplete/symptom')
   // add investigations required entries to autocomplete table
   // add dietary advice and other advice entries to autocompelte table
-  let {investigationsRequired, dietaryAdvice, otherAdvice} = doc
-  _.zip([investigationsRequired, dietaryAdvice, otherAdvice], [Investigation, Dietary, Other])
+  let {investigationsRequired, dietaryAdvice, otherAdvice, diagnosis, chiefComplaints} = doc
+  _.zip([investigationsRequired, dietaryAdvice, otherAdvice, diagnosis, chiefComplaints], [Investigation, Dietary, Other, Diagnosis, Symptom])
    .map(([elms, model]) => {
       elms.filter(elm => elm).map(elm => {
         // console.log(elm)
