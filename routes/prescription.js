@@ -31,6 +31,7 @@ module.exports = (app) => {
   
   app.get('/prescriptionPdf/:prescriptionId', function(req, res) {
     const {prescriptionId} = req.params
+    console.log("hit pdf creations with " + prescriptionId)
     Prescription.findOne({_id: parseInt(prescriptionId)})
       .populate('patient')
       .then(prescription => {
@@ -46,6 +47,9 @@ module.exports = (app) => {
             prescription: prescription, 
             dateformat: dateformat
           }, (err, html) => {
+            if (err) {
+              throw err
+            }
             var options = {
               width: '8.27in',
               height: '11.69in',

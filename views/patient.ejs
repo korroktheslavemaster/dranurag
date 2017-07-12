@@ -145,11 +145,11 @@
   })
 
   var diagnosisSrc = new Bloodhound({
-      datumTokenizer: Bloodhound.tokenizers.nonword,
+      datumTokenizer: Bloodhound.tokenizers.obj.nonword('disease_name'),
       queryTokenizer: Bloodhound.tokenizers.nonword,
       // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
       remote: {
-        url: '/autocomplete/diagnosis?q=%QUERY',
+        url: '/autocomplete/diagnosis/healthos?q=%QUERY',
         wildcard: '%QUERY'
       }
     });
@@ -160,10 +160,12 @@
       typeaheadjs: [{
         hint: true,
         highlight: true,
-        minLength: 1,
+        minLength: 2,
+        valueKey: 'disease_name',
       },
       { 
         name: 'diagnosis',
+        display: 'disease_name',
         source: diagnosisSrc.ttAdapter(),
         limit: Infinity,
       }],

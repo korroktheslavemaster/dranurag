@@ -116,15 +116,16 @@ module.exports = (app) => {
         // req.body.otherAdvice = _.split(req.body.otherAdvice, '\r\n').filter(elm => elm)
         var {
           medicinesAdvisedDrug: drug, 
+          medicinesAdvisedDrugConstituents: drugConstituents,
           medicinesAdvisedFrequency: frequency, 
           medicinesAdvisedDurationNumber: durationNumber,
           medicinesAdvisedDurationType: durationType,
           medicinesAdvisedSpecialAdvice: specialAdvice} = req.body
         duration = _.zip(durationNumber, durationType).map(([number, type]) => (number ? number + " " + type : ""))
         var medicineAdvice =
-          _.zip(drug, frequency, duration, specialAdvice)
+          _.zip(drug, drugConstituents, frequency, duration, specialAdvice)
            .filter(elm => elm[0])
-           .map(elm => _.zipObject(['drug', 'frequency', 'duration', 'specialAdvice'], elm))
+           .map(elm => _.zipObject(['drug', 'drugConstituents', 'frequency', 'duration', 'specialAdvice'], elm))
         return new Prescription(Object.assign({date: new Date(), patient: patient._id, medicineAdvice: medicineAdvice}, req.body))
           .save()
           .then(prescription => {

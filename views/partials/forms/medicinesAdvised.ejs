@@ -4,6 +4,7 @@
       <div class="col-3 pr-0 pr-md-0">
         <div id="scrollable-dropdown-menu">
           <input type="text" class="form-control" id="medicinesAdvisedDrug" name="medicinesAdvisedDrug[]" placeholder="Drug name">
+          <input type="hidden" id="medicinesAdvisedDrugConstituents" name="medicinesAdvisedDrugConstituents[]">
         </div>
         <img class="Typeahead-spinner" src="/img/ellipsis.svg" style="display: inline; display: none; position: absolute; top: 5px; right: 7px; width: 28px; height: 28px">
       </div>
@@ -47,16 +48,26 @@
     const container = this;
     var tmpl = Handlebars.compile($('#medicinesAdvisedTemplate').html())
     // using onemg source
+    // var drugSrc = new Bloodhound({
+    //   datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
+    //   queryTokenizer: Bloodhound.tokenizers.whitespace,
+    //   // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
+    //   remote: {
+    //     url: '/autocomplete/medicineAdvice/drug?q=%QUERY',
+    //     wildcard: '%QUERY'
+    //   }
+    // });
+    
+    // using healthos source
     var drugSrc = new Bloodhound({
       datumTokenizer: Bloodhound.tokenizers.obj.whitespace('name'),
       queryTokenizer: Bloodhound.tokenizers.whitespace,
       // prefetch: 'https://api.drugbankplus.com/v1/us/drug_names?q=tylenol',
       remote: {
-        url: '/autocomplete/medicineAdvice/drug?q=%QUERY',
+        url: '/autocomplete/medicineAdvice/drug/healthos?q=%QUERY',
         wildcard: '%QUERY'
       }
     });
-    
     // cross site query will not work
     // var startTime = new Date().getTime()
     // var drugSrc_direct = new Bloodhound({
@@ -120,15 +131,20 @@
       },
       { 
         name: 'drugs',
-        display: 'pName',
+        display: 'name',
         source: drugSrc,
-        limit: 10,
+        limit: Infinity,
       }).on('typeahead:asyncrequest', function() {
         $('.Typeahead-spinner', $jqueryElement).show();
       })
       .on('typeahead:asynccancel typeahead:asyncreceive', function() {
         $('.Typeahead-spinner', $jqueryElement).hide();
-      });
+      }).on('typeahead:select', function(e, suggestion) {
+        $('#medicinesAdvisedDrugConstituents', $jqueryElement).val(
+          _.map(suggestion['constituents'], elm => (elm['name'] + ' (' + elm['strength'] + ')'))
+           .join(' + ')
+          )
+      })
 
       _.zip([frequencySrc, durationSrc, specialAdviceSrc], ["Frequency", "Duration", "SpecialAdvice"])
        .forEach(([src, str]) => {

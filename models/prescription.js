@@ -6,13 +6,14 @@ const {Drug, Frequency, Duration, SpecialAdvice} = require('./autocomplete/medic
 
 var medicineAdviceSchema = mongoose.Schema({
     drug: String,
+    drugConstituents: String,
     frequency: String,
     duration: String,
     specialAdvice: String
 })
 
 medicineAdviceSchema.methods.getText = function () {
-  return this.drug +  ", " + this.frequency + ", " + this.duration + ", " + this.specialAdvice
+  return this.drug +  ", " + this.drugConstituents + ', ' + this.frequency + ", " + this.duration + ", " + this.specialAdvice
 }
 
 medicineAdviceSchema.post('save', function(doc) {
