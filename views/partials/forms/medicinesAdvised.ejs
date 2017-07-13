@@ -141,7 +141,7 @@
         $('.Typeahead-spinner', $jqueryElement).hide();
       }).on('typeahead:select', function(e, suggestion) {
         $('#medicinesAdvisedDrugConstituents', $jqueryElement).val(
-          _.map(suggestion['constituents'], elm => (elm['name'] + ' (' + elm['strength'] + ')'))
+          _.map(suggestion['constituents'] || [''], elm => (elm['name'] + ' (' + elm['strength'] + ')'))
            .join(' + ')
           )
       })
