@@ -1,0 +1,66 @@
+<!-- views/partials/prescription2.ejs -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+ <%- include('head')%>
+ <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+ <!-- jsbarcode -->
+ <script src="https://cdn.jsdelivr.net/jsbarcode/3.5.8/JsBarcode.all.min.js"></script>
+ <script src="https://use.typekit.net/kac8cip.js"></script>
+ <script>try{Typekit.load({ async: false });}catch(e){}</script>
+ <style type="text/css">
+
+/* hack to fix a4 rendering issue. dimensions in inches work now. 
+https://github.com/ariya/phantomjs/issues/12685*/
+html {
+    transform-origin: 0 0; 
+    -webkit-transform-origin: 0 0; 
+    transform: scale(0.75); 
+   -webkit-transform: scale(0.75);
+}
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'europa';
+  }
+  p, div {
+    font-family: 'europa';
+    font-size: 1rem;
+  }
+  body {
+    margin-top: 0;
+    padding-top: 0
+  }
+  .leftbox {
+    width: <%=renderParams.leftBoxWidth%>;
+    height: <%=renderParams.leftBoxHeight%>;
+    background-color: #334455;
+  }
+  .rightbox {
+    background-color: #000044;
+    flex-grow: 1;
+    height: 6in;
+  }
+</style>
+<script type="text/javascript">
+  // $(document).ready(() => {
+    $(()=> {
+      JsBarcode("#barcode", "<%=prescription._id%>", {
+        displayValue: false,
+        height: 40,
+      });
+      
+    })
+  // })
+
+</script>
+</head>
+<body>
+  <div class="container px-0">
+    <div class="d-flex">
+      <div class="leftbox"></div>
+      <div class="rightbox"></div>
+    </div>
+  </div> 
+</body>
+</html>

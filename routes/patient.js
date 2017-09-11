@@ -2,12 +2,38 @@ var Visit            = require('../models/visit');
 var Patient          = require('../models/patient');
 var Investigation    = require('../models/investigation');
 var Prescription     = require('../models/prescription');
+var PicturePrescription = require('../models/picturePrescription')
 
 var _ = require('lodash');
 
 
 var dateformat = require('dateformat');
 module.exports = (app) => {
+  // FIX: serving patient_with_picture_prescription for now!
+  app.get('/patient/:patientId', (req, res) => {
+    const { patientId } = req.params
+    Patient.findOne({_id: parseInt(patientId)})
+    .then((patient) => {
+      if (!patient) {
+        throw {message: "Invalid patient ID."}
+      }
+      return PicturePrescription.find({patient: parseInt(patientId)})
+        .then((picturePrescriptions) => {
+          res.render('patient_with_picture_prescriptions', {
+            messages: req.flash(),
+            req: req,
+            patient: patient,
+            helpText: patient.getHelpText(),
+            dateformat: dateformat,
+            picturePrescriptions: picturePrescriptions
+          })
+        })
+    })
+    .catch((err) => {
+      req.flash("error", err.message)
+      res.redirect('/')
+    })
+  })
   // show patient profile
   app.get('/patient/:patientId', (req, res) => {
     const { patientId } = req.params

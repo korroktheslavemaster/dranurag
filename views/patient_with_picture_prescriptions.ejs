@@ -1,0 +1,61 @@
+<!-- views/patient.ejs -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <%- include('partials/head')%>
+</head>
+
+<body>
+  <div class="container">
+    <%- include('partials/navbar') %>
+    <%- include('partials/header')%>
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="display-3"><%=patient.name%></h1>
+        <p class="lead"><%-helpText%> </p>
+      </div>
+      <div class="col-md-6">
+        <div class="row">
+          <p class="col-6">Height</p>
+          <p class="col-3"><%=patient.height || "-"%></p>
+          <p class="col-3">cms</p>
+        </div>
+        <div class="row">
+          <p class="col-6">Weight</p>
+          <p class="col-3"><%=patient.weight || "-"%></p>
+          <p class="col-3">kgs</p>
+        </div>
+        <div class="row">
+          <p class="col-6">BMI</p>
+          <p class="col-6"><%=patient.bmi || "-"%></p>
+        </div>
+        <div class="row">
+          <p class="col-6">Allergies</p>
+          <p class="col-6"><%=patient.allergies || "-"%></p>
+        </div>
+        <div class="row">
+          <p class="col-6">Alternate phone number</p>
+          <p class="col-6"><%=patient.phone2 || "-"%></p>
+        </div>
+      </div>
+    </div>
+    <hr class="pb-4">
+    <div class="card">
+      <div class="card-block">
+        <h3 class="card-title">Prescriptions</h3>
+        <div class="list-group">
+          <%picturePrescriptions.forEach(elm => {%>
+            <a href="<%=elm.url%>" class="list-group-item list-group-item-action"><%=elm.title%></a>
+          <%})%>
+        </div>
+      </div>
+    </div>
+    <%- include('partials/footer') %>
+  </div>
+
+
+</body>
+
+</html>

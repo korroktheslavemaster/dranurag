@@ -2,13 +2,18 @@ var Visit            = require('../models/visit');
 var Patient          = require('../models/patient');
 var Investigation    = require('../models/investigation');
 var Prescription     = require('../models/prescription');
+var PicturePrescription = require('../models/picturePrescription')
 
 var _ = require('lodash');
 var pdf = require('html-pdf');
 
 var dateformat = require('dateformat');
 
-
+var renderParams = {
+          dateRightMargin: '6mm',
+          leftBoxWidth: '66mm',
+          leftBoxHeight: '125mm', 
+        }
 module.exports = (app) => {
   
   // testing prescription
@@ -20,7 +25,14 @@ module.exports = (app) => {
         if (!prescription) {
           throw {message: "no prescrpitoin"}
         }
-        res.render('partials/prescription', {messages: req.flash(), req: req, patient: prescription.patient, prescription: prescription, dateformat: dateformat})
+        res.render('partials/prescription2', {
+          messages: req.flash(), 
+          req: req, 
+          patient: prescription.patient, 
+          prescription: prescription, 
+          dateformat: dateformat,
+          renderParams: renderParams
+        })
       })
       .catch(err => {
         req.flash('error', err.message)
@@ -38,21 +50,26 @@ module.exports = (app) => {
         if (!prescription) {
           throw {message: "no prescrpitoin"}
         }
+        
         res.render(
-          'partials/prescription', 
+          'partials/prescription2', 
           {
             messages: req.flash(), 
             req: req, 
             patient: prescription.patient, 
             prescription: prescription, 
-            dateformat: dateformat
+            dateformat: dateformat,
+            renderParams: renderParams
           }, (err, html) => {
             if (err) {
               throw err
             }
             var options = {
-              width: '8.27in',
-              height: '11.69in',
+              // width: '8.27in',
+              // height: '11.69in',
+              paperSize: {
+                format: 'A4',
+              },
               // viewportSize: {
               //   width: 1500,
               //   height: 3000
@@ -68,9 +85,9 @@ module.exports = (app) => {
                 height: '1.5in'
               },
               "border": {
-                "top": "1.2in",            // default is 0, units: mm, cm, in, px 
-                "right": "0.2in",
-                "left": "0.2in"
+                "top": "32mm",            // default is 0, units: mm, cm, in, px 
+                "right": "12mm",
+                "left": "12mm"
               },
             };
             console.log('creating pdf...')
@@ -87,5 +104,19 @@ module.exports = (app) => {
         req.flash('error', err.message)
         res.redirect('/')
       })
+  })
+
+  moment = require('moment')
+
+  app.post('/add-picture-prescription', function(req, res) {
+    console.log("got an add picture request")
+    new PicturePrescription({
+      patient: parseInt(req.body.id),
+      url: req.body.url,
+      timestamp: moment.now(),
+      title: moment().format('MMMM Do, YYYY')
+    }).save()
+    .then(() => res.send('ok'))
+    .catch((e) => res.send('notok'))
   })
 }
