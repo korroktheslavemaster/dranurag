@@ -1,6 +1,11 @@
 var Patient            = require('../models/patient');
 var Visit              = require('../models/visit');
 
+function toTitleCase(str)
+{
+    return str.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+}
+
 module.exports = (app) => {
   // add patient page
   app.get('/addPatient', (req, res) => {
@@ -11,6 +16,7 @@ module.exports = (app) => {
   app.post('/addPatient', (req, res) => {
     // dd/mm/yyyy conversion, now handled client side only
     // req.body.dateOfBirth =  req.body.dateOfBirth.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1")
+    req.body.name = toTitleCase(req.body.name)
     console.log(req.body)
     new Patient(req.body)
       .save()
