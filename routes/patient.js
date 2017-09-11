@@ -35,7 +35,7 @@ module.exports = (app) => {
     })
   })
   // show patient profile
-  app.get('/patient/:patientId', (req, res) => {
+  app.get('/patient/full/:patientId', (req, res) => {
     const { patientId } = req.params
     Patient.findOne({_id: parseInt(patientId)})
     .then((patient) => {
