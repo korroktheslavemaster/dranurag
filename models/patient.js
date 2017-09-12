@@ -16,6 +16,7 @@ var patientSchema = mongoose.Schema({
   weight: Number,
   bmi   : Number,
   allergies: String,
+  timestamp: Number,
 });
 
 patientSchema.methods.getHelpText = function() {

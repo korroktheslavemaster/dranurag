@@ -28,6 +28,7 @@ module.exports = (app) => {
     // req.body.dateOfBirth =  req.body.dateOfBirth.replace( /(\d{2})\/(\d{2})\/(\d{4})/, "$3-$2-$1")
     req.body.name = toTitleCase(req.body.name)
     req.body.bmi = bmi(req.body.weight, req.body.height)
+    req.body.timestamp = Date.now()
     console.log(req.body)
     new Patient(req.body)
       .save()
