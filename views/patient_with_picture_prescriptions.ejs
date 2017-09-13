@@ -120,6 +120,7 @@
     $(document).ready(function() {
       $.fn.editable.defaults.mode = 'popup'
       $.fn.editable.defaults.unsavedclass = null
+      $.fn.editable.defaults.emptytext = 'none'
       $.fn.editable.defaults.ajaxOptions = {
         type: "PATCH",
         dataType: 'json',
@@ -152,7 +153,7 @@
         <span class="lead patient-editable" data-name="sex" data-type="select" data-source="['Male', 'Female']"  data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Sex"><%-patient.sex%></span>
         <span class="lead"> / </span>
         <span class="lead patient-editable" data-name="age" data-type="number" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Age"><%-patient.age%></span>
-        <span class="lead"> yrs / <i class='fa fa-phone px-1'></i> </span>
+        <span class="lead">&nbsp;yrs / <i class='fa fa-phone px-1'></i> </span>
         <span class="lead patient-editable" data-name="phone1" data-type="text" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Phone Number"><%-patient.phone1%></span>
         <p class="lead">ID: <%=patient._id%></p>
       </div>
