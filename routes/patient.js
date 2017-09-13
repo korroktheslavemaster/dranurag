@@ -5,7 +5,7 @@ var Prescription     = require('../models/prescription');
 var PicturePrescription = require('../models/picturePrescription')
 
 var _ = require('lodash');
-
+var moment = require('moment')
 
 var dateformat = require('dateformat');
 module.exports = (app) => {
@@ -26,7 +26,8 @@ module.exports = (app) => {
             helpText: patient.getHelpText(),
             dateformat: dateformat,
             picturePrescriptions: picturePrescriptions,
-            scan_url: process.env.SCAN_URL
+            scan_url: process.env.SCAN_URL,
+            moment: moment
           })
         })
     })
