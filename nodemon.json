@@ -1,4 +1,8 @@
 {
   "verbose": true,
   "ignore": ["*.test.js", "fixtures/*", "view/", "public/"],
+  "env": {
+    "SCAN_URL": "http://scan-server:8899/scan",
+    "PORT": 8080
+  }
 }

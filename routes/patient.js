@@ -25,7 +25,8 @@ module.exports = (app) => {
             patient: patient,
             helpText: patient.getHelpText(),
             dateformat: dateformat,
-            picturePrescriptions: picturePrescriptions
+            picturePrescriptions: picturePrescriptions,
+            scan_url: process.env.SCAN_URL
           })
         })
     })

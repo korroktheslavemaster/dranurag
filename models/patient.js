@@ -21,7 +21,8 @@ var patientSchema = mongoose.Schema({
 
 patientSchema.methods.getHelpText = function() {
   // <i class="fa fa-transgender px-2"></i> / <i class="fa fa-phone px-1"></i> +917407650530 / 24 yrs
-  helpText = "<i class='fa fa-" + (this.sex == "Male" ? "mars" : "venus" ) + " pr-2'></i>" 
+  // helpText = "<i class='fa fa-" + (this.sex == "Male" ? "mars" : "venus" ) + " pr-2'></i>"
+  helpText = this.sex == "Male" ? "M" : "F" 
   if (this.age) {
     helpText += " / " + this.getAge() + " yrs"
   }
