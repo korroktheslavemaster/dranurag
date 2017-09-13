@@ -15,8 +15,8 @@ module.exports = (app) => {
     if (req.body.name) {
       searchObj.name = {$regex: req.body.name, $options: "i"}
     }
-    if (req.body.dateOfBirth) {
-      searchObj.dateOfBirth =  req.body.dateOfBirth
+    if (req.body.phone1) {
+      searchObj.phone1 =  {$regex: req.body.phone1, $options: "i"}
     }
     Patient.find(searchObj)
     .sort({_id: -1})
