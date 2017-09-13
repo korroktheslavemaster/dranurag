@@ -18,6 +18,9 @@ module.exports = (app) => {
         throw {message: "Invalid patient ID."}
       }
       return PicturePrescription.find({patient: parseInt(patientId)})
+        .sort({
+          timestamp: -1
+        })
         .then((picturePrescriptions) => {
           res.render('patient_with_picture_prescriptions', {
             messages: req.flash(),

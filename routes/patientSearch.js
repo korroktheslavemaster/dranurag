@@ -18,7 +18,9 @@ module.exports = (app) => {
     if (req.body.dateOfBirth) {
       searchObj.dateOfBirth =  req.body.dateOfBirth
     }
-    Patient.find(searchObj).then((patients) => {
+    Patient.find(searchObj)
+    .sort({_id: -1})
+    .then((patients) => {
       if (patients.length == 0) {
         req.flash("warning", "No patients found.")
       }
