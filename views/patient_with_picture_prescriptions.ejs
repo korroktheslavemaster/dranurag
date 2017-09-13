@@ -111,6 +111,29 @@
          text-align: center;
     }
   </style>
+
+  <!-- X-editable -->
+  <link href="//cdnjs.cloudflare.com/ajax/libs/x-editable/1.5.0/bootstrap3-editable/css/bootstrap-editable.css" rel="stylesheet"/>
+  <script src="/js/x-editable-bs4.js"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $.fn.editable.defaults.mode = 'popup'
+      $.fn.editable.defaults.unsavedclass = null
+      $.fn.editable.defaults.ajaxOptions = {
+        type: "PATCH",
+        dataType: 'json',
+        contentType: 'application/json',
+      };
+      $.fn.editable.defaults.params = function(params) {
+        dict = {}
+        dict[params['name']] = params['value']
+        console.log(dict)
+        return JSON.stringify(dict)
+      }
+      $('.patient-editable').editable();
+    })
+  </script>
 </head>
 
 <body>
@@ -125,19 +148,23 @@
     <%- include('partials/header')%>
     <div class="row">
       <div class="col-md-6">
-        <h1 class="display-3"><%=patient.name%></h1>
-        <p class="lead"><%-helpText%> </p>
+        <h1 class="display-3 patient-editable"  data-name="name" data-type="text" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Name"><%=patient.name%></h1>
+        <span class="lead patient-editable" data-name="sex" data-type="select" data-source="['Male', 'Female']"  data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Sex"><%-patient.sex%></span>
+        <span class="lead"> / </span>
+        <span class="lead patient-editable" data-name="age" data-type="number" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Age"><%-patient.age%></span>
+        <span class="lead"> yrs / <i class='fa fa-phone px-1'></i> </span>
+        <span class="lead patient-editable" data-name="phone1" data-type="text" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Phone Number"><%-patient.phone1%></span>
         <p class="lead">ID: <%=patient._id%></p>
       </div>
       <div class="col-md-6">
         <div class="row">
           <p class="col-6">Height</p>
-          <p class="col-3"><%=patient.height || "-"%></p>
+          <p class="col-3 patient-editable" data-name="height" data-type="number" data-step="any" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Height"><%=patient.height || "-"%></p>
           <p class="col-3">cms</p>
         </div>
         <div class="row">
           <p class="col-6">Weight</p>
-          <p class="col-3"><%=patient.weight || "-"%></p>
+          <p class="col-3 patient-editable" data-name="weight" data-type="number" data-step="any" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Weight"><%=patient.weight || "-"%></p>
           <p class="col-3">kgs</p>
         </div>
         <div class="row">
@@ -146,11 +173,11 @@
         </div>
         <div class="row">
           <p class="col-6">Allergies</p>
-          <p class="col-6"><%=patient.allergies || "-"%></p>
+          <p class="col-6 patient-editable" data-name="allergies" data-type="text" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Allergies"><%=patient.allergies || "-"%></p>
         </div>
         <div class="row">
           <p class="col-6">Alternate phone number</p>
-          <p class="col-6"><%=patient.phone2 || "-"%></p>
+          <p class="col-6 patient-editable" data-name="phone2" data-type="text" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Alternate Phone"><%=patient.phone2 || "-"%></p>
         </div>
       </div>
     </div>

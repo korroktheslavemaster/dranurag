@@ -11,6 +11,9 @@ const MongoStore = require('connect-mongo')(session);
 var mongoose     = require('mongoose');
 var flash        = require('connect-flash');
 var configDB     = require('./config/database.js');
+const restify = require('express-restify-mongoose')
+const router = express.Router()
+
 // configuration ===============================================================
 var connection = mongoose.connect(configDB.url); // connect to our database
 // use js promise
@@ -58,6 +61,13 @@ app.get('/logout', function(req, res){
 });
 /////
 
+// REST api
+// TODO: move below home.js so its secured
+var Patient = require('./models/patient')
+restify.serve(router, Patient)
+app.use(router)
+
+
 //// Other routing
 // homepage first to handle auth redirects correctly
 require('./routes/home.js')(app)
@@ -66,6 +76,9 @@ require('./routes/addVisit.js')(app);
 require('./routes/patientSearch.js')(app);
 require('./routes/patient.js')(app);
 require('./routes/autocomplete.js')(app);
+
+
+
 
 app.listen(port)
 
