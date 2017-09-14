@@ -148,7 +148,7 @@
     <%- include('partials/navbar') %>
     <%- include('partials/header')%>
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <h1 class="display-3 patient-editable"  data-name="name" data-type="text" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Name"><%=patient.name%></h1>
         <span class="lead patient-editable" data-name="sex" data-type="select" data-source="['Male', 'Female']"  data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Sex"><%-patient.sex%></span>
         <span class="lead"> / </span>
@@ -157,7 +157,7 @@
         <span class="lead patient-editable" data-name="phone1" data-type="text" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Phone Number"><%-patient.phone1%></span>
         <p class="lead">ID: <%=patient._id%></p>
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <div class="row">
           <p class="col-6">Height</p>
           <p class="col-3 patient-editable" data-name="height" data-type="number" data-step="any" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Height"><%=patient.height || "-"%></p>
