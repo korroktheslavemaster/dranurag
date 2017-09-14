@@ -20,6 +20,7 @@ module.exports = (app) => {
     }
     Patient.find(searchObj)
     .sort({_id: -1})
+    .limit(20)
     .then((patients) => {
       if (patients.length == 0) {
         req.flash("warning", "No patients found.")
