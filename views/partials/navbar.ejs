@@ -15,6 +15,9 @@
       <li class="nav-item">
         <a class="nav-link <%- req.path=="/patientSearch"? 'active': '' %>" href="/patientSearch">Patient Search</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link <%- req.path=="/visitSearch"? 'active': '' %>" href="/visitSearch">Visit Search</a>
+      </li>
 
     </ul>
     <% if (!req.user) {%>

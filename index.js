@@ -64,7 +64,9 @@ app.get('/logout', function(req, res){
 // REST api
 // TODO: move below home.js so its secured
 var Patient = require('./models/patient')
+var Visit = require('./models/visit')
 restify.serve(router, Patient)
+restify.serve(router, Visit)
 app.use(router)
 
 
@@ -73,6 +75,7 @@ app.use(router)
 require('./routes/home.js')(app)
 require('./routes/addPatient.js')(app); 
 require('./routes/addVisit.js')(app); 
+require('./routes/visitSearch.js')(app);
 require('./routes/patientSearch.js')(app);
 require('./routes/patient.js')(app);
 require('./routes/autocomplete.js')(app);
