@@ -9,6 +9,14 @@ var moment = require('moment')
 
 var dateformat = require('dateformat');
 module.exports = (app) => {
+
+  // delete picture prescription endpoint
+  app.get('/deletePrescription', (req, res) => {
+    PicturePrescription.findOne({_id: parseInt(req.query.delete_id)})
+      .remove()
+      .exec()
+      .then(()=>res.redirect('back'))
+  })
   // FIX: serving patient_with_picture_prescription for now!
   app.get('/patient/:patientId', (req, res) => {
     const { patientId } = req.params

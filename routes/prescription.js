@@ -41,6 +41,7 @@ module.exports = (app) => {
   })
 
   
+  
   app.get('/prescriptionPdf/:prescriptionId', function(req, res) {
     const {prescriptionId} = req.params
     console.log("hit pdf creations with " + prescriptionId)
