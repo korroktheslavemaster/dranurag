@@ -112,6 +112,10 @@
           console.log("deleting!")
           $('#delete_prescription_form').submit()
         })
+        $('#delete_profile_button').on('click', function(event) {
+          console.log("deleting profile!")
+          $('#delete_profile_form').submit()
+        })
       })
 
     </script>
@@ -159,7 +163,7 @@
       <img src="" id="modal-img" >
     </div>
   </div>
-  <!-- confirm delete modal -->
+  <!-- confirm delete prescription modal -->
   <div class="modal fade" id='confirm'>
     <div class="modal-dialog" role="document">
       <div class="modal-content">
@@ -179,8 +183,31 @@
       </div>
     </div>
   </div>
+   <!-- confirm delete profile modal -->
+  <div class="modal fade" id='confirmProfile'>
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Delete Profile</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p id="help-text">Are you sure you want to delete profile? This action is not reversible.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" id="delete_profile_button">Delete</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <form id="delete_prescription_form" action='/deletePrescription'>
     <input type='hidden' name="delete_id" id="delete_id">
+  </form>
+  <form id="delete_profile_form" action='/deletePatient'>
+    <input type='hidden' name="delete_id" value="<%=patient._id%>">
   </form>
   <div class="container">
     <%- include('partials/navbar') %>
@@ -194,6 +221,7 @@
         <span class="lead">&nbsp;yrs / <i class='fa fa-phone px-1'></i> </span>
         <span class="lead patient-editable" data-name="phone1" data-type="text" data-pk="1" data-url="/api/v1/Patient/<%=patient._id%>" data-title="Enter Phone Number"><%-patient.phone1%></span>
         <p class="lead">ID: <%=patient._id%></p>
+        <a href="#" class="btn btn-outline-danger" data-toggle="modal" data-target="#confirmProfile">Delete Profile</a>
       </div>
       <div class="col-lg-6">
         <div class="row">
