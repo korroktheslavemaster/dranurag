@@ -32,7 +32,7 @@ files = [
 for (collection, file) in zip(collections, files):
   os.system("mongoimport -h {} -d {} -c {} -u {} -p {}  --drop --file {}".format(
     host, db, collection, username, password, file
-    ))
+    )) 
 # mongoimport --db dranurag --collection ac_tests --drop --file ~/random/dranurag/public/json/tests.json 
 # mongoimport -h ds127132.mlab.com:27132 -d heroku_652gl5jn -c <collection> -u heroku_652gl5jn -p ms4qmjejupvb72jq0p5vpqr61p  --drop --file <input file>
 
